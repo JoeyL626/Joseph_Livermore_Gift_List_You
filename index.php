@@ -1,0 +1,6 @@
+<?
+
+include 'controller/main.php';
+
+
+?>
