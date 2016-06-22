@@ -102,6 +102,19 @@ class dbinfo{
 	
 	}
 
+	public function getUserListsName($uid){
+		
+		$user="root";
+		$pass="root";
+		$dbh = new PDO('mysql:host=localhost;dbname=giftlistyou;port=8889', $user, $pass);
+	
+		$st = $dbh->prepare("select list_id, name from lists where user_id=:id");
+		$st->execute(array(":id"=>$uid));
+		$result = $st->fetchAll();
+		return $result;
+	
+	}
+
 	public function deleteList($lid){
 		
 		$user="root";
@@ -120,6 +133,64 @@ class dbinfo{
 		$dbh = new PDO('mysql:host=localhost;dbname=giftlistyou;port=8889', $user, $pass);
 		
 		$st = $dbh->prepare("delete from lists where user_id=:id");
+		$st->execute(array(":id"=>$uid));
+	
+	}
+
+		public function addItem($name,$url,$price,$listid){
+		
+		$user="root";
+		$pass="root";
+		$salt="Joeysendallbeallnogettingpasts.a.l.t.thatissecureascanbe";
+		$dbh = new PDO('mysql:host=localhost;dbname=giftlistyou;port=8889', $user, $pass);
+		
+		$st = $dbh->prepare("insert into lists(name,url,price,purchased,list_id) values(:na,:url,:pr,:li)");
+		$st->execute(array(":na"=>$name,":url"=>$url,":pr"=>$price,":li"=>$listid));
+		
+	}
+
+	public function getListItems($lid){
+		
+		$user="root";
+		$pass="root";
+		$dbh = new PDO('mysql:host=localhost;dbname=giftlistyou;port=8889', $user, $pass);
+	
+		$st = $dbh->prepare("select * from items where list_id=:id");
+		$st->execute(array(":id"=>$lid));
+		$result = $st->fetchAll();
+		return $result;
+	
+	}
+
+	public function deleteListItems($lid){
+		
+		$user="root";
+		$pass="root";
+		$dbh = new PDO('mysql:host=localhost;dbname=giftlistyou;port=8889', $user, $pass);
+		
+		$st = $dbh->prepare("delete from items where list_id=:id");
+		$st->execute(array(":id"=>$lid));
+	
+	}
+
+	public function deleteItem($iid){
+		
+		$user="root";
+		$pass="root";
+		$dbh = new PDO('mysql:host=localhost;dbname=giftlistyou;port=8889', $user, $pass);
+		
+		$st = $dbh->prepare("delete from items where item_id=:id");
+		$st->execute(array(":id"=>$iid));
+	
+	}
+
+	public function deleteUserItems($uid){
+		
+		$user="root";
+		$pass="root";
+		$dbh = new PDO('mysql:host=localhost;dbname=giftlistyou;port=8889', $user, $pass);
+		
+		$st = $dbh->prepare("delete from items where user_id=:id");
 		$st->execute(array(":id"=>$uid));
 	
 	}

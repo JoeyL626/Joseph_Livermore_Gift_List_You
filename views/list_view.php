@@ -9,14 +9,15 @@
 foreach($ldata as $list){
 ?>
 <tr>
-<td><? echo $list["name"]?></td>
-<td><? echo $list["event"]?></td>
-<td><? echo $list["address"]?></td>
-<td><? echo $list["city"]?></td>
-<td><? echo $list["state"]?></td>
-<td><? echo $list["zip"]?></td>
-<td><a href="?action=updateListButton&id=<? echo $list['list_id']?>">Edit List</a></td>
-<td><a href="?action=deleteListButton&id=<? echo $list['list_id']?>">Delete List</a></td>
+<th><? echo $list["name"]?></th>
+<th><? echo $list["event"]?></th>
+<th><? echo $list["address"]?></th>
+<th><? echo $list["city"]?></th>
+<th><? echo $list["state"]?></th>
+<th><? echo $list["zip"]?></th>
+<th><a href="?action=updateListButton&id=<? echo $list['list_id']?>">Edit List</a></th>
+<th><a href="?action=deleteListAction&id=<? echo $list['list_id']?>">Delete List</a></th>
+<th><a href="?action=addItemButton&id=<? echo $list['list_id']?>">Delete List</a></th>
 </tr>
 <?
 }

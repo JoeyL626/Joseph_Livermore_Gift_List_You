@@ -156,7 +156,7 @@ if(!empty($_GET["action"])){
 		
 		}
 
-		}else if($_GET["action"]=="deleteListButton"){
+		}else if($_GET["action"]=="deleteListAction"){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
@@ -174,6 +174,24 @@ if(!empty($_GET["action"])){
 		$views->getView("views/user_profile.php",$data);
 		$views->getView("views/list_view.php",$data,$ldata);
 		$views->getView("views/list_add.php");
+		$views->getView("views/footer.php");
+		
+		}
+
+		}else if($_GET["action"]=="addItemButton"){
+	
+		if(!isset($_SESSION["isloggedin"])){
+	 		
+	 		$views->getView("views/header.php");
+			$views->getView("views/user_login.php");
+			$views->getView("views/footer.php"); 
+	 	
+	 	}else if($_SESSION["isloggedin"] == 1){
+
+	 	$data = $dbinfo->getUserListsName($_SESSION["userid"]);
+	
+	 	$views->getView("views/header.php");
+	 	$views->getView("views/item_add.php",$data);
 		$views->getView("views/footer.php");
 		
 		}
