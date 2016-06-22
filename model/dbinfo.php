@@ -108,7 +108,7 @@ class dbinfo{
 		$pass="root";
 		$dbh = new PDO('mysql:host=localhost;dbname=giftlistyou;port=8889', $user, $pass);
 	
-		$st = $dbh->prepare("select list_id, name from lists where user_id=:id");
+		$st = $dbh->prepare("select list_id, name, event from lists where user_id=:id");
 		$st->execute(array(":id"=>$uid));
 		$result = $st->fetchAll();
 		return $result;
@@ -137,15 +137,15 @@ class dbinfo{
 	
 	}
 
-		public function addItem($name,$url,$price,$listid){
+		public function addItem($name,$url,$price,$listid,$userid){
 		
 		$user="root";
 		$pass="root";
 		$salt="Joeysendallbeallnogettingpasts.a.l.t.thatissecureascanbe";
 		$dbh = new PDO('mysql:host=localhost;dbname=giftlistyou;port=8889', $user, $pass);
 		
-		$st = $dbh->prepare("insert into lists(name,url,price,purchased,list_id) values(:na,:url,:pr,:li)");
-		$st->execute(array(":na"=>$name,":url"=>$url,":pr"=>$price,":li"=>$listid));
+		$st = $dbh->prepare("insert into lists(name,url,price,purchased,list_id,user_id) values(:na,:url,:pr,:li,:ui)");
+		$st->execute(array(":na"=>$name,":url"=>$url,":pr"=>$price,":li"=>$listid,":ui"=>$userid));
 		
 	}
 

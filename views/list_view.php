@@ -17,7 +17,6 @@ foreach($ldata as $list){
 <th><? echo $list["zip"]?></th>
 <th><a href="?action=updateListButton&id=<? echo $list['list_id']?>">Edit List</a></th>
 <th><a href="?action=deleteListAction&id=<? echo $list['list_id']?>">Delete List</a></th>
-<th><a href="?action=addItemButton&id=<? echo $list['list_id']?>">Delete List</a></th>
 </tr>
 <?
 }

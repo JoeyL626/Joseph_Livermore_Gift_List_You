@@ -5,13 +5,15 @@
 		Name :<input type="text" name="name" value="" placeholder="Your List" /><br>
 
 		Event :<select name="event" value="" placeholder="Alaska">
-    					<option value="mothers">Mothers' Day</option>
-							<option value="valentine">Valentine's Day</option>
-							<option value="easter">Easter</option>
-							<option value="fathers">Fathers' Day</option>
-							<option value="christmas">Christmas</option>
-							<option value="birthday">Birthday</option>
-							<option value="birthday">Birthday</option>
+    					<option value="Mothers' Day">Mothers' Day</option>
+							<option value="Valentine's Day">Valentine's Day</option>
+							<option value="Easter">Easter</option>
+							<option value="Fathers' Day">Fathers' Day</option>
+							<option value="Christmas">Christmas</option>
+							<option value="Hanukkah">Hanukkah</option>
+							<option value="Birthday">Birthday</option>
+							<option value="Baby Shower">Baby Shower</option>
+							<option value="Wedding">Wedding</option>
   					</select><br>
 
 		Address: <input type="text" name="address" value="" placeholder="123 your street" /><br>

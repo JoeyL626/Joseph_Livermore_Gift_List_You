@@ -196,6 +196,28 @@ if(!empty($_GET["action"])){
 		
 		}
 
+		}else if($_GET["action"]=="addItemAction"){
+	
+		if(!isset($_SESSION["isloggedin"])){
+	 		
+	 		$views->getView("views/header.php");
+			$views->getView("views/user_login.php");
+			$views->getView("views/footer.php"); 
+	 	
+	 	}else if($_SESSION["isloggedin"] == 1){
+
+	 	$ndata = $dbinfo->addItem($_POST["name"],$_POST["url"],$_POST["price"],$_POST["list"],$_SESSION["userid"]);
+	 	$data = $dbinfo->getUser($_SESSION["userid"]);
+	 	$ldata = $dbinfo->getUserLists($_SESSION["userid"]);
+
+	 	$views->getView("views/header.php");
+		$views->getView("views/user_profile.php",$data);
+		$views->getView("views/list_view.php",$data,$ldata);
+		$views->getView("views/list_add.php");
+		$views->getView("views/footer.php");
+		
+		}
+
 	}
 	
 	}else{
