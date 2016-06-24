@@ -144,19 +144,19 @@ class dbinfo{
 		$salt="Joeysendallbeallnogettingpasts.a.l.t.thatissecureascanbe";
 		$dbh = new PDO('mysql:host=localhost;dbname=giftlistyou;port=8889', $user, $pass);
 		
-		$st = $dbh->prepare("insert into lists(name,url,price,purchased,list_id,user_id) values(:na,:url,:pr,:li,:ui)");
+		$st = $dbh->prepare("insert into items(name,url,price,list_id,user_id) values(:na,:url,:pr,:li,:ui)");
 		$st->execute(array(":na"=>$name,":url"=>$url,":pr"=>$price,":li"=>$listid,":ui"=>$userid));
 		
 	}
 
-	public function getListItems($lid){
+	public function getListItems($uid){
 		
 		$user="root";
 		$pass="root";
 		$dbh = new PDO('mysql:host=localhost;dbname=giftlistyou;port=8889', $user, $pass);
 	
-		$st = $dbh->prepare("select * from items where list_id=:id");
-		$st->execute(array(":id"=>$lid));
+		$st = $dbh->prepare("select * from items where user_id=:id");
+		$st->execute(array(":id"=>$uid));
 		$result = $st->fetchAll();
 		return $result;
 	

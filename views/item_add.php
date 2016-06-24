@@ -1,5 +1,5 @@
 
-<form enctype="multipart/form-data" action="?action=addListAction" method="POST">
+<form enctype="multipart/form-data" action="?action=addItemAction" method="POST">
 	<fieldset>
 
 		Name :<input type="text" name="name" value="" placeholder="Your List" /><br>

@@ -84,7 +84,7 @@ if(!empty($_GET["action"])){
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
-	 	
+	 	$ndata = $dbinfo->deleteUserItems($_SESSION["userid"]);
 	 	$ndata = $dbinfo->deleteLists($_SESSION["userid"]);
 	 	$data = $dbinfo->deleteUser($_SESSION["userid"]);
 	 	session_unset(); 
@@ -125,15 +125,17 @@ if(!empty($_GET["action"])){
 	 	$ndata = $dbinfo->updateUser($_SESSION["userid"],$_POST["name"]);
 	 	$data = $dbinfo->getUser($_SESSION["userid"]);
 	 	$ldata = $dbinfo->getUserLists($_SESSION["userid"]);
+	 	$edata = $dbinfo->getListItem($_SESSION["userid"]);
 	
 	 	$views->getView("views/header.php");
 		$views->getView("views/user_profile.php",$data);
-		$views->getView("views/list_view.php",$ldata);
+		$views->getView("views/list_view.php",$data,$ldata,$edata);
 		$views->getView("views/list_add.php");
 		$views->getView("views/footer.php");
 		
 		}
-		}else if($_GET["action"]=="addListAction"){
+		
+	}else if($_GET["action"]=="addListAction"){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
@@ -147,16 +149,17 @@ if(!empty($_GET["action"])){
 		$_POST["city"],$_POST["state"],$_POST["zip"],$_SESSION["userid"]);
 	 	$data = $dbinfo->getUser($_SESSION["userid"]);
 	 	$ldata = $dbinfo->getUserLists($_SESSION["userid"]);
+	 	$edata = $dbinfo->getListItem($_SESSION["userid"]);
 	
 	 	$views->getView("views/header.php");
 		$views->getView("views/user_profile.php",$data);
-		$views->getView("views/list_view.php",$data,$ldata);
+		$views->getView("views/list_view.php",$data,$ldata,$edata);
 		$views->getView("views/list_add.php");
 		$views->getView("views/footer.php");
 		
 		}
 
-		}else if($_GET["action"]=="deleteListAction"){
+	}else if($_GET["action"]=="deleteListAction"){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
@@ -178,7 +181,7 @@ if(!empty($_GET["action"])){
 		
 		}
 
-		}else if($_GET["action"]=="addItemButton"){
+	}else if($_GET["action"]=="addItemButton"){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
@@ -196,7 +199,7 @@ if(!empty($_GET["action"])){
 		
 		}
 
-		}else if($_GET["action"]=="addItemAction"){
+	}else if($_GET["action"]=="addItemAction"){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
@@ -209,16 +212,40 @@ if(!empty($_GET["action"])){
 	 	$ndata = $dbinfo->addItem($_POST["name"],$_POST["url"],$_POST["price"],$_POST["list"],$_SESSION["userid"]);
 	 	$data = $dbinfo->getUser($_SESSION["userid"]);
 	 	$ldata = $dbinfo->getUserLists($_SESSION["userid"]);
+	 	$edata = $dbinfo->getListItems($_SESSION["userid"]);
 
 	 	$views->getView("views/header.php");
 		$views->getView("views/user_profile.php",$data);
-		$views->getView("views/list_view.php",$data,$ldata);
+		$views->getView("views/list_view.php",$data,$ldata,$edata);
 		$views->getView("views/list_add.php");
 		$views->getView("views/footer.php");
 		
 		}
 
-	}
+	}else if($_GET["action"]=="deleteItemAction"){
+	
+		if(!isset($_SESSION["isloggedin"])){
+	 		
+	 		$views->getView("views/header.php");
+			$views->getView("views/user_login.php");
+			$views->getView("views/footer.php"); 
+	 	
+	 	}else if($_SESSION["isloggedin"] == 1){
+
+	 	$ndata = $dbinfo->deleteItem($_GET["id"]);
+	 	$data = $dbinfo->getUser($_SESSION["userid"]);
+	 	$ldata = $dbinfo->getUserLists($_SESSION["userid"]);
+	 	$edata = $dbinfo->getListItems($_SESSION["userid"]);
+
+	 	$views->getView("views/header.php");
+		$views->getView("views/user_profile.php",$data);
+		$views->getView("views/list_view.php",$data,$ldata,$edata);
+		$views->getView("views/list_add.php");
+		$views->getView("views/footer.php");
+		
+		}
+
+	
 	
 	}else{
 
@@ -227,6 +254,7 @@ if(!empty($_GET["action"])){
 		$views->getView("views/footer.php");
 
 	}
+}
 
 
 ?>
