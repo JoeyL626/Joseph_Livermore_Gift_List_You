@@ -4,7 +4,7 @@
 
 		Name :<input type="text" name="name" value="" placeholder="Your List" /><br>
 
-		Event :<select name="event" value="" placeholder="Alaska">
+		Event :<select name="event">
     					<option value="Mothers' Day">Mothers' Day</option>
 							<option value="Valentine's Day">Valentine's Day</option>
 							<option value="Easter">Easter</option>
@@ -20,7 +20,7 @@
 
 		City: <input type="text" name="city" value="" placeholder="Jacksonville" /><br>
 
-		State: <select name="state" value="" placeholder="Alaska">
+		State: <select name="state">
     					<option value="AL">Alabama</option>
 							<option value="AK">Alaska</option>
 							<option value="AZ">Arizona</option>

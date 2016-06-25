@@ -125,7 +125,7 @@ if(!empty($_GET["action"])){
 	 	$ndata = $dbinfo->updateUser($_SESSION["userid"],$_POST["name"]);
 	 	$data = $dbinfo->getUser($_SESSION["userid"]);
 	 	$ldata = $dbinfo->getUserLists($_SESSION["userid"]);
-	 	$edata = $dbinfo->getListItem($_SESSION["userid"]);
+	 	$edata = $dbinfo->getListItems($_SESSION["userid"]);
 	
 	 	$views->getView("views/header.php");
 		$views->getView("views/user_profile.php",$data);
@@ -149,7 +149,7 @@ if(!empty($_GET["action"])){
 		$_POST["city"],$_POST["state"],$_POST["zip"],$_SESSION["userid"]);
 	 	$data = $dbinfo->getUser($_SESSION["userid"]);
 	 	$ldata = $dbinfo->getUserLists($_SESSION["userid"]);
-	 	$edata = $dbinfo->getListItem($_SESSION["userid"]);
+	 	$edata = $dbinfo->getListItems($_SESSION["userid"]);
 	
 	 	$views->getView("views/header.php");
 		$views->getView("views/user_profile.php",$data);
@@ -241,6 +241,24 @@ if(!empty($_GET["action"])){
 		$views->getView("views/user_profile.php",$data);
 		$views->getView("views/list_view.php",$data,$ldata,$edata);
 		$views->getView("views/list_add.php");
+		$views->getView("views/footer.php");
+		
+		}
+
+	}else if($_GET["action"]=="updateItemButton"){
+	
+		if(!isset($_SESSION["isloggedin"])){
+	 		
+	 		$views->getView("views/header.php");
+			$views->getView("views/user_login.php");
+			$views->getView("views/footer.php"); 
+	 	
+	 	}else if($_SESSION["isloggedin"] == 1){
+
+	 	$data = $dbinfo->getItem($_SESSION["userid"]);
+
+	 	$views->getView("views/header.php");
+		$views->getView("views/user_profile.php",$data);
 		$views->getView("views/footer.php");
 		
 		}
