@@ -14,8 +14,6 @@
 </head>
 <body>
 	<h2> Gift List You </h2>
-<a href="?action=addPost">Add Post</a>
 <a href="?action=signup">Sign up</a>
-<a href="?action=profile">Profile</a>
 <a href="?action=logout">Logout</a>
 <br>
