@@ -171,7 +171,7 @@ if(!empty($_GET["action"])){
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
-	 	$ndata = $dbinfo->deleteList($_GET["id"]);
+	 	$data = $dbinfo->deleteList($_GET["id"]);
 	 	
 	 	header("Location: http://localhost:8888/?action=profile");
 		
