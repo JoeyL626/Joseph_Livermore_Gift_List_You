@@ -63,13 +63,12 @@ if(!empty($_GET["action"])){
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
-	 		$data = $dbinfo->getUser($_SESSION["userid"]);
-	 		$ldata = $dbinfo->getUserLists($_SESSION["userid"]);
-	 		$edata = $dbinfo->getListItems($_SESSION["userid"]);
+	 		$data[0] = $dbinfo->getUser($_SESSION["userid"]);
+	 		$data[1] = $dbinfo->getUserLists($_SESSION["userid"]);
 
 	 		$views->getView("views/header.php");
 			$views->getView("views/user_profile.php",$data);
-			$views->getView("views/list_view.php",$data,$ldata);
+			$views->getView("views/list_view.php",$data);
 			$views->getView("views/list_add.php");
 			$views->getView("views/footer.php");
 	 	
@@ -85,11 +84,11 @@ if(!empty($_GET["action"])){
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
-	 		$data = $dbinfo->getUserList($_GET["id"]);
-	 		$ldata = $dbinfo->getListItems($_GET["id"]);
+	 		$data[0] = $dbinfo->getUserList($_GET["id"]);
+	 		$data[1] = $dbinfo->getListItems($_GET["id"]);
 
 	 		$views->getView("views/header.php");
-			$views->getView("views/item_view.php",$data,$ldata);
+			$views->getView("views/item_view.php",$data);
 			$views->getView("views/footer.php");
 	 	
 	 	}
@@ -120,9 +119,9 @@ if(!empty($_GET["action"])){
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
-	 	$ndata = $dbinfo->deleteUserItems($_SESSION["userid"]);
-	 	$ndata = $dbinfo->deleteLists($_SESSION["userid"]);
-	 	$data = $dbinfo->deleteUser($_SESSION["userid"]);
+	 	$data[0] = $dbinfo->deleteUserItems($_SESSION["userid"]);
+	 	$data[1] = $dbinfo->deleteLists($_SESSION["userid"]);
+	 	$data[2] = $dbinfo->deleteUser($_SESSION["userid"]);
 	 	session_unset(); 
 		session_destroy();
 	
@@ -158,7 +157,7 @@ if(!empty($_GET["action"])){
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
-	 		$ndata = $dbinfo->updateUser($_SESSION["userid"],$_POST["name"]);
+	 		$data = $dbinfo->updateUser($_SESSION["userid"],$_POST["name"]);
 	 		header("Location: http://localhost:8888/?action=profile");
 		
 		}
@@ -173,7 +172,7 @@ if(!empty($_GET["action"])){
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
-	 		$ndata = $dbinfo->addList($_POST["name"],$_POST["event"],$_POST["address"],
+	 		$data = $dbinfo->addList($_POST["name"],$_POST["event"],$_POST["address"],
 			$_POST["city"],$_POST["state"],$_POST["zip"],$_SESSION["userid"]);
 	 	
 	 		header("Location: http://localhost:8888/?action=profile");
@@ -256,12 +255,13 @@ if(!empty($_GET["action"])){
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
-	 	$data = $dbinfo->getItem($_GET["id"]);
-	 	$ldata = $dbinfo->getItemListName($data[0]["list_id"]);
-	 	$edata = $dbinfo->getUserListsName($_SESSION["userid"]);
+	 	$data[0] = $dbinfo->getItem($_GET["id"]);
+	 	$data[1] = $dbinfo->getItemListName($data[0][0]["list_id"]);
+	 	$data[2] = $dbinfo->getUserListsName($_SESSION["userid"]);
+
 
 	 	$views->getView("views/header.php");
-		$views->getView("views/item_update.php",$data,$ldata,$edata);
+		$views->getView("views/item_update.php",$data);
 		$views->getView("views/footer.php");
 		
 		}

@@ -1,6 +1,6 @@
 <table width=60%>
 <?
-foreach($ldata as $item){
+foreach($data[1] as $item){
 ?>
 <tr>
 <th align=left><? echo $item["name"]?></th>

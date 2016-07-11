@@ -1,6 +1,6 @@
 <table width=60%>
 <?
-foreach($ldata as $list){
+foreach($data[1] as $list){
 ?>
 <tr>
 <th align=left><? echo $list["list_id"]?></th>
