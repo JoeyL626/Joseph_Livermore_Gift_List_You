@@ -257,10 +257,11 @@ if(!empty($_GET["action"])){
 	 	}else if($_SESSION["isloggedin"] == 1){
 
 	 	$data = $dbinfo->getItem($_GET["id"]);
-	 	$ldata = $dbinfo->getUserListsName($_SESSION["userid"]);
+	 	$ldata = $dbinfo->getItemListName($data[0]["list_id"]);
+	 	$edata = $dbinfo->getUserListsName($_SESSION["userid"]);
 
 	 	$views->getView("views/header.php");
-		$views->getView("views/item_update.php",$data);
+		$views->getView("views/item_update.php",$data,$ldata,$edata);
 		$views->getView("views/footer.php");
 		
 		}
