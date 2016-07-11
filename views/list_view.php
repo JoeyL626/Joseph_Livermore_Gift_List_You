@@ -13,6 +13,7 @@ foreach($ldata as $list){
 <th align=left><? echo $list["zip"]?></th>
 <th align=left><a href="?action=updateListButton&id=<? echo $list['list_id']?>">Edit List</a></th>
 <th align=left><a href="?action=deleteListAction&id=<? echo $list['list_id']?>">Delete List</a></th>
+<th align=left><a href="?action=itemView&id=<? echo $list['list_id']?>">View Items</a></th>
 </tr>
 <tr>
 <?

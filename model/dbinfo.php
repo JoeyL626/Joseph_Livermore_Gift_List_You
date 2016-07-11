@@ -102,6 +102,19 @@ class dbinfo{
 	
 	}
 
+	public function getUserList($lid){
+		
+		$user="root";
+		$pass="root";
+		$dbh = new PDO('mysql:host=localhost;dbname=giftlistyou;port=8889', $user, $pass);
+	
+		$st = $dbh->prepare("select * from lists where list_id=:id");
+		$st->execute(array(":id"=>$lid));
+		$result = $st->fetchAll();
+		return $result;
+	
+	}
+
 	public function getUserListsName($uid){
 		
 		$user="root";
@@ -168,7 +181,7 @@ class dbinfo{
 		$pass="root";
 		$dbh = new PDO('mysql:host=localhost;dbname=giftlistyou;port=8889', $user, $pass);
 	
-		$st = $dbh->prepare("select * from lists left join items on items.list_id = lists.list_id where lists.user_id = :id order by items.order");
+		$st = $dbh->prepare("select * from items where list_id = :id");
 		$st->execute(array(":id"=>$uid));
 		$result = $st->fetchAll();
 		return $result;

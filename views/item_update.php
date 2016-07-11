@@ -6,7 +6,7 @@
 
 		Price: <input type="text" name="price" value="" placeholder="<? echo $data[0]["price"]?>" /><br>
 
-		List : <? echo $ldata[0]["name"]?><br>
+		List : <? echo $data[0]["name"]?><br>
 
 		New List :<select name="list">
 							<?
