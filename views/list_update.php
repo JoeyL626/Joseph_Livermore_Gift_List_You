@@ -21,3 +21,5 @@
 
   </fieldset>
 </form>
+
+<a href="?action=profile">Back</a>

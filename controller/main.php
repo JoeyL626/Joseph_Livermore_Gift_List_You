@@ -195,6 +195,26 @@ if(!empty($_GET["action"])){
 		
 		}
 
+	}else if($_GET["action"]=="updateListButton"){
+	
+		if(!isset($_SESSION["isloggedin"])){
+	 		
+	 		$views->getView("views/header.php");
+			$views->getView("views/user_login.php");
+			$views->getView("views/footer.php"); 
+	 	
+	 	}else if($_SESSION["isloggedin"] == 1){
+
+	 	$data = $dbinfo->getItemListName($_GET["id"]);
+	 	
+
+
+	 	$views->getView("views/header.php");
+		$views->getView("views/list_update.php",$data);
+		$views->getView("views/footer.php");
+		
+		}
+
 	}else if($_GET["action"]=="addItemButton"){
 	
 		if(!isset($_SESSION["isloggedin"])){
@@ -223,7 +243,7 @@ if(!empty($_GET["action"])){
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
-	 	$ndata = $dbinfo->addItem($_POST["name"],$_POST["url"],$_POST["price"],$_POST["list"],$_SESSION["userid"]);
+	 	$data = $dbinfo->addItem($_POST["name"],$_POST["url"],$_POST["price"],$_POST["list"],$_SESSION["userid"]);
 	 	
 	 	header("Location: http://localhost:8888/?action=profile");
 		
@@ -239,9 +259,9 @@ if(!empty($_GET["action"])){
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
-	 	$ndata = $dbinfo->deleteItem($_GET["id"]);
+	 	$data = $dbinfo->deleteItem($_GET["id"]);
 	 	
-	 	header("Location: http://localhost:8888/?action=itemView");
+	 	header("Location: http://localhost:8888/?action=profile");
 		
 		}
 

@@ -134,7 +134,7 @@ class dbinfo{
 		$pass="root";
 		$dbh = new PDO('mysql:host=localhost;dbname=giftlistyou;port=8889', $user, $pass);
 	
-		$st = $dbh->prepare("select name from lists where list_id=:id");
+		$st = $dbh->prepare("select * from lists where list_id=:id");
 		$st->execute(array(":id"=>$lid));
 		$result = $st->fetchAll();
 		return $result;

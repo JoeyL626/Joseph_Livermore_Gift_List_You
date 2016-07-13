@@ -76,7 +76,7 @@
 
 		Zip: <input type="text" name="zip" value="" placeholder="12345" /><br>
 
-  	<input type="submit" name="submit" value="Signup"/>
+  	<input type="submit" name="submit" value="Create List"/>
 
   </fieldset>
 </form>

@@ -22,3 +22,4 @@
 
   </fieldset>
 </form>
+<a href="?action=itemView&id=<? echo $data[0][0]['list_id']?>">Back</a>

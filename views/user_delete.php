@@ -67,7 +67,5 @@ foreach($edata as $post){
 		<input type="submit" name="submit" value="Delete"/>
 	
 	</form>
-	<form action="?action=backButton" align=center method="POST">
-		<input type="submit" name="submit" value="Back"/>
-	</form>
+<a href="?action=profile">Back</a>
 </div>
