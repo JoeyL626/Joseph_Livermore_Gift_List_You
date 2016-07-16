@@ -30,8 +30,25 @@
 		</ul>
   </div><!-- content --> 
   </div>
-  <div class="fb-share-button" data-href="http://gift-list-you.herokuapp.com/?action=shareView&id=<? echo $data[0]['user_id']?>" 
+  <!-- <div class="fb-share-button" data-href="http://gift-list-you.herokuapp.com/?action=shareView&id=<? echo $data[0]['user_id']?>" 
   data-layout="button_count" data-size="small" data-mobile-iframe="true">
   <a class="fb-xfbml-parse-ignore" target="_blank" href="http://gift-list-you.herokuapp.com/?action=shareView&id=<? echo $data[0]['user_id']?>">
-  Share</a></div>
+  Share</a></div> -->
+  <script type="text/javascript">
+$(document).ready(function(){
+$('#share_button').click(function(e){
+e.preventDefault();
+FB.ui(
+{
+method: 'feed',
+name: 'This is the content of the "name" field.',
+link: ' http://gift-list-you.herokuapp.com/?action=shareView&id=<? echo $data[0]['user_id']?>',
+picture: 'http://www.hyperarts.com/external-xfbml/share-image.gif',
+caption: 'Joey Livermore',
+description: 'His list for his birthday',
+message: ''
+});
+});
+});
+</script>
 <a href="?action=profile">Back</a>
