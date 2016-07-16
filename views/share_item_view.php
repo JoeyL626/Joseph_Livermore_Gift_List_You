@@ -4,7 +4,7 @@
 <th align=left><? echo $data[1]["event"]?></th>
 </tr>
 <?
-foreach($data[2] as $list){
+foreach($data[0] as $list){
 ?>
 <tr>
 <td align=left><? echo $list["name"]?></td>
