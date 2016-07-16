@@ -16,7 +16,8 @@
 			?>
 				<li id="<?php echo $item['item_id']; ?>">
 				<span></span>
-				<div><? echo $item["name"]?>
+				<div>
+				<? echo $item["name"]?>
 				<? echo $item["url"]?>
 				<? echo $item["price"]?>
 				<a href="?action=updateItemButton&id=<? echo $item['item_id']?>">Edit Item</a>
@@ -29,7 +30,7 @@
 		</ul>
   </div><!-- content --> 
   </div>
-  <?echo $data[1]['user_id']?>
+  <div><?echo $data[1]['user_id']?></div>
   <div class="fb-share-button" data-href="http://gift-list-you.herokuapp.com/?action=shareView&id=<? echo $data[1]['user_id']?>" 
   data-layout="button_count" data-size="large" data-mobile-iframe="true">
   <a class="fb-xfbml-parse-ignore" target="_blank" href="http://gift-list-you.herokuapp.com/?action=shareView&id=<? echo $data[1]['user_id']?>">
