@@ -1,11 +1,18 @@
+
+
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7&appId=1766483266905544";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+<script>
+window.fbAsyncInit = function() {
+FB.init({appId: '1766483266905544', status: true, cookie: true,
+xfbml: true});
+};
+(function() {
+var e = document.createElement('script'); e.async = true;
+e.src = document.location.protocol +
+'//connect.facebook.net/en_US/all.js';
+document.getElementById('fb-root').appendChild(e);
+}());
+</script>
 
 <div class="container">
   <div class="content">
@@ -30,10 +37,7 @@
 		</ul>
   </div><!-- content --> 
   </div>
-  <!-- <div class="fb-share-button" data-href="http://gift-list-you.herokuapp.com/?action=shareView&id=<? echo $data[0]['user_id']?>" 
-  data-layout="button_count" data-size="small" data-mobile-iframe="true">
-  <a class="fb-xfbml-parse-ignore" target="_blank" href="http://gift-list-you.herokuapp.com/?action=shareView&id=<? echo $data[0]['user_id']?>">
-  Share</a></div> -->
+
   <script type="text/javascript">
 $(document).ready(function(){
 $('#share_button').click(function(e){
