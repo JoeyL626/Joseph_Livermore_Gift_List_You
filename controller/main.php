@@ -320,8 +320,8 @@ if(!empty($_GET["action"])){
 
 	}else if($_GET["action"]=="shareView"){
 	
-	 		$data[1] = $dbinfo->getListItems($_GET["id"]);
-	 		$data[2] = $dbinfo->getUserList($_GET["id"]);
+	 		$data[1] = $dbinfo->getListItems($_GET["list_id"]);
+	 		$data[2] = $dbinfo->getUserList($_GET["list_id"]);
 	 		$data[0] = $dbinfo->getListItems($data[1][0]["user_id"]);
 
 	 		$views->getView("views/header.php");
