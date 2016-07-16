@@ -30,7 +30,7 @@
 		</ul>
   </div><!-- content --> 
   </div>
-  <div class="fb-share-button" data-href="http://gift-list-you.herokuapp.com/?action=shareView&id=<? echo $data[1][0]['user_id']?>" 
+  <div class="fb-share-button" data-href="http://gift-list-you.herokuapp.com/?action=shareView&list_id=<? echo $data[1][0]['list_id']?>" 
   data-layout="button_count" data-size="large" data-mobile-iframe="true">
   <a class="fb-xfbml-parse-ignore" target="_blank" href="http://gift-list-you.herokuapp.com/?action=shareView&id=<? echo $data[1][0]['user_id']?>">
   Share</a></div>

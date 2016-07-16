@@ -318,6 +318,17 @@ if(!empty($_GET["action"])){
 		
 		}
 
+	}else if($_GET["action"]=="shareView"){
+	
+	 		$data[1] = $dbinfo->getListItems($_GET["id"]);
+	 		$data[2] = $dbinfo->getUserList($_GET["id"]);
+	 		$data[0] = $dbinfo->getListItems($data[1][0]["user_id"]);
+
+	 		$views->getView("views/header.php");
+			$views->getView("views/share_user_profile.php",$data);
+			$views->getView("views/share_item_view.php",$data);
+			$views->getView("views/footer.php"); 
+
 	}
 		}else{
 
