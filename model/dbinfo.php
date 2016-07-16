@@ -1,16 +1,19 @@
 <?
+
+
 class dbinfo{
 
+	public function __construct() // or any other method
+    {
+      include('config.php');
+			$this->pdo = connect();
+    }
+
 	public function checkLogin($email='',$passw=''){
-	
-		$user="root";
-		$pass="root";
+
 		$salt="Joeysendallbeallnogettingpasts.a.l.t.thatissecureascanbe";
-		$dbh = new PDO('mysql:host=localhost;dbname=giftlistyou;port=8889', $user, $pass);
 		
-		$st = $dbh->prepare("select * from users where
-						email = :em and password= :ps");
-		
+		$st = $this->pdo->prepare("select * from users where email = :em and password= :ps");
 		$st->execute(array(":em"=>$email,":ps"=>md5($passw.$salt)));
 		
 		$result = $st->fetchAll();
@@ -20,57 +23,39 @@ class dbinfo{
 	
 	public function addUser($name,$email,$passw,$address,$city,$state,$zip){
 		
-		$user="root";
-		$pass="root";
 		$salt="Joeysendallbeallnogettingpasts.a.l.t.thatissecureascanbe";
-		$dbh = new PDO('mysql:host=localhost;dbname=giftlistyou;port=8889', $user, $pass);
-		
-		$st = $dbh->prepare("insert into users(name,email,password,address,city,state,zip) values(:na,:em,:ps,:ad,:ci,:st,:zi)");
+
+		$st = $this->pdo->prepare("insert into users(name,email,password,address,city,state,zip) values(:na,:em,:ps,:ad,:ci,:st,:zi)");
 		$st->execute(array(":na"=>$name,":em"=>$email,":ps"=>md5($passw.$salt),":ad"=>$address,":ci"=>$city,":st"=>$state,":zi"=>$zip));
 		
 	}
 	
 	public function updateUser($uid,$nname){
 		
-		$user="root";
-		$pass="root";
-		$dbh = new PDO('mysql:host=localhost;dbname=giftlistyou;port=8889', $user, $pass);
-		
-		$st = $dbh->prepare("update users set name = :nu where id = :uid");
+		$st = $this->pdo->prepare("update users set name = :nu where id = :uid");
 		$st->execute(array(":nu"=>$nname,":uid"=>$uid));
 	}
 	
 	public function deleteUser($uid){
 		
-		$user="root";
-		$pass="root";
-		$dbh = new PDO('mysql:host=localhost;dbname=giftlistyou;port=8889', $user, $pass);
-		
-		$st = $dbh->prepare("delete from users where id=:id");
+		$st = $this->pdo->prepare("delete from users where id=:id");
 		$st->execute(array(":id"=>$uid));
 	
 	}
 	
 	public function getUser($uid){
-		
-		$user="root";
-		$pass="root";
-		$dbh = new PDO('mysql:host=localhost;dbname=giftlistyou;port=8889', $user, $pass);
 	
-		$st = $dbh->prepare("select * from users where id=:id");
+		$st = $this->pdo->prepare("select * from users where id=:id");
 		$st->execute(array(":id"=>$uid));
+		
 		$result = $st->fetchAll();
 		return $result;
 	
 	}
 
 	public function getUsers(){
-
-		$user="root";
-		$pass="root";
-		$dbh = new PDO('mysql:host=localhost;dbname=giftlistyou;port=8889', $user, $pass);
 	
-		$st = $dbh->prepare("select username, email from users");
+		$st = $this->pdo->prepare("select username, email from users");
 		$st->execute();
 		$result = $st->fetchAll();
 		return $result;
@@ -79,37 +64,26 @@ class dbinfo{
 
 	public function addList($name,$event,$address,$city,$state,$zip,$userid){
 		
-		$user="root";
-		$pass="root";
-		$salt="Joeysendallbeallnogettingpasts.a.l.t.thatissecureascanbe";
-		$dbh = new PDO('mysql:host=localhost;dbname=giftlistyou;port=8889', $user, $pass);
-		
-		$st = $dbh->prepare("insert into lists(name,event,address,city,state,zip,user_id) values(:na,:ev,:ad,:ci,:st,:zi,:ui)");
+		$st = $this->pdo->prepare("insert into lists(name,event,address,city,state,zip,user_id) values(:na,:ev,:ad,:ci,:st,:zi,:ui)");
 		$st->execute(array(":na"=>$name,":ev"=>$event,":ad"=>$address,":ci"=>$city,":st"=>$state,":zi"=>$zip,":ui"=>$userid));
 		
 	}
 
 	public function getUserLists($uid){
-		
-		$user="root";
-		$pass="root";
-		$dbh = new PDO('mysql:host=localhost;dbname=giftlistyou;port=8889', $user, $pass);
 	
-		$st = $dbh->prepare("select * from lists where user_id=:id");
+		$st = $this->pdo->prepare("select * from lists where user_id=:id");
 		$st->execute(array(":id"=>$uid));
+		
 		$result = $st->fetchAll();
 		return $result;
 	
 	}
 
 	public function getUserList($lid){
-		
-		$user="root";
-		$pass="root";
-		$dbh = new PDO('mysql:host=localhost;dbname=giftlistyou;port=8889', $user, $pass);
 	
-		$st = $dbh->prepare("select * from lists where list_id=:id");
+		$st = $this->pdo->prepare("select * from lists where list_id=:id");
 		$st->execute(array(":id"=>$lid));
+		
 		$result = $st->fetchAll();
 		return $result;
 	
@@ -117,25 +91,19 @@ class dbinfo{
 
 	public function getUserListsName($uid){
 		
-		$user="root";
-		$pass="root";
-		$dbh = new PDO('mysql:host=localhost;dbname=giftlistyou;port=8889', $user, $pass);
-	
-		$st = $dbh->prepare("select list_id, name, event from lists where user_id=:id");
+		$st = $this->pdo->prepare("select list_id, name, event from lists where user_id=:id");
 		$st->execute(array(":id"=>$uid));
+		
 		$result = $st->fetchAll();
 		return $result;
 	
 	}
 
 		public function getItemListName($lid){
-		
-		$user="root";
-		$pass="root";
-		$dbh = new PDO('mysql:host=localhost;dbname=giftlistyou;port=8889', $user, $pass);
 	
-		$st = $dbh->prepare("select * from lists where list_id=:id");
+		$st = $this->pdo->prepare("select * from lists where list_id=:id");
 		$st->execute(array(":id"=>$lid));
+		
 		$result = $st->fetchAll();
 		return $result;
 	
@@ -143,59 +111,40 @@ class dbinfo{
 
 	public function deleteList($lid){
 		
-		$user="root";
-		$pass="root";
-		$dbh = new PDO('mysql:host=localhost;dbname=giftlistyou;port=8889', $user, $pass);
-		
-		$st = $dbh->prepare("delete from lists where list_id=:id");
+		$st = $this->pdo->prepare("delete from lists where list_id=:id");
 		$st->execute(array(":id"=>$lid));
 	
 	}
 
 	public function deleteLists($uid){
-		
-		$user="root";
-		$pass="root";
-		$dbh = new PDO('mysql:host=localhost;dbname=giftlistyou;port=8889', $user, $pass);
-		
-		$st = $dbh->prepare("delete from lists where user_id=:id");
+
+		$st = $this->pdo->prepare("delete from lists where user_id=:id");
 		$st->execute(array(":id"=>$uid));
 	
 	}
 
 		public function addItem($name,$url,$price,$listid,$userid){
-		
-		$user="root";
-		$pass="root";
-		$salt="Joeysendallbeallnogettingpasts.a.l.t.thatissecureascanbe";
-		$dbh = new PDO('mysql:host=localhost;dbname=giftlistyou;port=8889', $user, $pass);
-		
-		$st = $dbh->prepare("insert into items(name,url,price,list_id,user_id) values(:na,:url,:pr,:li,:ui)");
+
+		$st = $this->pdo->prepare("insert into items(name,url,price,list_id,user_id) values(:na,:url,:pr,:li,:ui)");
 		$st->execute(array(":na"=>$name,":url"=>$url,":pr"=>$price,":li"=>$listid,":ui"=>$userid));
 		
 	}
 
 	public function getListItems($uid){
-		
-		$user="root";
-		$pass="root";
-		$dbh = new PDO('mysql:host=localhost;dbname=giftlistyou;port=8889', $user, $pass);
 	
-		$st = $dbh->prepare("select * from items where list_id = :id");
+		$st = $this->pdo->prepare("select * from items where list_id = :id order by items.order");
 		$st->execute(array(":id"=>$uid));
+		
 		$result = $st->fetchAll();
 		return $result;
 	
 	}
 
 	public function getItem($uid){
-		
-		$user="root";
-		$pass="root";
-		$dbh = new PDO('mysql:host=localhost;dbname=giftlistyou;port=8889', $user, $pass);
 	
-		$st = $dbh->prepare("select * from items where item_id=:id");
+		$st = $this->pdo->prepare("select * from items where item_id=:id");
 		$st->execute(array(":id"=>$uid));
+		
 		$result = $st->fetchAll();
 		return $result;
 	
@@ -203,35 +152,35 @@ class dbinfo{
 
 	public function deleteListItems($lid){
 		
-		$user="root";
-		$pass="root";
-		$dbh = new PDO('mysql:host=localhost;dbname=giftlistyou;port=8889', $user, $pass);
-		
-		$st = $dbh->prepare("delete from items where list_id=:id");
+		$st = $this->pdo->prepare("delete from items where list_id=:id");
 		$st->execute(array(":id"=>$lid));
 	
 	}
 
 	public function deleteItem($iid){
 		
-		$user="root";
-		$pass="root";
-		$dbh = new PDO('mysql:host=localhost;dbname=giftlistyou;port=8889', $user, $pass);
-		
-		$st = $dbh->prepare("delete from items where item_id=:id");
+		$st = $this->pdo->prepare("delete from items where item_id=:id");
 		$st->execute(array(":id"=>$iid));
 	
 	}
 
 	public function deleteUserItems($uid){
 		
-		$user="root";
-		$pass="root";
-		$dbh = new PDO('mysql:host=localhost;dbname=giftlistyou;port=8889', $user, $pass);
-		
-		$st = $dbh->prepare("delete from items where user_id=:id");
+		$st = $this->pdo->prepare("delete from items where user_id=:id");
 		$st->execute(array(":id"=>$uid));
 	
+	}
+
+	public function updateList($lid,$name,$event,$address,$city,$state,$zip){
+		
+		$st = $this->pdo->prepare("update lists set name = :nu,event = :ev,address = :ad,city = :ci,state = :st,zip = :zi where list_id = :lid");
+		$st->execute(array(":lid"=>$lid,":nu"=>$name,":ev"=>$event,":ad"=>$address,":ci"=>$city,":st"=>$state,":zi"=>$zip));
+	}
+
+	public function updateItem($iid,$name,$price,$list_id){
+		
+		$st = $this->pdo->prepare("update items set name = :nu,price = :pr,list_id = :li where item_id = :iid");
+		$st->execute(array(":iid"=>$iid,":nu"=>$name,":pr"=>$price,":li"=>$list_id));
 	}
 	
 }

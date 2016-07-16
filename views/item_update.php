@@ -1,6 +1,8 @@
 
-<form enctype="multipart/form-data" action="?action=addItemAction" method="POST">
+<form enctype="multipart/form-data" action="?action=updateItemAction" method="POST">
 	<fieldset>
+
+					 <input type="hidden" name="item_id" value="<? echo $data[0][0]["item_id"]?>"/><br>
 
 		Name : <input type="text" name="name" value="" placeholder="<? echo $data[0][0]["name"]?>" /><br>
 
