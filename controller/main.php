@@ -322,7 +322,7 @@ if(!empty($_GET["action"])){
 	
 	 		$data[0] = $dbinfo->getListItems($_GET["list_id"]);
 	 		$data[1] = $dbinfo->getUserList($_GET["list_id"]);
-	 		$data[2] = $dbinfo->getUser($data[1]["user_id"]);
+	 		$data[2] = $dbinfo->getUser($data[0][0]["user_id"]);
 
 	 		$views->getView("views/header.php");
 			$views->getView("views/share_user_profile.php",$data);
