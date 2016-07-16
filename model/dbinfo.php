@@ -123,10 +123,10 @@ class dbinfo{
 	
 	}
 
-		public function addItem($name,$url,$price,$listid,$userid){
+		public function addItem($name,$url,$price,$order,$listid,$userid){
 
-		$st = $this->pdo->prepare("insert into items(name,url,price,list_id,user_id) values(:na,:url,:pr,:li,:ui)");
-		$st->execute(array(":na"=>$name,":url"=>$url,":pr"=>$price,":li"=>$listid,":ui"=>$userid));
+		$st = $this->pdo->prepare("insert into items(name,url,price,order,list_id,user_id) values(:na,:url,:pr,:or,:li,:ui)");
+		$st->execute(array(":na"=>$name,":url"=>$url,":pr"=>$price,":or"=>$order,":li"=>$listid,":ui"=>$userid));
 		
 	}
 

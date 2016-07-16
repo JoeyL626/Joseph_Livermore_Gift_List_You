@@ -259,7 +259,9 @@ if(!empty($_GET["action"])){
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
-	 	$data = $dbinfo->addItem($_POST["name"],$_POST["url"],$_POST["price"],$_POST["list"],$_SESSION["userid"]);
+	 	$data = $dbinfo->getListItems($_POST["list"]);
+	 	$i = sizeof($data)+1;
+	 	$data = $dbinfo->addItem($_POST["name"],$_POST["url"],$_POST["price"],$i,$_POST["list"],$_SESSION["userid"]);
 	 	
 	 	header("Location: http://gift-list-you.herokuapp.com/?action=profile");
 		
