@@ -1,7 +1,7 @@
 <table width=60%>
 <tr>
-<th align=left><? echo $data[1]["name"]?></th>
-<th align=left><? echo $data[1]["event"]?></th>
+<th align=left><? echo $data[1][0]["name"]?></th>
+<th align=left><? echo $data[1][0]["event"]?></th>
 </tr>
 <?
 foreach($data[0] as $list){
