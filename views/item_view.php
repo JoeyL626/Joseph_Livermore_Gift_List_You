@@ -19,7 +19,7 @@
 				<div><? echo $item["name"]?>
 				<? echo $item["url"]?>
 				<? echo $item["price"]?>
-				<? echo $item["order"]?>
+				<? echo $item["user_id"]?>
 				<a href="?action=updateItemButton&id=<? echo $item['item_id']?>">Edit Item</a>
 				<a href="?action=deleteItemAction&id=<? echo $item['item_id']?>&list_id=<? echo $item['list_id']?>">Delete Item</a></div>
 				</li>	
