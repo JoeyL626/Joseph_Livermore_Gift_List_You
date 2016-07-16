@@ -5,7 +5,7 @@
 */
 
 // including the config file
-include('../config.php');
+include('config.php');
 $pdo = connect();
 
 // get the list of items id separated by cama (,)

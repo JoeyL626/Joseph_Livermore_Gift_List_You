@@ -11,16 +11,15 @@ $(function() {
         update: function(event, ui) {
          
             var list_sortable = $(this).sortable('toArray').toString();
-            console.log(list_sortable);
     		// change order in the database using Ajax
             $.ajax({
                 url: 'model/set_order.php',
                 type: 'POST',
                 data: {list_order:list_sortable},
                 success: function(data) {
-                    console.log(data);
+                
                 }
             });
         }
-    }); // fin sortable
+    });
 });

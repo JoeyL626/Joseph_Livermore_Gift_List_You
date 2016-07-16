@@ -17,7 +17,7 @@ if(!empty($_GET["action"])){
 			
 			$_SESSION["isloggedin"] = 1;
 			$_SESSION["userid"] = $data[0]["id"];
-	 		header("Location: http://localhost:8888/?action=profile");
+	 		header("Location: http://gift-list-you.herokuapp.com/?action=profile");
 		
 		}else{
 
@@ -158,7 +158,7 @@ if(!empty($_GET["action"])){
 	 	}else if($_SESSION["isloggedin"] == 1){
 
 	 		$data = $dbinfo->updateUser($_SESSION["userid"],$_POST["name"]);
-	 		header("Location: http://localhost:8888/?action=profile");
+	 		header("Location: http://gift-list-you.herokuapp.com/?action=profile");
 		
 		}
 		
@@ -175,7 +175,7 @@ if(!empty($_GET["action"])){
 	 		$data = $dbinfo->addList($_POST["name"],$_POST["event"],$_POST["address"],
 			$_POST["city"],$_POST["state"],$_POST["zip"],$_SESSION["userid"]);
 	 	
-	 		header("Location: http://localhost:8888/?action=profile");
+	 		header("Location: http://gift-list-you.herokuapp.com/?action=profile");
 		
 		}
 
@@ -191,7 +191,7 @@ if(!empty($_GET["action"])){
 
 	 	$data = $dbinfo->deleteList($_GET["id"]);
 	 	
-	 	header("Location: http://localhost:8888/?action=profile");
+	 	header("Location: http://gift-list-you.herokuapp.com/?action=profile");
 		
 		}
 
@@ -227,7 +227,7 @@ if(!empty($_GET["action"])){
 
 	 	$data = $dbinfo->updateList($_POST["list_id"],$_POST["name"],$_POST["event"],$_POST["address"],$_POST["city"],$_POST["state"],$_POST["zip"]);
 	 	
-	 	header("Location: http://localhost:8888/?action=profile");
+	 	header("Location: http://gift-list-you.herokuapp.com/?action=profile");
 		
 		}
 
@@ -261,7 +261,7 @@ if(!empty($_GET["action"])){
 
 	 	$data = $dbinfo->addItem($_POST["name"],$_POST["url"],$_POST["price"],$_POST["list"],$_SESSION["userid"]);
 	 	
-	 	header("Location: http://localhost:8888/?action=profile");
+	 	header("Location: http://gift-list-you.herokuapp.com/?action=profile");
 		
 		}
 
@@ -277,7 +277,7 @@ if(!empty($_GET["action"])){
 
 	 	$data = $dbinfo->deleteItem($_GET["id"]);
 	 	
-	 	header("Location: http://localhost:8888/?action=itemView&id=".$_GET["list_id"]);
+	 	header("Location: http://gift-list-you.herokuapp.com/?action=itemView&id=".$_GET["list_id"]);
 		
 		}
 
@@ -314,7 +314,7 @@ if(!empty($_GET["action"])){
 
 	 	$data = $dbinfo->updateItem($_POST["item_id"],$_POST["name"],$_POST["price"],$_POST["list"]);
 		
-		header("Location: http://localhost:8888/?action=itemView&id=".$_POST["list"]);
+		header("Location: http://gift-list-you.herokuapp.com/?action=itemView&id=".$_POST["list"]);
 		
 		}
 

@@ -3,7 +3,7 @@
 
 class dbinfo{
 
-	public function __construct() // or any other method
+	public function __construct()
     {
       include('config.php');
 			$this->pdo = connect();
