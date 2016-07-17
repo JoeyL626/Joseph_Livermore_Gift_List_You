@@ -442,6 +442,7 @@ if(!empty($_GET["action"])){
 	 		header("Location: http://gift-list-you.herokuapp.com/?action=addItemView");
 		
 		}
+	}
 	
 	}else{
 
