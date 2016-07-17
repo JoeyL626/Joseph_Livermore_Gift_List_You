@@ -370,7 +370,7 @@ if(!empty($_GET["action"])){
 			
 			$_SESSION["isloggedin"] = 1;
 			$_SESSION["userid"] = $data[0]["id"];
-	 		header("Location: http://gift-list-you.herokuapp.com/?action=addItemView");
+	 		header("Location: http://gift-list-you.herokuapp.com/?action=chromeAddItemView");
 		
 		}else{
 
