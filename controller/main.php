@@ -31,7 +31,7 @@ if(!empty($_GET["action"])){
 		}
 		
 	
-	}else if($_GET["action"]=="logout"){
+}else if($_GET["action"]=="logout"){
 
 		session_unset(); 
 		session_destroy();
@@ -40,14 +40,14 @@ if(!empty($_GET["action"])){
 		$views->getView("views/user_login.php");
 		$views->getView("views/page_footer.php");
 
-	}else if($_GET["action"]=="signup"){
+}else if($_GET["action"]=="signup"){
 
 		$views->getView("views/page_header.php");
 	 	$views->getView("views/page_navigation.php");
 		$views->getView("views/user_signup.php");
 		$views->getView("views/page_footer.php");
 
-	}else if($_GET["action"]=="signupAction"){
+}else if($_GET["action"]=="signupAction"){
 
 		$data = $dbinfo->addUser($_POST["name"],$_POST["email"],$_POST["password"],$_POST["address"],
 		$_POST["city"],$_POST["state"],$_POST["zip"]);
@@ -57,7 +57,7 @@ if(!empty($_GET["action"])){
 		$views->getView("views/user_login.php");
 		$views->getView("views/page_footer.php");
 
-	}else if($_GET["action"]=="profile"){
+}else if($_GET["action"]=="profile"){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
@@ -80,7 +80,7 @@ if(!empty($_GET["action"])){
 	 	
 	 	}
 
-	}else if($_GET["action"]=="itemView"){
+}else if($_GET["action"]=="itemView"){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
@@ -101,7 +101,7 @@ if(!empty($_GET["action"])){
 	 	
 	 	}
 	
-	}else if($_GET["action"]=="deleteUserButton"){
+}else if($_GET["action"]=="deleteUserButton"){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
@@ -118,7 +118,7 @@ if(!empty($_GET["action"])){
 	 	
 	 	}
 
-	}else if($_GET["action"]=="deleteUserAction"){
+}else if($_GET["action"]=="deleteUserAction"){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
@@ -127,7 +127,7 @@ if(!empty($_GET["action"])){
 			$views->getView("views/user_login.php");
 			$views->getView("views/page_footer.php"); 
 	 	
-	 	}else if($_SESSION["isloggedin"] == 1){
+		}else if($_SESSION["isloggedin"] == 1){
 
 	 	$data[0] = $dbinfo->deleteUserItems($_SESSION["userid"]);
 	 	$data[1] = $dbinfo->deleteLists($_SESSION["userid"]);
@@ -142,7 +142,7 @@ if(!empty($_GET["action"])){
 		
 		}
 
-	}else if($_GET["action"]=="updateUserButton"){
+}else if($_GET["action"]=="updateUserButton"){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
@@ -159,7 +159,7 @@ if(!empty($_GET["action"])){
 	 	
 	 	}
 
-	}else if($_GET["action"]=="updateUserAction"){
+}else if($_GET["action"]=="updateUserAction"){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
@@ -175,7 +175,7 @@ if(!empty($_GET["action"])){
 		
 		}
 		
-	}else if($_GET["action"]=="addListAction"){
+}else if($_GET["action"]=="addListAction"){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
@@ -193,7 +193,7 @@ if(!empty($_GET["action"])){
 		
 		}
 
-	}else if($_GET["action"]=="deleteListAction"){
+}else if($_GET["action"]=="deleteListAction"){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
@@ -210,7 +210,7 @@ if(!empty($_GET["action"])){
 		
 		}
 
-	}else if($_GET["action"]=="updateListButton"){
+}else if($_GET["action"]=="updateListButton"){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
@@ -230,7 +230,7 @@ if(!empty($_GET["action"])){
 		
 		}
 
-	}else if($_GET["action"]=="updateListAction"){
+}else if($_GET["action"]=="updateListAction"){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
@@ -247,7 +247,7 @@ if(!empty($_GET["action"])){
 		
 		}
 
-	}else if($_GET["action"]=="addItemButton"){
+}else if($_GET["action"]=="addItemButton"){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
@@ -267,7 +267,7 @@ if(!empty($_GET["action"])){
 		
 		}
 
-	}else if($_GET["action"]=="addItemAction"){
+}else if($_GET["action"]=="addItemAction"){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
@@ -286,7 +286,7 @@ if(!empty($_GET["action"])){
 		
 		}
 
-	}else if($_GET["action"]=="deleteItemAction"){
+}else if($_GET["action"]=="deleteItemAction"){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
@@ -303,7 +303,7 @@ if(!empty($_GET["action"])){
 		
 		}
 
-	}else if($_GET["action"]=="updateItemButton"){
+}else if($_GET["action"]=="updateItemButton"){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
@@ -326,7 +326,7 @@ if(!empty($_GET["action"])){
 		
 		}
 
-	}else if($_GET["action"]=="updateItemAction"){
+}else if($_GET["action"]=="updateItemAction"){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
@@ -343,7 +343,7 @@ if(!empty($_GET["action"])){
 		
 		}
 
-	}else if($_GET["action"]=="shareView"){
+}else if($_GET["action"]=="shareView"){
 	
 	 		$data[0] = $dbinfo->getListItems($_GET["list_id"]);
 	 		$data[1] = $dbinfo->getUserList($_GET["list_id"]);
@@ -355,14 +355,14 @@ if(!empty($_GET["action"])){
 			$views->getView("views/share_item_view.php",$data);
 			$views->getView("views/footer.php"); 
 
-	}else if($_GET["action"]=="chromeLogin"){
+}else if($_GET["action"]=="chromeLogin"){
 	
   	$views->getView("views/page_header.php");
 		$views->getView("views/chrome_page_navigation.php");
 		$views->getView("views/chrome_user_login.php");
 		$views->getView("views/page_footer.php");
 	
-	}else if($_GET["action"]=="chromeLoginAction"){
+}else if($_GET["action"]=="chromeLoginAction"){
 		
 		$data = $dbinfo->checkLogin($_POST["email"],$_POST["password"]);
 	
@@ -380,7 +380,7 @@ if(!empty($_GET["action"])){
 		
 		}
 
-	}else if($_GET["action"]=="chromeAddItemView"){
+}else if($_GET["action"]=="chromeAddItemView"){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
@@ -397,7 +397,7 @@ if(!empty($_GET["action"])){
 		
 		}
 
-	}else if($_GET["action"]=="chromeAddItemAction"){
+}else if($_GET["action"]=="chromeAddItemAction"){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
@@ -413,7 +413,7 @@ if(!empty($_GET["action"])){
 		
 		}
 
-	}else if($_GET["action"]=="chromeAddListView"){
+}else if($_GET["action"]=="chromeAddListView"){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
@@ -428,7 +428,7 @@ if(!empty($_GET["action"])){
 		
 		}
 
-	}else if($_GET["action"]=="chromeAddListAction"){
+}else if($_GET["action"]=="chromeAddListAction"){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
@@ -442,16 +442,17 @@ if(!empty($_GET["action"])){
 	 		header("Location: http://gift-list-you.herokuapp.com/?action=addItemView");
 		
 		}
+}
 
 	
-	}else{
+}else{
 
   	$views->getView("views/header.php");
 		$views->getView("views/user_login.php");
 		$views->getView("views/footer.php");
 
-	}
 }
+
 
 
 
