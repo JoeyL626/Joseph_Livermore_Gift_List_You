@@ -442,7 +442,7 @@ if(!empty($_GET["action"])){
 	 		header("Location: http://gift-list-you.herokuapp.com/?action=addItemView");
 		
 		}
-	}
+
 	
 	}else{
 
@@ -451,7 +451,7 @@ if(!empty($_GET["action"])){
 		$views->getView("views/footer.php");
 
 	}
-
+}
 
 
 
