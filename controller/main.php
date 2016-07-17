@@ -409,7 +409,7 @@ if(!empty($_GET["action"])){
 	 	$i = sizeof($data)+1;
 	 	$data = $dbinfo->addItem($_POST["name"],$_POST["url"],$_POST["price"],$i,$_POST["list"],$_SESSION["userid"]);
 	 	
-	 	header("Location: http://gift-list-you.herokuapp.com/?action=profile");
+	 	header("Location: http://gift-list-you.herokuapp.com/?action=chromeAddItemView");
 		
 		}
 
@@ -439,7 +439,7 @@ if(!empty($_GET["action"])){
 	 		$data = $dbinfo->addList($_POST["name"],$_POST["event"],$_POST["address"],
 			$_POST["city"],$_POST["state"],$_POST["zip"],$_SESSION["userid"]);
 	 	
-	 		header("Location: http://gift-list-you.herokuapp.com/?action=addItemView");
+	 		header("Location: http://gift-list-you.herokuapp.com/?action=chromeAddItemView");
 		
 		}
 	
