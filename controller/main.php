@@ -423,7 +423,7 @@ if(!empty($_GET["action"])){
 
 			$views->getView("views/page_header.php");
 			$views->getView("views/chrome_page_navigation.php");
-			$views->getView("views/user_login.php");
+			$views->getView("views/chrome_list_add.php");
 			$views->getView("views/page_footer.php");
 		
 		}
