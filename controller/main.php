@@ -442,12 +442,13 @@ if(!empty($_GET["action"])){
 	 		header("Location: http://gift-list-you.herokuapp.com/?action=addItemView");
 		
 		}
+	
 	}else if($_GET["action"]=="chromeLogout"){
 
 		session_unset(); 
 		session_destroy();
 		$views->getView("views/page_header.php");
-	 	$views->getView("views/page_navigation.php");
+	 	$views->getView("views/chrome_page_navigation.php");
 		$views->getView("views/chrome_user_login.php");
 		$views->getView("views/page_footer.php");
 
