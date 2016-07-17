@@ -444,19 +444,21 @@ if(!empty($_GET["action"])){
 		}
 
 	}else{
-
-  	$views->getView("views/header.php");
+			
+		$views->getView("views/page_header.php");
+	 	$views->getView("views/page_navigation.php");
 		$views->getView("views/user_login.php");
-		$views->getView("views/footer.php");
+		$views->getView("views/page_footer.php");
 
 	}
 
 	
 }else{
 
-  	$views->getView("views/header.php");
-		$views->getView("views/user_login.php");
-		$views->getView("views/footer.php");
+  $views->getView("views/page_header.php");
+	$views->getView("views/page_navigation.php");
+	$views->getView("views/user_login.php");
+	$views->getView("views/page_footer.php");
 
 }
 
