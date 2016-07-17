@@ -23,9 +23,10 @@ if(!empty($_GET["action"])){
 
 			session_unset(); 
 			session_destroy();
-			$views->getView("views/header.php");
+			$views->getView("views/page_header.php");
+	 		$views->getView("views/page_navigation.php");
 			$views->getView("views/user_login.php");
-			$views->getView("views/footer.php");
+			$views->getView("views/page_footer.php");
 		
 		}
 		
@@ -34,43 +35,48 @@ if(!empty($_GET["action"])){
 
 		session_unset(); 
 		session_destroy();
-		$views->getView("views/header.php");
+		$views->getView("views/page_header.php");
+	 	$views->getView("views/page_navigation.php");
 		$views->getView("views/user_login.php");
-		$views->getView("views/footer.php");
+		$views->getView("views/page_footer.php");
 
 	}else if($_GET["action"]=="signup"){
 
-		$views->getView("views/header.php");
+		$views->getView("views/page_header.php");
+	 	$views->getView("views/page_navigation.php");
 		$views->getView("views/user_signup.php");
-		$views->getView("views/footer.php");
+		$views->getView("views/page_footer.php");
 
 	}else if($_GET["action"]=="signupAction"){
 
 		$data = $dbinfo->addUser($_POST["name"],$_POST["email"],$_POST["password"],$_POST["address"],
 		$_POST["city"],$_POST["state"],$_POST["zip"]);
 
-		$views->getView("views/header.php");
+		$views->getView("views/page_header.php");
+	 	$views->getView("views/page_navigation.php");
 		$views->getView("views/user_login.php");
-		$views->getView("views/footer.php");
+		$views->getView("views/page_footer.php");
 
 	}else if($_GET["action"]=="profile"){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
-	 		$views->getView("views/header.php");
+	 		$views->getView("views/page_header.php");
+	 		$views->getView("views/page_navigation.php");
 			$views->getView("views/user_login.php");
-			$views->getView("views/footer.php"); 
+			$views->getView("views/page_footer.php"); 
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
 	 		$data[0] = $dbinfo->getUser($_SESSION["userid"]);
 	 		$data[1] = $dbinfo->getUserLists($_SESSION["userid"]);
 
-	 		$views->getView("views/header.php");
+	 		$views->getView("views/page_header.php");
+	 		$views->getView("views/page_navigation2.php");
 			$views->getView("views/user_profile.php",$data);
-			$views->getView("views/list_view.php",$data);
 			$views->getView("views/list_add.php");
-			$views->getView("views/footer.php");
+			$views->getView("views/list_view.php",$data);
+			$views->getView("views/page_footer.php");
 	 	
 	 	}
 
@@ -78,18 +84,20 @@ if(!empty($_GET["action"])){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
-	 		$views->getView("views/header.php");
+	 		$views->getView("views/page_header.php");
+	 		$views->getView("views/page_navigation.php");
 			$views->getView("views/user_login.php");
-			$views->getView("views/footer.php"); 
+			$views->getView("views/page_footer.php"); 
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
 	 		$data[0] = $dbinfo->getUserList($_GET["id"]);
 	 		$data[1] = $dbinfo->getListItems($_GET["id"]);
 
-	 		$views->getView("views/header.php");
+	 		$views->getView("views/page_header.php");
+	 		$views->getView("views/page_navigation2.php");
 			$views->getView("views/item_view.php",$data);
-			$views->getView("views/footer.php");
+			$views->getView("views/page_footer.php");
 	 	
 	 	}
 	
@@ -97,9 +105,10 @@ if(!empty($_GET["action"])){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
-	 		$views->getView("views/header.php");
+	 		$views->getView("views/page_header.php");
+	 		$views->getView("views/page_navigation.php");
 			$views->getView("views/user_login.php");
-			$views->getView("views/footer.php"); 
+			$views->getView("views/page_footer.php"); 
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
@@ -113,9 +122,10 @@ if(!empty($_GET["action"])){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
-	 		$views->getView("views/header.php");
+	 		$views->getView("views/page_header.php");
+	 		$views->getView("views/page_navigation.php");
 			$views->getView("views/user_login.php");
-			$views->getView("views/footer.php"); 
+			$views->getView("views/page_footer.php"); 
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
@@ -125,9 +135,10 @@ if(!empty($_GET["action"])){
 	 	session_unset(); 
 		session_destroy();
 	
-	 	$views->getView("views/header.php");
+	 	$views->getView("views/page_header.php");
+	 	$views->getView("views/page_navigation.php");
 		$views->getView("views/user_login.php");
-		$views->getView("views/footer.php");
+		$views->getView("views/page_footer.php");
 		
 		}
 
@@ -135,9 +146,10 @@ if(!empty($_GET["action"])){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
-	 		$views->getView("views/header.php");
+	 		$views->getView("views/page_header.php");
+	 		$views->getView("views/page_navigation.php");
 			$views->getView("views/user_login.php");
-			$views->getView("views/footer.php"); 
+			$views->getView("views/page_footer.php"); 
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
@@ -151,9 +163,10 @@ if(!empty($_GET["action"])){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
-	 		$views->getView("views/header.php");
+	 		$views->getView("views/page_header.php");
+	 		$views->getView("views/page_navigation.php");
 			$views->getView("views/user_login.php");
-			$views->getView("views/footer.php"); 
+			$views->getView("views/page_footer.php"); 
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
@@ -166,9 +179,10 @@ if(!empty($_GET["action"])){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
-	 		$views->getView("views/header.php");
+	 		$views->getView("views/page_header.php");
+	 		$views->getView("views/page_navigation.php");
 			$views->getView("views/user_login.php");
-			$views->getView("views/footer.php"); 
+			$views->getView("views/page_footer.php"); 
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
@@ -183,9 +197,10 @@ if(!empty($_GET["action"])){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
-	 		$views->getView("views/header.php");
+	 		$views->getView("views/page_header.php");
+	 		$views->getView("views/page_navigation.php");
 			$views->getView("views/user_login.php");
-			$views->getView("views/footer.php"); 
+			$views->getView("views/page_footer.php"); 
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
@@ -199,19 +214,19 @@ if(!empty($_GET["action"])){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
-	 		$views->getView("views/header.php");
+	 		$views->getView("views/page_header.php");
+	 		$views->getView("views/page_navigation.php");
 			$views->getView("views/user_login.php");
-			$views->getView("views/footer.php"); 
+			$views->getView("views/page_footer.php"); 
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
 	 	$data = $dbinfo->getItemListName($_GET["id"]);
 	 	
-
-
-	 	$views->getView("views/header.php");
+		$views->getView("views/page_header.php");
+	 	$views->getView("views/page_navigation2.php");
 		$views->getView("views/list_update.php",$data);
-		$views->getView("views/footer.php");
+		$views->getView("views/page_footer.php");
 		
 		}
 
@@ -219,9 +234,10 @@ if(!empty($_GET["action"])){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
-	 		$views->getView("views/header.php");
+	 		$views->getView("views/page_header.php");
+	 		$views->getView("views/page_navigation.php");
 			$views->getView("views/user_login.php");
-			$views->getView("views/footer.php"); 
+			$views->getView("views/page_footer.php"); 
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
@@ -235,17 +251,19 @@ if(!empty($_GET["action"])){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
-	 		$views->getView("views/header.php");
+	 		$views->getView("views/page_header.php");
+	 		$views->getView("views/page_navigation.php");
 			$views->getView("views/user_login.php");
-			$views->getView("views/footer.php"); 
+			$views->getView("views/page_footer.php"); 
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
 	 	$data = $dbinfo->getUserListsName($_SESSION["userid"]);
 	
-	 	$views->getView("views/header.php");
+	 	$views->getView("views/page_header.php");
+	 	$views->getView("views/page_navigation2.php");
 	 	$views->getView("views/item_add.php",$data);
-		$views->getView("views/footer.php");
+		$views->getView("views/page_footer.php");
 		
 		}
 
@@ -253,9 +271,10 @@ if(!empty($_GET["action"])){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
-	 		$views->getView("views/header.php");
+	 		$views->getView("views/page_header.php");
+	 		$views->getView("views/page_navigation.php");
 			$views->getView("views/user_login.php");
-			$views->getView("views/footer.php"); 
+			$views->getView("views/page_footer.php"); 
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
@@ -271,9 +290,10 @@ if(!empty($_GET["action"])){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
-	 		$views->getView("views/header.php");
+	 		$views->getView("views/page_header.php");
+	 		$views->getView("views/page_navigation.php");
 			$views->getView("views/user_login.php");
-			$views->getView("views/footer.php"); 
+			$views->getView("views/page_footer.php"); 
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
@@ -287,9 +307,10 @@ if(!empty($_GET["action"])){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
-	 		$views->getView("views/header.php");
+	 		$views->getView("views/page_header.php");
+	 		$views->getView("views/page_navigation.php");
 			$views->getView("views/user_login.php");
-			$views->getView("views/footer.php"); 
+			$views->getView("views/page_footer.php"); 
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
@@ -298,9 +319,10 @@ if(!empty($_GET["action"])){
 	 	$data[2] = $dbinfo->getUserListsName($_SESSION["userid"]);
 
 
-	 	$views->getView("views/header.php");
+	 	$views->getView("views/page_header.php");
+	 	$views->getView("views/page_navigation2.php");
 		$views->getView("views/item_update.php",$data);
-		$views->getView("views/footer.php");
+		$views->getView("views/page_footer.php");
 		
 		}
 
@@ -308,9 +330,10 @@ if(!empty($_GET["action"])){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
-	 		$views->getView("views/header.php");
+	 		$views->getView("views/page_header.php");
+	 		$views->getView("views/page_navigation.php");
 			$views->getView("views/user_login.php");
-			$views->getView("views/footer.php"); 
+			$views->getView("views/page_footer.php"); 
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
@@ -326,13 +349,101 @@ if(!empty($_GET["action"])){
 	 		$data[1] = $dbinfo->getUserList($_GET["list_id"]);
 	 		$data[2] = $dbinfo->getUser($data[0][0]["user_id"]);
 
-	 		$views->getView("views/header.php");
+	 		$views->getView("views/page_header.php");
+	 		$views->getView("views/share_navigation.php");
 			$views->getView("views/share_user_profile.php",$data);
 			$views->getView("views/share_item_view.php",$data);
 			$views->getView("views/footer.php"); 
 
-	}
+	}else if($_GET["action"]=="chromeLogin"){
+	
+  	$views->getView("views/page_header.php");
+		$views->getView("views/chrome_page_navigation.php");
+		$views->getView("views/chrome_user_login.php");
+		$views->getView("views/page_footer.php");
+	
+	}else if($_GET["action"]=="chromeLoginAction"){
+		
+		$data = $dbinfo->checkLogin($_POST["email"],$_POST["password"]);
+	
+		if($data){
+			
+			$_SESSION["isloggedin"] = 1;
+			$_SESSION["userid"] = $data[0]["id"];
+	 		header("Location: http://gift-list-you.herokuapp.com/?action=addItemView");
+		
 		}else{
+
+			session_unset(); 
+			session_destroy();
+			header("Location: http://gift-list-you.herokuapp.com/?action=chromeLogin");
+		
+		}
+
+	}else if($_GET["action"]=="chromeAddItemView"){
+	
+		if(!isset($_SESSION["isloggedin"])){
+	 		
+			header("Location: http://gift-list-you.herokuapp.com/?action=chromeLogin"); 
+	 	
+	 	}else if($_SESSION["isloggedin"] == 1){
+
+	 	$data = $dbinfo->getUserListsName($_SESSION["userid"]);
+	
+	 	$views->getView("views/page_header.php");
+		$views->getView("views/chrome_page_navigation.php");
+	 	$views->getView("views/chrome_item_add.php",$data);
+		$views->getView("views/page_footer.php");
+		
+		}
+
+	}else if($_GET["action"]=="chromeAddItemAction"){
+	
+		if(!isset($_SESSION["isloggedin"])){
+	 		
+	 		header("Location: http://gift-list-you.herokuapp.com/?action=chromeLogin"); 
+	 	
+	 	}else if($_SESSION["isloggedin"] == 1){
+
+	 	$data = $dbinfo->getListItems($_POST["list"]);
+	 	$i = sizeof($data)+1;
+	 	$data = $dbinfo->addItem($_POST["name"],$_POST["url"],$_POST["price"],$i,$_POST["list"],$_SESSION["userid"]);
+	 	
+	 	header("Location: http://gift-list-you.herokuapp.com/?action=profile");
+		
+		}
+
+	}else if($_GET["action"]=="chromeAddListView"){
+	
+		if(!isset($_SESSION["isloggedin"])){
+	 		
+	 		header("Location: http://gift-list-you.herokuapp.com/?action=chromeLogin"); 
+	 	
+	 	}else if($_SESSION["isloggedin"] == 1){
+
+			$views->getView("views/page_header.php");
+			$views->getView("views/chrome_page_navigation.php");
+			$views->getView("views/user_login.php");
+			$views->getView("views/page_footer.php");
+		
+		}
+
+	}else if($_GET["action"]=="chromeAddListAction"){
+	
+		if(!isset($_SESSION["isloggedin"])){
+	 		
+	 		header("Location: http://gift-list-you.herokuapp.com/?action=chromeLogin");  
+	 	
+	 	}else if($_SESSION["isloggedin"] == 1){
+
+	 		$data = $dbinfo->addList($_POST["name"],$_POST["event"],$_POST["address"],
+			$_POST["city"],$_POST["state"],$_POST["zip"],$_SESSION["userid"]);
+	 	
+	 		header("Location: http://gift-list-you.herokuapp.com/?action=addItemView");
+		
+		}
+	
+	}else{
 
   	$views->getView("views/header.php");
 		$views->getView("views/user_login.php");

@@ -23,8 +23,4 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 	<h2> Gift List You </h2>
-<nav>
-<a href="?action=signup">Sign up</a>
-<a href="?action=logout">Logout</a>
-</nav>
-<br>
+
