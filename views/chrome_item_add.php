@@ -4,7 +4,7 @@
 
 		Name :<input type="text" name="name" value="" placeholder="Your List" /><br>
 
-		Url: <? var_dump($data[1]);?><br>
+		Url: <? echo $data[1]?><br>
 
 		Url: <input type="text" name="url" value="" placeholder="url.com" /><br>
 
