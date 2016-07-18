@@ -1,6 +1,4 @@
-<script>chrome.tabs.getCurrent( function(tab){
-    console.log(tab);
-} );</script>
+
 <form enctype="multipart/form-data" action="?action=chromeAddListAction" method="POST">
 	<fieldset>
 
