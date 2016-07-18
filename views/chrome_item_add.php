@@ -1,4 +1,4 @@
-<script> console.log(getUrl()); </script>
+<div id="host"></div>
 <form enctype="multipart/form-data" action="?action=chromeAddItemAction" method="POST">
 	<fieldset>
 
