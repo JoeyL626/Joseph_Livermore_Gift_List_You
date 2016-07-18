@@ -389,7 +389,7 @@ if(!empty($_GET["action"])){
 	 	}else if($_SESSION["isloggedin"] == 1){
 
 	 	$data[0] = $dbinfo->getUserListsName($_SESSION["userid"]);
-	 	$data[1] = $_GET["url"];
+	 	$data[1] = $_GET["id"];
 	
 	 	$views->getView("views/page_header.php");
 		$views->getView("views/chrome_page_navigation.php");
