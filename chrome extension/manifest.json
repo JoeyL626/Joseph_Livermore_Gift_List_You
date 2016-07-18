@@ -9,6 +9,7 @@
    ],
   "content_scripts": [
     {
+    	"matches": ["http://www.google.com/*"],
       "js": ["jquery-3.1.0.min.js", "popup.js"]
     }
   ],
