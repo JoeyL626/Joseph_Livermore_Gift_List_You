@@ -2,7 +2,7 @@
 <form enctype="multipart/form-data" action="?action=chromeAddListAction" method="POST">
 	<fieldset>
 
-		Event :<select name="event">
+		<select name="event">
     					<option value="Mothers' Day">Mothers' Day</option>
 							<option value="Valentine's Day">Valentine's Day</option>
 							<option value="Easter">Easter</option>
@@ -14,11 +14,11 @@
 							<option value="Wedding">Wedding</option>
   					</select>
 
-		Address: <input type="text" name="address" value="" placeholder="123 your street" />
+		 <input type="text" name="address" value="" placeholder="Address" />
 
-		City: <input type="text" name="city" value="" placeholder="Jacksonville" />
+		<input type="text" name="city" value="" placeholder="City" />
 
-		State: <select name="state">
+		<select name="state">
     					<option value="AL">Alabama</option>
 							<option value="AK">Alaska</option>
 							<option value="AZ">Arizona</option>
@@ -72,7 +72,7 @@
 							<option value="WY">Wyoming</option>
   					</select>
 
-		Zip: <input type="text" name="zip" value="" placeholder="12345" />
+		<input type="text" name="zip" value="" placeholder="Zip" />
 
   	<input type="submit" name="submit" value="Create List"/>
 
