@@ -6,6 +6,10 @@
 table { 
 	color: #fff;  
 }
+/* buttons ******************/
+.listButton { 
+	width:10rem;  
+}
 /* Sortable ******************/
 #sortable { 
 	list-style: none; 

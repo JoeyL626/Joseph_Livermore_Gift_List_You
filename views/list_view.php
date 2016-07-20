@@ -11,8 +11,8 @@ foreach($data[1] as $list){
 <th align=left><? echo $list["city"]?></th>
 <th align=left><? echo $list["state"]?></th>
 <th align=left><? echo $list["zip"]?></th>
-<th align=left><a class="button" href="?action=updateListButton&id=<? echo $list['list_id']?>">Edit List</a></th>
-<th align=left><a class="button" href="?action=itemView&id=<? echo $list['list_id']?>">View Items</a></th>
+<th align=left><a class="button listButton" href="?action=updateListButton&id=<? echo $list['list_id']?>">Edit List</a></th>
+<th align=left><a class="button listButton" href="?action=itemView&id=<? echo $list['list_id']?>">View Items</a></th>
 </tr>
 <?
 }
