@@ -1,8 +1,5 @@
+<div class="small-5 small-centered columns">
 <table>
-<tr>
-<td><? echo $data[1][0]["event"]?></td>
-<td><? echo $data[1][0]["address"]." ".$data[1][0]["city"].", ".$data[1][0]["state"]." ".$data[1][0]["zip"]?></td>
-</tr>
 <?
 foreach($data[0] as $list){
 ?>
@@ -15,3 +12,5 @@ foreach($data[0] as $list){
 }
 ?>
 </table>
+</div>
+</div>
