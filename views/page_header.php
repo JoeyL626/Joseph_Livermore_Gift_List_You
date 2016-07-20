@@ -28,6 +28,6 @@
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7&appId=1766483266905544";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-
-	<h2> Gift List You </h2>
+<header>
+	<h1> Gift List You </h1>
 

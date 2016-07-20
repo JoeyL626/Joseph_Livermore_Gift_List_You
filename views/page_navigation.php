@@ -4,4 +4,5 @@
 <a href="?action=login">Login</a>
 <a href="?action=logout">Logout</a>
 </nav>
+</header>
 <br>
