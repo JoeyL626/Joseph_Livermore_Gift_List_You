@@ -21,3 +21,4 @@ foreach($data[1] as $list){
 
 </table>
 </div>
+</div>
