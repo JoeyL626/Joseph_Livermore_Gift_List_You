@@ -3,9 +3,7 @@
 <form enctype="multipart/form-data" action="?action=addListAction" method="POST">
 	<fieldset>
 
-		Name :<input type="text" name="name" value="" placeholder="Your List" /><br>
-
-		Event :<select name="event">
+						<select name="event">
     					<option value="Mothers' Day">Mothers' Day</option>
 							<option value="Valentine's Day">Valentine's Day</option>
 							<option value="Easter">Easter</option>
@@ -17,11 +15,11 @@
 							<option value="Wedding">Wedding</option>
   					</select><br>
 
-		Address: <input type="text" name="address" value="" placeholder="123 your street" /><br>
+		<input type="text" name="address" value="" placeholder="123 your street" /><br>
 
-		City: <input type="text" name="city" value="" placeholder="Jacksonville" /><br>
+		<input type="text" name="city" value="" placeholder="Jacksonville" /><br>
 
-		State: <select name="state">
+		<select name="state">
     					<option value="AL">Alabama</option>
 							<option value="AK">Alaska</option>
 							<option value="AZ">Arizona</option>
@@ -75,7 +73,7 @@
 							<option value="WY">Wyoming</option>
   					</select><br>
 
-		Zip: <input type="text" name="zip" value="" placeholder="12345" /><br>
+		<input type="text" name="zip" value="" placeholder="12345" /><br>
 
   	<input type="submit" name="submit" value="Create List"/>
 
