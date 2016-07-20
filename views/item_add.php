@@ -1,4 +1,5 @@
-
+<div class="row">
+<div class="large-6 small-4 small-centered columns">
 <form enctype="multipart/form-data" action="?action=addItemAction" method="POST">
 	<fieldset>
 
@@ -21,3 +22,5 @@
 
   </fieldset>
 </form>
+<div class="row">
+<div class="large-6 small-4 small-centered columns">

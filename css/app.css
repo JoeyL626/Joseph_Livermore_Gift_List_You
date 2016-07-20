@@ -1,4 +1,7 @@
-
+/* header ******************/
+#sortable { 
+	background: #2A6DBE;  
+}
 /* Sortable ******************/
 #sortable { 
 	list-style: none; 
