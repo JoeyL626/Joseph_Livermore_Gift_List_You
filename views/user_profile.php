@@ -1,4 +1,5 @@
 <div class="row">
+<div class="row">
 <div class="small-5 columns">
 <table>
 <tr>
@@ -26,6 +27,7 @@
 <td><? echo $data[0][0]["zip"]?></td>
 </tr>
 </table>
+</div>
 </div>
 
 
