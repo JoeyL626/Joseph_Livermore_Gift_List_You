@@ -1,4 +1,4 @@
-<div class="row" style = "padding-right: 35rem;">
+<div class="row" style = "padding-right: 25rem;">
 <div class="row float-left" style = "padding-left: 2rem;">
 <div class="small-5 columns" >
 <table>
