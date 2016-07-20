@@ -3,6 +3,11 @@
 	background-color: #2A6DBE;
 	margin-bottom:1.5rem;  
 }
+/* table ******************/
+table { 
+	border-radius: 20px;
+	padding:1rem;	  
+}
 /* form ******************/
 form { 
 	background-color: #0C56AF;
