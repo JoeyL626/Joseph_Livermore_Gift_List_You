@@ -1,5 +1,5 @@
 
-
+<div class="medium-6 columns">
 <ul class="menu align-right">
 <li><a class="button" href="?action=profile">Profile</a></li>
 <li><a class="button" href="?action=updateUserButton">Edit Profile</a></li>
