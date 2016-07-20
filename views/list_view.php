@@ -4,7 +4,7 @@
 <thead>
 <tr>
 <th width="250">Event</th>
-<th width="400">Address</th>
+<th width="700">Address</th>
 <th width="50">Edit</th>
 <th width="50">Items</th>
 </tr>
