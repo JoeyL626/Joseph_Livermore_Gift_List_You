@@ -1,8 +1,9 @@
-
 <nav>
-<a href="?action=chromeAddListView">Add List</a>
-<a href="?action=chromeAddItemView">Add Item</a>
-<a href="?action=chromeLogout">Logout</a>
+<ul class="dropdown menu" data-dropdown-menu>
+<li><a href="?action=chromeAddListView">Add List</a></li>
+<li><a href="?action=chromeAddItemView">Add Item</a></li>
+<li><a href="?action=chromeLogout">Logout</a></li>
+</ul>
 </nav>
 </header>
 <br>

@@ -1,8 +1,10 @@
 
 <nav>
-<a href="?action=signup">Sign Up</a>
-<a href="?action=login">Login</a>
-<a href="?action=logout">Logout</a>
+<ul class="menu align-right">
+<li><a href="?action=signup">Sign Up</a></li>
+<li><a href="?action=login">Login</a></li>
+<li><a href="?action=logout">Logout</a></li>
+</ul>
 </nav>
 </header>
 <br>
