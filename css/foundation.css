@@ -2469,13 +2469,13 @@ table {
   table tbody,
   table tfoot {
     border: 1px solid #f1f1f1;
-    background-color: #fefefe; }
+    background-color: #71A1DA; }
   table caption {
     font-weight: bold;
     padding: 0.5rem 0.625rem 0.625rem; }
   table thead,
   table tfoot {
-    background: #f8f8f8;
+    background: #0C56AF;
     color: #0a0a0a; }
     table thead tr,
     table tfoot tr {

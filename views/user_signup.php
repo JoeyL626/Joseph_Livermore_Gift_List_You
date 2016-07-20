@@ -3,17 +3,17 @@
 <form enctype="multipart/form-data" action="?action=signupAction" method="POST">
 	<fieldset>
 
-		Name :<input type="text" name="name" value="" placeholder="Name" /><br>
+		<input type="text" name="name" value="" placeholder="Name" /><br>
 
-		Email :<input type="text" name="email" value="" placeholder="Email" /><br>
+		<input type="text" name="email" value="" placeholder="Email" /><br>
 
-		Password: <input type="password" name="password" value="" placeholder="Password" /><br>
+		<input type="password" name="password" value="" placeholder="Password" /><br>
 
-		Address: <input type="text" name="address" value="" placeholder="Address" /><br>
+		<input type="text" name="address" value="" placeholder="Address" /><br>
 
-		City: <input type="text" name="city" value="" placeholder="City" /><br>
+		<input type="text" name="city" value="" placeholder="City" /><br>
 
-		State: <select name="state" value="">
+		<select name="state" value="">
     					<option value="AL">Alabama</option>
 							<option value="AK">Alaska</option>
 							<option value="AZ">Arizona</option>
@@ -67,7 +67,7 @@
 							<option value="WY">Wyoming</option>
   					</select><br>
 
-		Zip: <input type="text" name="zip" value="" placeholder="Zip" /><br>
+		<input type="text" name="zip" value="" placeholder="Zip" /><br>
 
   	<input type="submit" name="submit" value="Signup"/>
 
