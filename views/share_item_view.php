@@ -1,3 +1,4 @@
+<div class="row">
 <div class="small-5 small-centered columns">
 <table>
 <?
