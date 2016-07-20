@@ -1,8 +1,7 @@
-<div class="row" style = "
-  padding-right: 20rem;">
+<div class="row">
 
 <div class="row float-left">
-<div class="small-4 large-offset-1 columns">
+<div class="small-4 columns" style = "padding-left: 10rem;">
 <table>
 <tr>
 <th>Name</th>
