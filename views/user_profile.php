@@ -1,7 +1,7 @@
 <div class="row" style = "
 	width: 62.5rem;
-  padding-right: 5 rem;
-  margin-right: 5 rem;">
+  padding-left: 5 rem;
+  margin-left: 5 rem;">
 
 <div class="row float-left">
 <div class="small-5 columns">
