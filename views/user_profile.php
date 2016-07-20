@@ -3,7 +3,7 @@
   margin-left: auto;
   margin-right: auto;
   max-width: initial;
-  padding: 0.0rem 0.9091rem 0.0rem 0.9091rem;">
+  padding: 0.0rem 1.818rem 0.0rem 1.818rem;">
 <div class="row float-left">
 <div class="small-5 columns">
 <table>
