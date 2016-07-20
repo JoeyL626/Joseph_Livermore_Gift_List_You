@@ -1,6 +1,5 @@
 <div class="row" style = " 
 	width: 65rem;
-  margin-right: auto;
   padding-right: 20rem;">
 
 <div class="row float-left">
