@@ -97,8 +97,11 @@ if(!empty($_GET["action"])){
 	 	}else if($_SESSION["isloggedin"] == 1){
 
 	 	$data = $dbinfo->getUser($_SESSION["userid"]);
-	
+		
+		$views->getView("views/page_header.php");
+	 	$views->getView("views/page_navigation2.php");
 	 	$views->getView("views/user_delete.php",$data);
+	 	$views->getView("views/page_footer.php");
 	 	
 	 	}
 
@@ -138,8 +141,11 @@ if(!empty($_GET["action"])){
 	 	}else if($_SESSION["isloggedin"] == 1){
 
 	 	$data = $dbinfo->getUser($_SESSION["userid"]);
-	
+		
+		$views->getView("views/page_header.php");
+	 	$views->getView("views/page_navigation2.php");
 	 	$views->getView("views/user_update.php",$data);
+	 	$views->getView("views/page_footer.php");
 	 	
 	 	}
 

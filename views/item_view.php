@@ -25,6 +25,5 @@
   data-layout="button" data-size="large" data-mobile-iframe="true">
   <a class="fb-xfbml-parse-ignore" target="_blank" href="http://gift-list-you.herokuapp.com/?action=shareView&id=<? echo $data[1][0]['user_id']?>">
   Share</a></div>
-<a href="?action=profile">Back</a>
 </div><!-- content --> 
 </div>
