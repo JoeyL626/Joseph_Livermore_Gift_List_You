@@ -4,9 +4,7 @@
 
 		Name :<input type="text" name="name" value="" placeholder="Your List" /><br>
 
-		Url: <? echo $data[1]?><br>
-
-		Url: <input type="text" name="url" value="" placeholder="url.com" /><br>
+		Url: <? echo $data[1]?><input type="hidden" name="url" value="<? echo $data[1]?>"/><br>
 
 		Price: <input type="text" name="price" value="" placeholder="$9.99" /><br>
 
