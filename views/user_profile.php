@@ -10,8 +10,8 @@
 <th>Email</th>
 <td><? echo $data[0][0]["email"]?></td>
 </tr>
-<tr>
-<th width="200">Address</th>
+<tr style="width:100px;">
+<th>Address</th>
 <td><? echo $data[0][0]["address"]." ".$data[0][0]["city"].", ".$data[0][0]["state"]." ".$data[0][0]["zip"]?></td>
 </tr>
 </table>
