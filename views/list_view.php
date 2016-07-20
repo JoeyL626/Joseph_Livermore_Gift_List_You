@@ -1,5 +1,6 @@
 
 <div class="small-7 columns float-right" style="border-radius: 15px;">
+<div style = "widt:100%;">
 <table>
 <tr>
 <th width="250">Event</th>
@@ -21,6 +22,7 @@ foreach($data[1] as $list){
 ?>
 
 </table>
+</div>
 </div>
 
 
