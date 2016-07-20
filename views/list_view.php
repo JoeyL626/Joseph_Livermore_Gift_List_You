@@ -1,5 +1,5 @@
 
-<div class="small-4 columns float-right">
+<div class="small-6 columns float-right">
 <table>
 <?
 foreach($data[1] as $list){
@@ -21,5 +21,5 @@ foreach($data[1] as $list){
 
 </table>
 </div>
-</div>
+
 
