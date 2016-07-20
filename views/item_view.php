@@ -8,14 +8,14 @@
 			?>
 				<li id="<?php echo $item['item_id']; ?>">
 				<span>
-				<div class="row" >
-				<div class="small-3 columns" style="padding-left:2rem;">
+				<div class="row" style="padding-right:2rem;">
+				<div class="small-3 columns" style="padding-left:2.5rem;">
 				<? echo $item["name"]?>
 				</div>
-				<div class="small-3 columns" style="padding-left:2rem;">
+				<div class="small-3 columns" style="padding-left:2.5rem;">
 				<? echo $item["url"]?>
 				</div>
-				<div class="small-3 columns" style="padding-left:2rem;">
+				<div class="small-3 columns" style="padding-left:2.5rem;">
 				<? echo $item["price"]?>
 				</div>
 				<div class="small-3 columns" style="padding-left:1rem;">
