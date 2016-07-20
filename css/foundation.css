@@ -2475,7 +2475,7 @@ table {
     padding: 0.5rem 0.625rem 0.625rem; }
   table thead,
   table tfoot {
-    background: #4A84CA;
+    background: #71A1DA;
     color: #0a0a0a; }
     table thead tr,
     table tfoot tr {
@@ -2488,7 +2488,7 @@ table {
       font-weight: bold;
       text-align: left; }
   table tbody tr:nth-child(even) {
-    background-color: #f1f1f1; }
+    background-color: #4A84CA; }
   table tbody th,
   table tbody td {
     padding: 0.5rem 0.625rem 0.625rem; }
