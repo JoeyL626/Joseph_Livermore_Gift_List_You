@@ -1,5 +1,5 @@
 
-<div class="small-8 columns float-right">
+<div class="small-7 columns float-right">
 <table>
 <?
 foreach($data[1] as $list){

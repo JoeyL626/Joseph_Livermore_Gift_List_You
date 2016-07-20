@@ -1,6 +1,6 @@
 <div class="row">
 <div class="row float-left">
-<div class="small-6 columns">
+<div class="small-5 columns end">
 <table>
 <tr>
 <th>Name</th>
