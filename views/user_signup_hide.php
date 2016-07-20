@@ -69,7 +69,7 @@
 
 	<input type="text" name="zip" value="" placeholder="Zip" /><br>
 
-  	<input class="button" type="submit" name="submit" value="Signup"/>
+  	<input class="button small-centered" type="submit" name="submit" value="Signup"/>
 
   </fieldset>
 </form>
