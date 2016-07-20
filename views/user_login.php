@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="small-3 columns"></div>
+  <div class="small-5 columns"></div>
 </div>
 <div class="row">
 <div class="small-6 columns">
