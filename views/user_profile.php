@@ -1,7 +1,7 @@
 <div class="row">
-<div class="row float-left" >
+<div class="row float-left" style="width:100%;" >
 <div class="small-5 columns" >
-<table style="width:100%;">
+<table >
 <tr>
 <th>Name</th>
 <td><? echo $data[0][0]["name"]?></td>
