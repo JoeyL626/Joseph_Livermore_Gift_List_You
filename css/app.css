@@ -55,16 +55,13 @@ form {
 #sortable li { 
 	margin: 0 0 10px 0;
 	height: 75px; 
-	background: #dbd9d9;
+	background: #4A84CA;
 	border: 1px solid #999999;
 	border-radius: 5px;
 	color: #333333;
 }
 #sortable li span {
-	background-color: #b4b3b3;
-	background-image: url('../images/drag.png');
-	background-repeat: no-repeat;
-	background-position: center;
+
 	width: 30px;
 	height: 75px; 
 	display: inline-block;
