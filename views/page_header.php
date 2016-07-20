@@ -28,7 +28,7 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 <header>
-<row>
+<div class="row">
   <div class="large-12 columns">
 
 	<h1> Gift List You </h1>
