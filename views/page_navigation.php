@@ -27,8 +27,8 @@
 <div class="show-for-small-only">
 	</div>
 	<div class="small-6 columns show-for-small-only" id="header">
-		<ul class="menu-center">
-			<li><a class="button" href="?action=signup">Logout</a></li>
+		<ul class="menu-center" style="list-style: none;">
+			<li><a class="button" href="?action=signup">Signup</a></li>
 		</ul>
 	</div>
 </div>
