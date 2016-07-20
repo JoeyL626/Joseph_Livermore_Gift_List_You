@@ -1,6 +1,5 @@
 <div class="row" style = " 
 	width: 65rem;
-  margin-left: auto;
   margin-right: auto;
   padding-right: 20rem;">
 
