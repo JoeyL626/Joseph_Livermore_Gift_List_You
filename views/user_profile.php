@@ -2,7 +2,7 @@
 	width: 65rem;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 10rem;">
+  padding-right: 20rem;">
 
 <div class="row float-left">
 <div class="small-5 columns">
