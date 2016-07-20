@@ -1,8 +1,8 @@
 
 <div class="small-5 columns float-right">
-<table>
-<th width="300">Event</th>
-<th width="600">Address</th>
+<table role="grid">
+<th>Event</th>
+<th>Address</th>
 <th>Edit</th>
 <th>Items</th>
 <?
