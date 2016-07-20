@@ -3,13 +3,12 @@
 <form enctype="multipart/form-data" action="?action=updateListAction" method="POST">
 	<fieldset>
 
-					<input type="hidden" name="list_id" value="<? echo $data[0]["list_id"]?>"/><br>
+					<input type="hidden" name="list_id" value="<? echo $data[0]["list_id"]?>"/>
 
-		Name :<input type="text" name="name" value="" placeholder="<? echo $data[0]["name"]?>" /><br>
+		Name :<input type="text" name="name" value="" placeholder="<? echo $data[0]["name"]?>" />
 
-		Event: <? echo $data[0]["event"]?><br>
-
-		New Event :<select name="event">
+		Event :<select name="event">
+    					<option value="$data[0]["event"]">$data[0]["event"]</option>
     					<option value="Mothers' Day">Mothers' Day</option>
 							<option value="Valentine's Day">Valentine's Day</option>
 							<option value="Easter">Easter</option>
@@ -19,15 +18,14 @@
 							<option value="Birthday">Birthday</option>
 							<option value="Baby Shower">Baby Shower</option>
 							<option value="Wedding">Wedding</option>
-  					</select><br>
+  					</select>
 
-		Address: <input type="text" name="address" value="" placeholder="<? echo $data[0]['address']?>" /><br>
+		Address: <input type="text" name="address" value="" placeholder="<? echo $data[0]['address']?>" />
 
-		City: <input type="text" name="city" value="" placeholder="<? echo $data[0]['city']?>" /><br>
+		City: <input type="text" name="city" value="" placeholder="<? echo $data[0]['city']?>" />
 
-		State: <? echo $data[0]["state"]?><br>
-
-		New State: <select name="state" value="">
+		State: <select name="state" value="">
+    					<option value="$data[0]["state"]">$data[0]["state"]</option>
     					<option value="AL">Alabama</option>
 							<option value="AK">Alaska</option>
 							<option value="AZ">Arizona</option>
@@ -79,13 +77,12 @@
 							<option value="WV">West Virginia</option>
 							<option value="WI">Wisconsin</option>
 							<option value="WY">Wyoming</option>
-  					</select><br>
+  					</select>
 
-		Zip: <input type="text" name="zip" value="" placeholder="<? echo $data[0]['zip']?>" /><br>
+		Zip: <input type="text" name="zip" value="" placeholder="<? echo $data[0]['zip']?>" />
 
 		  	 <input type="submit" name="submit" value="Update List"/>
 		  	 <a class="button" href="?action=deleteListAction&id=<? echo $data[0]["list_id"]?>">Delete List</a>
   </fieldset>
 </form>
 </div></div>
-<a class="button" href="?action=deleteListAction&id=<? echo $data[0]["list_id"]?>">Delete List</a>

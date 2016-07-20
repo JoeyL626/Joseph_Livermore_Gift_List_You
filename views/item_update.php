@@ -1,4 +1,5 @@
-
+<div class="row">
+<div class="large-6 small-4 small-centered columns">
 <form enctype="multipart/form-data" action="?action=updateItemAction" method="POST">
 	<fieldset>
 
@@ -8,13 +9,12 @@
 
 		Price: <input type="text" name="price" value="" placeholder="<? echo $data[0][0]["price"]?>" /><br>
 
-		List : <? echo $data[1][0]["name"]?><br>
-
-		New List :<select name="list">
+		List :<select name="list">
+								<option value="<? echo $data[1][0]["list_id"]?>"> $data[1][0]["event"]?></option>
 							<?
 								foreach($data[2] as $list){
 							?>
-    						<option value="<? echo $list["list_id"]?>"><? echo $list["name"]?> <?echo $list["event"]?></option>
+    						<option value="<? echo $list["list_id"]?>"><?echo $list["event"]?></option>
   						<?
 								}
 							?>
@@ -24,4 +24,5 @@
 
   </fieldset>
 </form>
-<a href="?action=itemView&id=<? echo $data[0][0]['list_id']?>">Back</a>
+</div>
+</div>
