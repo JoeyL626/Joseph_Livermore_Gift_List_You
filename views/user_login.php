@@ -1,7 +1,7 @@
 
 <div class="row">
-<div class="small-5 columns"></div>
-<div class="small-4 columns">
+<div class="small-4 columns"></div>
+<div class="small-6 columns">
 <form enctype="multipart/form-data" action="?action=loginAction" method="POST">
 	<fieldset>
 
