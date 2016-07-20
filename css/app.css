@@ -8,11 +8,11 @@ table {
 	border-radius: 15px;
 	padding:1rem;	  
 }
-table tr:last-child td:first-child {
+table tr:last-child td:first-child th:first-child {
     border-bottom-left-radius: 15px;
 }
 
-table tr:last-child td:last-child {
+table tr:last-child td:last-child th:last-child {
     border-bottom-right-radius: 15px;
 }
 /* form ******************/
