@@ -3,11 +3,23 @@
 
 class dbinfo{
 
+//****************************************************************************************************
+//                       This is the env file being brought in
+//											 and the connection to the database being made
+//****************************************************************************************************
+
+
 	public function __construct()
     {
       include('config.php');
 			$this->pdo = connect();
     }
+
+
+//****************************************************************************************************
+//                       This is the database calls for user info
+//****************************************************************************************************
+
 
 	public function checkLogin($email='',$passw=''){
 
@@ -62,6 +74,12 @@ class dbinfo{
 		
 	}
 
+
+//****************************************************************************************************
+//                       This is the database calls for list info
+//****************************************************************************************************
+
+
 	public function addList($name,$event,$address,$city,$state,$zip,$userid){
 		
 		$st = $this->pdo->prepare("insert into lists(name,event,address,city,state,zip,user_id) values(:na,:ev,:ad,:ci,:st,:zi,:ui)");
@@ -109,6 +127,12 @@ class dbinfo{
 	
 	}
 
+	public function updateList($lid,$name,$event,$address,$city,$state,$zip){
+		
+		$st = $this->pdo->prepare("update lists set name = :nu,event = :ev,address = :ad,city = :ci,state = :st,zip = :zi where list_id = :lid");
+		$st->execute(array(":lid"=>$lid,":nu"=>$name,":ev"=>$event,":ad"=>$address,":ci"=>$city,":st"=>$state,":zi"=>$zip));
+	}
+
 	public function deleteList($lid){
 		
 		$st = $this->pdo->prepare("delete from lists where list_id=:id");
@@ -122,6 +146,12 @@ class dbinfo{
 		$st->execute(array(":id"=>$uid));
 	
 	}
+
+
+//****************************************************************************************************
+//                       This is the database calls for item info
+//****************************************************************************************************
+
 
 		public function addItem($name,$url,$price,$order,$listid,$userid){
 
@@ -169,12 +199,6 @@ class dbinfo{
 		$st = $this->pdo->prepare("delete from items where user_id=:id");
 		$st->execute(array(":id"=>$uid));
 	
-	}
-
-	public function updateList($lid,$name,$event,$address,$city,$state,$zip){
-		
-		$st = $this->pdo->prepare("update lists set name = :nu,event = :ev,address = :ad,city = :ci,state = :st,zip = :zi where list_id = :lid");
-		$st->execute(array(":lid"=>$lid,":nu"=>$name,":ev"=>$event,":ad"=>$address,":ci"=>$city,":st"=>$state,":zi"=>$zip));
 	}
 
 	public function updateItem($iid,$name,$price,$list_id){
