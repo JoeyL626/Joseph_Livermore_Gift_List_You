@@ -5,7 +5,10 @@
 }
 /* table ******************/
 table { 
-	color: #fff;
+	color: #fff;	  
+}
+/* table ******************/
+form { 
 	background-color: #0C56AF;
 	border-radius: 20px;
 	padding:1rem;
