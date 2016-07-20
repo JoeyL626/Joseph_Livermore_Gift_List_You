@@ -2,13 +2,13 @@
 <form enctype="multipart/form-data" action="?action=chromeAddItemAction" method="POST">
 	<fieldset>
 
-		Name :<input type="text" name="name" value="" placeholder="Your List" /><br>
+		<input type="text" name="name" value="" placeholder="Item Name" />
 
-		Url: <? echo $data[1]?><input type="hidden" name="url" value="<? echo $data[1]?>"/><br>
+		<input type="text" name="url" value="<? echo $data[1]?>" placeholder="<? echo $data[1]?>"/>
 
-		Price: <input type="text" name="price" value="" placeholder="$9.99" /><br>
+		<input type="text" name="price" value="" placeholder="$9.99" />
 
-		List :<select name="list">
+		<select name="list">
 							<?
 								foreach($data[0] as $list){
 							?>
