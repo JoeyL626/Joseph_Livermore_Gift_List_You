@@ -10,12 +10,12 @@
 <td><? echo $data[2][0]["email"]?></td>
 </tr>
 <tr>
-<th>Address</th>
-<td><? echo $data[1][0]["address"]." ".$data[1][0]["city"].", ".$data[1][0]["state"]." ".$data[1][0]["zip"]?></td>
+<th>Event</th>
+<td><? echo $data[1][0]["event"]?></td>
 </tr>
 <tr>
 <th>Address</th>
-<td><? echo $data[1][0]["event"]?></td>
+<td><? echo $data[1][0]["address"]." ".$data[1][0]["city"].", ".$data[1][0]["state"]." ".$data[1][0]["zip"]?></td>
 </tr>
 </table>
 </div>
