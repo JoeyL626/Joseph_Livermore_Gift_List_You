@@ -1,6 +1,6 @@
 
 <div class="row">
-  <div class="small-8 columns">
+  <div class="small-10 columns">
 
 		<ul id="sortable">
 			<?
