@@ -1,5 +1,5 @@
 
-<div class="row show-for-small">
+<div class="row show-for-small-only">
 <div class="large-6 small-4 small-centered columns">
 <form enctype="multipart/form-data" action="?action=loginAction" method="POST">
 	<fieldset>
