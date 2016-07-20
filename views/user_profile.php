@@ -1,7 +1,4 @@
-<div class="row" style = " 
-	width: 75rem;
-  margin-left: auto;
-  margin-right: auto;
+<div class="row" style = "
   max-width: initial;
   padding: 0.0rem 3.636rem 0.0rem 3.636rem;">
 
