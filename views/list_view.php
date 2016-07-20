@@ -1,5 +1,5 @@
 
-<div class="small-5 columns float-right">
+<div class="small-7 columns float-right">
 <table>
 <thead>
 <tr>
