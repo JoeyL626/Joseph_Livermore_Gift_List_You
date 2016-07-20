@@ -1,10 +1,10 @@
 
 <div class="small-5 columns float-right">
-<table role="grid">
-<th>Event</th>
-<th>Address</th>
-<th>Edit</th>
-<th>Items</th>
+<table >
+<th width="150">Event</th>
+<th width="300">Address</th>
+<th width="150">Edit</th>
+<th width="150">Items</th>
 <?
 foreach($data[1] as $list){
 ?>
