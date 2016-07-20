@@ -79,8 +79,8 @@ if(!empty($_GET["action"])){
 	 		$views->getView("views/page_header.php");
 	 		$views->getView("views/page_navigation2.php");
 			$views->getView("views/user_profile.php",$data);
-			$views->getView("views/list_view.php",$data);
 			$views->getView("views/list_add.php");
+			$views->getView("views/list_view.php",$data);
 			$views->getView("views/page_footer.php");
 	 	
 	 	}
