@@ -1,5 +1,5 @@
 <div class="row">
-<div class="small-4 large-offset-1 columns">
+<div class="small-4 columns" style = "padding-left: 2rem;">
 <form enctype="multipart/form-data" action="?action=addListAction" method="POST">
 	<fieldset>
 
