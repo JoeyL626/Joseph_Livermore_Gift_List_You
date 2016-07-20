@@ -1,7 +1,7 @@
 
 	<ul class="dropdown menu" data-dropdown-menu>
 	  <li>
-		  <a >Menu</a>
+		  <a href="#">Menu</a>
 		   <ul class="menu">
 					<li><a href="?action=chromeAddListView">Add List</a></li>
 					<li><a href="?action=chromeAddItemView">Add Item</a></li>
