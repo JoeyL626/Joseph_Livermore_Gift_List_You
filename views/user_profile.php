@@ -1,5 +1,5 @@
 <div class="row">
-<div class="row float-left" style="width:100%;" >
+<div class="row float-left" style="width:95%;" >
 <div class="small-5 columns" >
 <table >
 <tr>
