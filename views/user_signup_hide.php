@@ -2,7 +2,7 @@
 <div class="large-6 small-4 small-centered columns" style="background-color: #0C56AF;
 border-radius: 20px;
 padding:1rem;
-margin:1.5rem;">
+margin-top:1.5rem;">
 <form enctype="multipart/form-data" action="?action=signupAction" method="POST">
 	<fieldset>
 
