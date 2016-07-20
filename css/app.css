@@ -1,6 +1,10 @@
 /* header ******************/
 #header { 
-	background: #2A6DBE;  
+	background-color: #2A6DBE;  
+}
+/* table ******************/
+table { 
+	color: #fff;  
 }
 /* Sortable ******************/
 #sortable { 

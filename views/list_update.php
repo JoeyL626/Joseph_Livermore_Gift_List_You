@@ -85,4 +85,4 @@
 		  	 <input type="submit" name="submit" value="Update List"/>
   </fieldset>
 </form>
-<a class="button" href="?action=deleteListAction&id=<? echo $list['list_id']?>">Delete List</a>
+<a class="button" href="?action=deleteListAction&id=<? echo $data[0]["list_id"]?>">Delete List</a>
