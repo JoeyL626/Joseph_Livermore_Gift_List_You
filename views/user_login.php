@@ -14,5 +14,4 @@
   </fieldset>
 </form>
 </div>
-<div class="small-3 columns"></div>
 </div>
