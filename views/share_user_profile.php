@@ -1,5 +1,5 @@
 <div class="row">
-<div class="small-7 small-centered columns">
+<div class="small-8 small-centered columns">
 <table>
 <tr>
 <th>Name</th>
