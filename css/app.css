@@ -50,10 +50,9 @@ form {
 /* Sortable ******************/
 #sortable { 
 	list-style: none; 
-	text-align: left; 
+
 }
 #sortable li { 
-	margin: 0 0 10px 0;
 	height: 75px; 
 	background: #4A84CA;
 	border: 1px solid #999999;
