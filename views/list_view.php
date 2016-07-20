@@ -1,4 +1,4 @@
-<div class="row float-right">
+<div class="row">
 <div class="small-5 columns">
 <table>
 <?
