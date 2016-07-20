@@ -13,11 +13,11 @@
 							<option value="Birthday">Birthday</option>
 							<option value="Baby Shower">Baby Shower</option>
 							<option value="Wedding">Wedding</option>
-  					</select><br>
+  					</select>
 
-		<input type="text" name="address" value="" placeholder="123 your street" /><br>
+		<input type="text" name="address" value="" placeholder="123 your street" />
 
-		<input type="text" name="city" value="" placeholder="Jacksonville" /><br>
+		<input type="text" name="city" value="" placeholder="Jacksonville" />
 
 		<select name="state">
     					<option value="AL">Alabama</option>
@@ -71,9 +71,9 @@
 							<option value="WV">West Virginia</option>
 							<option value="WI">Wisconsin</option>
 							<option value="WY">Wyoming</option>
-  					</select><br>
+  					</select>
 
-		<input type="text" name="zip" value="" placeholder="12345" /><br>
+		<input type="text" name="zip" value="" placeholder="12345" />
 
   	<input type="submit" name="submit" value="Create List"/>
 

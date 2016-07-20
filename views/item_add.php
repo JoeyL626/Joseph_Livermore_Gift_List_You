@@ -3,11 +3,11 @@
 <form enctype="multipart/form-data" action="?action=addItemAction" method="POST">
 	<fieldset>
 
-		Name :<input type="text" name="name" value="" placeholder="Your List" /><br>
+		Name :<input type="text" name="name" value="" placeholder="Your List" />
 
-		Url: <input type="text" name="url" value="" placeholder="url.com" /><br>
+		Url: <input type="text" name="url" value="" placeholder="url.com" />
 
-		Price: <input type="text" name="price" value="" placeholder="$9.99" /><br>
+		Price: <input type="text" name="price" value="" placeholder="$9.99" />
 
 		List :<select name="list">
 							<?
@@ -17,7 +17,7 @@
   						<?
 								}
 							?>
-								</select><br>
+								</select>
   	<input type="submit" name="submit" value="Add Item"/>
 
   </fieldset>

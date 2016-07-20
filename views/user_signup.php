@@ -3,15 +3,15 @@
 <form enctype="multipart/form-data" action="?action=signupAction" method="POST">
 	<fieldset>
 
-		<input type="text" name="name" value="" placeholder="Name" /><br>
+		<input type="text" name="name" value="" placeholder="Name" />
 
-		<input type="text" name="email" value="" placeholder="Email" /><br>
+		<input type="text" name="email" value="" placeholder="Email" />
 
-		<input type="password" name="password" value="" placeholder="Password" /><br>
+		<input type="password" name="password" value="" placeholder="Password" />
 
-		<input type="text" name="address" value="" placeholder="Address" /><br>
+		<input type="text" name="address" value="" placeholder="Address" />
 
-		<input type="text" name="city" value="" placeholder="City" /><br>
+		<input type="text" name="city" value="" placeholder="City" />
 
 		<select name="state" value="">
     					<option value="AL">Alabama</option>
@@ -65,9 +65,9 @@
 							<option value="WV">West Virginia</option>
 							<option value="WI">Wisconsin</option>
 							<option value="WY">Wyoming</option>
-  					</select><br>
+  					</select>
 
-		<input type="text" name="zip" value="" placeholder="Zip" /><br>
+		<input type="text" name="zip" value="" placeholder="Zip" />
 
   	<input type="submit" name="submit" value="Signup"/>
 

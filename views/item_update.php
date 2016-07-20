@@ -3,11 +3,11 @@
 <form enctype="multipart/form-data" action="?action=updateItemAction" method="POST">
 	<fieldset>
 
-					 <input type="hidden" name="item_id" value="<? echo $data[0][0]["item_id"]?>"/><br>
+					 <input type="hidden" name="item_id" value="<? echo $data[0][0]["item_id"]?>"/>
 
-		Name : <input type="text" name="name" value="" placeholder="<? echo $data[0][0]["name"]?>" /><br>
+		Name : <input type="text" name="name" value="" placeholder="<? echo $data[0][0]["name"]?>" />
 
-		Price: <input type="text" name="price" value="" placeholder="<? echo $data[0][0]["price"]?>" /><br>
+		Price: <input type="text" name="price" value="" placeholder="<? echo $data[0][0]["price"]?>" />
 
 		List :<select name="list">
 								<option value="<? echo $data[1][0]["list_id"]?>"> $data[1][0]["event"]?></option>
@@ -18,7 +18,7 @@
   						<?
 								}
 							?>
-								</select><br>
+								</select>
 
   	<input type="submit" name="submit" value="Update Item"/>
 

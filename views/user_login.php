@@ -4,9 +4,9 @@
 <form enctype="multipart/form-data" action="?action=loginAction" method="POST">
 	<fieldset>
 
-		<input type="text" name="email" value="" placeholder="Email" /><br>
+		<input type="text" name="email" value="" placeholder="Email" />
 
-		<input type="password" name="password" value="" placeholder="Password"/><br>
+		<input type="password" name="password" value="" placeholder="Password"/>
 
     <input type="submit" name="submit" value="Login"/>
 
