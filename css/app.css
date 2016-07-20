@@ -1,10 +1,15 @@
 /* header ******************/
 #header { 
-	background-color: #2A6DBE;  
+	background-color: #2A6DBE;
+	margin-bottom:1.5rem;  
 }
 /* table ******************/
 table { 
-	color: #fff;  
+	color: #fff;
+	background-color: #0C56AF;
+	border-radius: 20px;
+	padding:1rem;
+	  
 }
 
 /* buttons ******************/
