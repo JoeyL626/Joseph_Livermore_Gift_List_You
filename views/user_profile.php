@@ -6,7 +6,7 @@
   padding: 0.0rem 3.636rem 0.0rem 3.636rem;">
 
 <div class="row float-left">
-<div class="small-4 columns">
+<div class="small-5 columns">
 <table>
 <tr>
 <th>Name</th>
