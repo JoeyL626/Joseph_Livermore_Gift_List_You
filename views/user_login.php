@@ -1,7 +1,6 @@
 
 <div class="row">
-<div class="large-2 columns"></div>
-<div class="large-4 columns">
+<div class="large-5 large-offset-4 columns">
 <form enctype="multipart/form-data" action="?action=loginAction" method="POST">
 	<fieldset>
 
