@@ -5,13 +5,20 @@
 }
 /* table ******************/
 table { 
-	border-radius: 20px;
+	border-radius: 15px;
 	padding:1rem;	  
+}
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 15px;
+}
+
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 15px;
 }
 /* form ******************/
 form { 
 	background-color: #0C56AF;
-	border-radius: 20px;
+	border-radius: 15px;
 	padding:1rem;
 	  
 }
