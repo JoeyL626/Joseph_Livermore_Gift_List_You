@@ -1,5 +1,5 @@
 <div class="row" style = " 
-	width: 100%;
+	width: 95%;
   margin-left: auto;
   margin-right: auto;
   max-width: initial;
