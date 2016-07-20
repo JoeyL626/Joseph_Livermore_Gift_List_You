@@ -1,5 +1,5 @@
 
-<div class="small-6 columns float-right" style = "padding-right: 10rem;">
+<div class="small-6 columns float-right">
 <table>
 <?
 foreach($data[1] as $list){
