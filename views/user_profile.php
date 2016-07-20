@@ -2,7 +2,7 @@
   padding-right: 20rem;">
 
 <div class="row float-left">
-<div class="small-5 offset-1 columns">
+<div class="small-4 large-offset-1 columns">
 <table>
 <tr>
 <th>Name</th>
