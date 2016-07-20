@@ -5,37 +5,11 @@
 }
 /* table ******************/
 table { 
-	border-radius: 15px;
+	    border-collapse: collapse;
+    border-radius: 15px;
+    border-style: hidden;
 	padding:1rem;	  
 }
-table tr:last-child td:first-child {
-    border-bottom-left-radius: 15px;
-}
-
-table tr:last-child td:last-child {
-    border-bottom-right-radius: 15px;
-}
-table tr:last-child th:first-child {
-    border-bottom-left-radius: 15px;
-}
-
-table tr:last-child th:last-child {
-    border-bottom-right-radius: 15px;
-}
-table tr:first-child td:last-child {
-    border-bottom-left-radius: 15px;
-}
-
-table tr:first-child td:first-child {
-    border-bottom-right-radius: 15px;
-}
-table tr:first-child th:last-child {
-    border-bottom-left-radius: 15px;
-}
-
-table tr:first-child th:first-child {
-    border-bottom-right-radius: 15px;
-}first
 /* form ******************/
 form { 
 	background-color: #0C56AF;
