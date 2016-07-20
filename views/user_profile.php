@@ -1,6 +1,6 @@
 <div class="row" style = "padding-right: 35rem;">
-<div class="row float-left">
-<div class="small-5 columns" style = "padding-left: 2rem;">
+<div class="row float-left" style = "padding-left: 2rem;">
+<div class="small-5 columns" >
 <table>
 <tr>
 <th>Name</th>
