@@ -1,5 +1,6 @@
-<div class="row hide-for-small-only" style="background-color: #0C56AF;">
-<div class="large-6 small-4 small-centered columns">
+<div class="row hide-for-small-only" >
+<div class="large-6 small-4 small-centered columns" style="background-color: #0C56AF;
+border-radius: 20px;">
 <form enctype="multipart/form-data" action="?action=signupAction" method="POST">
 	<fieldset>
 
