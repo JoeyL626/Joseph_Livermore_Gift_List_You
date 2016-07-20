@@ -1,6 +1,6 @@
 
 <div class="row">
-<div class="large-6 large-offset-3 columns">
+<div class="large-6 small-4 small-centered columns">
 <form enctype="multipart/form-data" action="?action=loginAction" method="POST">
 	<fieldset>
 
