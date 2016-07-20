@@ -1,5 +1,4 @@
 <div class="row" style = "
-  max-width: initial;
   padding: 0.0rem 3.636rem 0.0rem 3.636rem;">
 
 <div class="row float-left">
