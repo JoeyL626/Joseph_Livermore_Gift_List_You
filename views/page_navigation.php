@@ -1,12 +1,24 @@
 <div class="large-6 small-4 small-centered columns">
 <form enctype="multipart/form-data" action="?action=loginAction" method="POST">
 	<fieldset>
+		
+		<div class="row">
+    	<div class="medium-4 columns">
+				<input type="text" name="email" value="" placeholder="email" />
+			</div>
+		</div>
 
-		<input type="text" name="email" value="" placeholder="email" />
+		<div class="row">
+    	<div class="medium-4 columns">
+				<input type="password" name="password" value="" placeholder="password"/>
+			</div>
+		</div>
 
-		<input type="password" name="password" value="" placeholder="password"/>
-
-    <input type="submit" name="submit" value="Login"/>
+		<div class="row">
+    	<div class="medium-4 columns">
+    		<input type="submit" name="submit" value="Login"/>
+    	</div>
+    </div>
 
   </fieldset>
 </form>
