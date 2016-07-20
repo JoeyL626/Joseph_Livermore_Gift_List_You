@@ -1,8 +1,8 @@
 
 <div class="small-5 columns float-right">
 <table>
-<th width="150">Event</th>
-<th width="300">Address</th>
+<th width="300">Event</th>
+<th width="600">Address</th>
 <th>Edit</th>
 <th>Items</th>
 <?
