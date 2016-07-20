@@ -1,5 +1,5 @@
 
-<div class="small-4 columns">
+<div class="small-4 columns float-left">
 <form enctype="multipart/form-data" action="?action=addListAction" method="POST">
 	<fieldset>
 
