@@ -1,5 +1,5 @@
-<div class="row float-left">
-<div class="small-5 columns end">
+<div class="row">
+<div class="small-5 large-offset-2 columns end">
 <table>
 <tr>
 <th>Name</th>
