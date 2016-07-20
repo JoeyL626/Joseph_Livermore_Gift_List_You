@@ -1,4 +1,5 @@
-
+<div class="row">
+<div class="large-6 small-4 small-centered columns">
 <form enctype="multipart/form-data" action="?action=signupAction" method="POST">
 	<fieldset>
 
@@ -72,3 +73,5 @@
 
   </fieldset>
 </form>
+</div>
+</div>

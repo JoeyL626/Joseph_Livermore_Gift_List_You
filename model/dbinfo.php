@@ -42,10 +42,10 @@ class dbinfo{
 		
 	}
 	
-	public function updateUser($uid,$nname){
+	public function updateUser($uid,$nname,$email,$address,$city,$state,$zip){
 		
-		$st = $this->pdo->prepare("update users set name = :nu where id = :uid");
-		$st->execute(array(":nu"=>$nname,":uid"=>$uid));
+		$st = $this->pdo->prepare("update users set name = :nu,email = :em,address = :ad,city = :ci,state = :st,zip = :zi where id = :uid");
+		$st->execute(array(":nu"=>$nname,":em"=>$email,":ad"=>$address,":ci"=>$city,":st"=>$state,":zi"=>$zip,":uid"=>$uid));
 	}
 	
 	public function deleteUser($uid){
