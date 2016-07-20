@@ -1,9 +1,4 @@
-<div class="row" style = " 
-	width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: initial;
-  padding: 0.0rem 3.636rem 0.0rem 3.636rem;">
+<div class="row" >
 
 <div class="row float-left">
 <div class="small-5 columns">
