@@ -1,5 +1,6 @@
 <div class="row">
-<table class="small-5 large-offset-1 columns">
+<div class="small-5 large-offset-1 columns">
+<table>
 <tr>
 <th>Name</th>
 <td><? echo $data[0][0]["name"]?></td>
@@ -25,6 +26,6 @@
 <td><? echo $data[0][0]["zip"]?></td>
 </tr>
 </table>
-
+</div>
 
 

@@ -1,4 +1,5 @@
-<table class="small-5 columns">
+<div class="small-5 columns">
+<table>
 <?
 foreach($data[1] as $list){
 ?>
@@ -13,9 +14,9 @@ foreach($data[1] as $list){
 <th align=left><a href="?action=deleteListAction&id=<? echo $list['list_id']?>">Delete List</a></th>
 <th align=left><a href="?action=itemView&id=<? echo $list['list_id']?>">View Items</a></th>
 </tr>
-<tr>
 <?
 }
 ?>
 
 </table>
+</div>
