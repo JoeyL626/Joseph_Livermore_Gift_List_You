@@ -1,5 +1,6 @@
 <div class="row" style = " 
-  padding-right: 20rem;">
+	width: 70%;
+  padding-right: 20 rem;">
 
 <div class="row float-left">
 <div class="small-5 columns">
