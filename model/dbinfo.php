@@ -82,8 +82,8 @@ class dbinfo{
 
 	public function addList($name,$event,$address,$city,$state,$zip,$userid){
 		
-		$st = $this->pdo->prepare("insert into lists(name,event,address,city,state,zip,user_id) values(:na,:ev,:ad,:ci,:st,:zi,:ui)");
-		$st->execute(array(":na"=>$name,":ev"=>$event,":ad"=>$address,":ci"=>$city,":st"=>$state,":zi"=>$zip,":ui"=>$userid));
+		$st = $this->pdo->prepare("insert into lists(event,address,city,state,zip,user_id) values(:na,:ev,:ad,:ci,:st,:zi,:ui)");
+		$st->execute(array(":ev"=>$event,":ad"=>$address,":ci"=>$city,":st"=>$state,":zi"=>$zip,":ui"=>$userid));
 		
 	}
 
@@ -109,7 +109,7 @@ class dbinfo{
 
 	public function getUserListsName($uid){
 		
-		$st = $this->pdo->prepare("select list_id, name, event from lists where user_id=:id");
+		$st = $this->pdo->prepare("select list_id, event from lists where user_id=:id");
 		$st->execute(array(":id"=>$uid));
 		
 		$result = $st->fetchAll();
@@ -129,8 +129,8 @@ class dbinfo{
 
 	public function updateList($lid,$name,$event,$address,$city,$state,$zip){
 		
-		$st = $this->pdo->prepare("update lists set name = :nu,event = :ev,address = :ad,city = :ci,state = :st,zip = :zi where list_id = :lid");
-		$st->execute(array(":lid"=>$lid,":nu"=>$name,":ev"=>$event,":ad"=>$address,":ci"=>$city,":st"=>$state,":zi"=>$zip));
+		$st = $this->pdo->prepare("update lists set event = :ev,address = :ad,city = :ci,state = :st,zip = :zi where list_id = :lid");
+		$st->execute(array(":lid"=>$lid,":ev"=>$event,":ad"=>$address,":ci"=>$city,":st"=>$state,":zi"=>$zip));
 	}
 
 	public function deleteList($lid){

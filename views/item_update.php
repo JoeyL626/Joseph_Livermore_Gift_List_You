@@ -10,7 +10,7 @@
 		Price: <input type="text" name="price" value="" placeholder="<? echo $data[0][0]["price"]?>" />
 
 		List :<select name="list">
-								<option value="<? echo $data[1][0]["list_id"]?>"> $data[1][0]["event"]?></option>
+								<option value="<? echo $data[1][0]["list_id"]?>"> <? echo $data[1][0]["event"]?></option>
 							<?
 								foreach($data[2] as $list){
 							?>

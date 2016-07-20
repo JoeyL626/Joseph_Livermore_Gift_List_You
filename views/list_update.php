@@ -5,10 +5,8 @@
 
 					<input type="hidden" name="list_id" value="<? echo $data[0]["list_id"]?>"/>
 
-		Name :<input type="text" name="name" value="" placeholder="<? echo $data[0]["name"]?>" />
-
 		Event :<select name="event">
-    					<option value="$data[0]["event"]">$data[0]["event"]</option>
+    					<option value="<? echo $data[0]['event']?>"><? echo $data[0]["event"]?></option>
     					<option value="Mothers' Day">Mothers' Day</option>
 							<option value="Valentine's Day">Valentine's Day</option>
 							<option value="Easter">Easter</option>
@@ -25,7 +23,7 @@
 		City: <input type="text" name="city" value="" placeholder="<? echo $data[0]['city']?>" />
 
 		State: <select name="state" value="">
-    					<option value="$data[0]["state"]">$data[0]["state"]</option>
+    					<option value="<? echo $data[0]['state']?>"><? echo $data[0]["state"]?></option>
     					<option value="AL">Alabama</option>
 							<option value="AK">Alaska</option>
 							<option value="AZ">Arizona</option>

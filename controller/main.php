@@ -166,7 +166,7 @@ if(!empty($_GET["action"])){
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
-	 		$data = $dbinfo->addList($_POST["name"],$_POST["event"],$_POST["address"],
+	 		$data = $dbinfo->addList($_POST["event"],$_POST["address"],
 			$_POST["city"],$_POST["state"],$_POST["zip"],$_SESSION["userid"]);
 	 	
 	 		header("Location: http://gift-list-you.herokuapp.com/?action=profile");
@@ -212,7 +212,7 @@ if(!empty($_GET["action"])){
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
-	 	$data = $dbinfo->updateList($_POST["list_id"],$_POST["name"],$_POST["event"],$_POST["address"],$_POST["city"],$_POST["state"],$_POST["zip"]);
+	 	$data = $dbinfo->updateList($_POST["list_id"],$_POST["event"],$_POST["address"],$_POST["city"],$_POST["state"],$_POST["zip"]);
 	 	
 	 	header("Location: http://gift-list-you.herokuapp.com/?action=profile");
 		
