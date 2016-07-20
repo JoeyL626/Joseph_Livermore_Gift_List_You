@@ -8,7 +8,7 @@
 			?>
 				<li id="<?php echo $item['item_id']; ?>">
 				<span>
-				<div class="row">
+				<div class="row" style="padding-left:1rem;">
 				<div class="small-3 columns">
 				<? echo $item["name"]?>
 				</div>
