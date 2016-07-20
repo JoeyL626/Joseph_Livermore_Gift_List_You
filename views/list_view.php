@@ -1,4 +1,4 @@
-
+<div class="row  float-right">
 <div class="small-4 columns">
 <table>
 <?
@@ -20,5 +20,6 @@ foreach($data[1] as $list){
 ?>
 
 </table>
+</div>
 </div>
 
