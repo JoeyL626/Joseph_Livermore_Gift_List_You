@@ -1,4 +1,5 @@
 <div class="row" style = "
+	width: 62.5rem;
   padding-right: 3.636rem;">
 
 <div class="row float-left">
