@@ -9,6 +9,11 @@ session_start();
 if(!empty($_GET["action"])){
 
 
+//****************************************************************************************************
+//                       This is the controller for the user
+//****************************************************************************************************
+
+
 	if($_GET["action"]=="loginAction"){
 		
 		$data = $dbinfo->checkLogin($_POST["email"],$_POST["password"]);
@@ -76,27 +81,6 @@ if(!empty($_GET["action"])){
 			$views->getView("views/user_profile.php",$data);
 			$views->getView("views/list_add.php");
 			$views->getView("views/list_view.php",$data);
-			$views->getView("views/page_footer.php");
-	 	
-	 	}
-
-	}else if($_GET["action"]=="itemView"){
-	
-		if(!isset($_SESSION["isloggedin"])){
-	 		
-	 		$views->getView("views/page_header.php");
-	 		$views->getView("views/page_navigation.php");
-			$views->getView("views/user_login.php");
-			$views->getView("views/page_footer.php"); 
-	 	
-	 	}else if($_SESSION["isloggedin"] == 1){
-
-	 		$data[0] = $dbinfo->getUserList($_GET["id"]);
-	 		$data[1] = $dbinfo->getListItems($_GET["id"]);
-
-	 		$views->getView("views/page_header.php");
-	 		$views->getView("views/page_navigation2.php");
-			$views->getView("views/item_view.php",$data);
 			$views->getView("views/page_footer.php");
 	 	
 	 	}
@@ -174,7 +158,13 @@ if(!empty($_GET["action"])){
 	 		header("Location: http://gift-list-you.herokuapp.com/?action=profile");
 		
 		}
+
+
+//****************************************************************************************************
+//                       This is the controller for the list
+//****************************************************************************************************
 		
+
 	}else if($_GET["action"]=="addListAction"){
 	
 		if(!isset($_SESSION["isloggedin"])){
@@ -247,6 +237,12 @@ if(!empty($_GET["action"])){
 		
 		}
 
+
+//****************************************************************************************************
+//                       This is the controller for the item
+//****************************************************************************************************
+
+
 	}else if($_GET["action"]=="addItemButton"){
 	
 		if(!isset($_SESSION["isloggedin"])){
@@ -285,6 +281,27 @@ if(!empty($_GET["action"])){
 	 	header("Location: http://gift-list-you.herokuapp.com/?action=profile");
 		
 		}
+
+	}else if($_GET["action"]=="itemView"){
+	
+		if(!isset($_SESSION["isloggedin"])){
+	 		
+	 		$views->getView("views/page_header.php");
+	 		$views->getView("views/page_navigation.php");
+			$views->getView("views/user_login.php");
+			$views->getView("views/page_footer.php"); 
+	 	
+	 	}else if($_SESSION["isloggedin"] == 1){
+
+	 		$data[0] = $dbinfo->getUserList($_GET["id"]);
+	 		$data[1] = $dbinfo->getListItems($_GET["id"]);
+
+	 		$views->getView("views/page_header.php");
+	 		$views->getView("views/page_navigation2.php");
+			$views->getView("views/item_view.php",$data);
+			$views->getView("views/page_footer.php");
+	 	
+	 	}
 
 	}else if($_GET["action"]=="deleteItemAction"){
 	
@@ -343,6 +360,12 @@ if(!empty($_GET["action"])){
 		
 		}
 
+
+//****************************************************************************************************
+//                       This is the controller for the facebook share
+//****************************************************************************************************
+
+
 	}else if($_GET["action"]=="shareView"){
 	
 	 		$data[0] = $dbinfo->getListItems($_GET["list_id"]);
@@ -354,6 +377,12 @@ if(!empty($_GET["action"])){
 			$views->getView("views/share_user_profile.php",$data);
 			$views->getView("views/share_item_view.php",$data);
 			$views->getView("views/footer.php"); 
+
+
+//****************************************************************************************************
+//                       This is the controller for the chrome extension
+//****************************************************************************************************
+
 
 	}else if($_GET["action"]=="chromeLogin"){
 	
