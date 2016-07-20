@@ -1,6 +1,5 @@
 <div class="row">
-<div class="row  float-left">
-<div class="small-12 columns">
+<div class="row">
 <div class="small-4 columns">
 <table>
 <tr>
@@ -28,7 +27,6 @@
 <td><? echo $data[0][0]["zip"]?></td>
 </tr>
 </table>
-</div>
 </div>
 
 
