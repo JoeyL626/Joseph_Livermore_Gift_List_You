@@ -127,7 +127,7 @@ class dbinfo{
 	
 	}
 
-	public function updateList($lid,$name,$event,$address,$city,$state,$zip){
+	public function updateList($lid,$event,$address,$city,$state,$zip){
 		
 		$st = $this->pdo->prepare("update lists set event = :ev,address = :ad,city = :ci,state = :st,zip = :zi where list_id = :lid");
 		$st->execute(array(":lid"=>$lid,":ev"=>$event,":ad"=>$address,":ci"=>$city,":st"=>$state,":zi"=>$zip));
