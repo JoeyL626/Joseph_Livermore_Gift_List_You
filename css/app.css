@@ -60,14 +60,7 @@ form {
 	border-radius: 5px;
 	color: #333333;
 }
-#sortable li span {
 
-	width: 30px;
-	height: 75px; 
-	display: inline-block;
-	float: left;
-	cursor: move;
-}
 #sortable li div {
 	padding: 5px;
 }
