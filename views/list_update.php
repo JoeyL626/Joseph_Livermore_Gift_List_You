@@ -1,4 +1,5 @@
-
+<div class="row">
+<div class="large-6 small-4 small-centered columns">
 <form enctype="multipart/form-data" action="?action=updateListAction" method="POST">
 	<fieldset>
 
@@ -83,6 +84,8 @@
 		Zip: <input type="text" name="zip" value="" placeholder="<? echo $data[0]['zip']?>" /><br>
 
 		  	 <input type="submit" name="submit" value="Update List"/>
+		  	 <a class="button" href="?action=deleteListAction&id=<? echo $data[0]["list_id"]?>">Delete List</a>
   </fieldset>
 </form>
+</div></div>
 <a class="button" href="?action=deleteListAction&id=<? echo $data[0]["list_id"]?>">Delete List</a>
