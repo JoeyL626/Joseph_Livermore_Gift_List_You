@@ -1,6 +1,6 @@
 
 <div class="row">
-
+<div class="small-2 columns"></div>
 <div class="small-8 columns">
 <form enctype="multipart/form-data" action="?action=loginAction" method="POST">
 	<fieldset>
@@ -14,4 +14,5 @@
   </fieldset>
 </form>
 </div>
+<div class="small-2 columns"></div>
 </div>
