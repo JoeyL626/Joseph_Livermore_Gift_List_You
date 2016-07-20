@@ -1,4 +1,4 @@
-<table width=60%>
+<table>
 <tr>
 <th align=left><? echo $data[1][0]["name"]?></th>
 <th align=left><? echo $data[1][0]["event"]?></th>
