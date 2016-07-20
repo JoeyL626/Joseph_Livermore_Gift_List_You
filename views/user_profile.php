@@ -1,6 +1,10 @@
-<div class="row">
+<div class="row" style = " 
+	width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: initial;">
 <div class="row float-left">
-<div class="small-5 columns float-left">
+<div class="small-5 columns">
 <table>
 <tr>
 <th>Name</th>
