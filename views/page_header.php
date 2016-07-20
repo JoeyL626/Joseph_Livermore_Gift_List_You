@@ -29,7 +29,8 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <div class="row" id="header">
-  <div class="large-12 columns">
+  <div class="large-6 columns">
 
 	<h1> Gift List You </h1>
+</div>
 

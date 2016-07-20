@@ -40,15 +40,20 @@ if(!empty($_GET["action"])){
 
 		session_unset(); 
 		session_destroy();
-		$views->getView("views/page_header.php");
-	 	$views->getView("views/page_navigation.php");
-		$views->getView("views/user_login.php");
-		$views->getView("views/page_footer.php");
+		header("Location: http://gift-list-you.herokuapp.com/?action=login");
 
 	}else if($_GET["action"]=="signup"){
 
 		$views->getView("views/page_header.php");
 	 	$views->getView("views/page_navigation.php");
+		$views->getView("views/user_signup.php");
+		$views->getView("views/page_footer.php");
+
+	}else if($_GET["action"]=="login"){
+
+		$views->getView("views/page_header.php");
+	 	$views->getView("views/page_navigation.php");
+	 	$views->getView("views/user_login.php");
 		$views->getView("views/user_signup.php");
 		$views->getView("views/page_footer.php");
 
@@ -66,10 +71,7 @@ if(!empty($_GET["action"])){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
-	 		$views->getView("views/page_header.php");
-	 		$views->getView("views/page_navigation.php");
-			$views->getView("views/user_login.php");
-			$views->getView("views/page_footer.php"); 
+			header("Location: http://gift-list-you.herokuapp.com/?action=login"); 
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
@@ -89,10 +91,7 @@ if(!empty($_GET["action"])){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
-	 		$views->getView("views/page_header.php");
-	 		$views->getView("views/page_navigation.php");
-			$views->getView("views/user_login.php");
-			$views->getView("views/page_footer.php"); 
+	 		header("Location: http://gift-list-you.herokuapp.com/?action=login"); 
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
@@ -109,10 +108,7 @@ if(!empty($_GET["action"])){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
-	 		$views->getView("views/page_header.php");
-	 		$views->getView("views/page_navigation.php");
-			$views->getView("views/user_login.php");
-			$views->getView("views/page_footer.php"); 
+	 		header("Location: http://gift-list-you.herokuapp.com/?action=login"); 
 	 	
 		}else if($_SESSION["isloggedin"] == 1){
 
@@ -122,10 +118,7 @@ if(!empty($_GET["action"])){
 	 	session_unset(); 
 		session_destroy();
 	
-	 	$views->getView("views/page_header.php");
-	 	$views->getView("views/page_navigation.php");
-		$views->getView("views/user_login.php");
-		$views->getView("views/page_footer.php");
+	 	header("Location: http://gift-list-you.herokuapp.com/?action=login");
 		
 		}
 
@@ -133,10 +126,7 @@ if(!empty($_GET["action"])){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
-	 		$views->getView("views/page_header.php");
-	 		$views->getView("views/page_navigation.php");
-			$views->getView("views/user_login.php");
-			$views->getView("views/page_footer.php"); 
+	 		header("Location: http://gift-list-you.herokuapp.com/?action=login"); 
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
@@ -153,10 +143,7 @@ if(!empty($_GET["action"])){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
-	 		$views->getView("views/page_header.php");
-	 		$views->getView("views/page_navigation.php");
-			$views->getView("views/user_login.php");
-			$views->getView("views/page_footer.php"); 
+	 		header("Location: http://gift-list-you.herokuapp.com/?action=login"); 
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
@@ -175,10 +162,7 @@ if(!empty($_GET["action"])){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
-	 		$views->getView("views/page_header.php");
-	 		$views->getView("views/page_navigation.php");
-			$views->getView("views/user_login.php");
-			$views->getView("views/page_footer.php"); 
+	 		header("Location: http://gift-list-you.herokuapp.com/?action=login"); 
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
@@ -193,10 +177,7 @@ if(!empty($_GET["action"])){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
-	 		$views->getView("views/page_header.php");
-	 		$views->getView("views/page_navigation.php");
-			$views->getView("views/user_login.php");
-			$views->getView("views/page_footer.php"); 
+	 		header("Location: http://gift-list-you.herokuapp.com/?action=login"); 
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
@@ -210,10 +191,7 @@ if(!empty($_GET["action"])){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
-	 		$views->getView("views/page_header.php");
-	 		$views->getView("views/page_navigation.php");
-			$views->getView("views/user_login.php");
-			$views->getView("views/page_footer.php"); 
+	 		header("Location: http://gift-list-you.herokuapp.com/?action=login"); 
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
@@ -230,10 +208,7 @@ if(!empty($_GET["action"])){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
-	 		$views->getView("views/page_header.php");
-	 		$views->getView("views/page_navigation.php");
-			$views->getView("views/user_login.php");
-			$views->getView("views/page_footer.php"); 
+	 		header("Location: http://gift-list-you.herokuapp.com/?action=login"); 
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
@@ -253,10 +228,7 @@ if(!empty($_GET["action"])){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
-	 		$views->getView("views/page_header.php");
-	 		$views->getView("views/page_navigation.php");
-			$views->getView("views/user_login.php");
-			$views->getView("views/page_footer.php"); 
+	 		header("Location: http://gift-list-you.herokuapp.com/?action=login"); 
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
@@ -273,10 +245,7 @@ if(!empty($_GET["action"])){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
-	 		$views->getView("views/page_header.php");
-	 		$views->getView("views/page_navigation.php");
-			$views->getView("views/user_login.php");
-			$views->getView("views/page_footer.php"); 
+	 		header("Location: http://gift-list-you.herokuapp.com/?action=login"); 
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
@@ -292,10 +261,7 @@ if(!empty($_GET["action"])){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
-	 		$views->getView("views/page_header.php");
-	 		$views->getView("views/page_navigation.php");
-			$views->getView("views/user_login.php");
-			$views->getView("views/page_footer.php"); 
+	 		header("Location: http://gift-list-you.herokuapp.com/?action=login"); 
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
@@ -313,10 +279,7 @@ if(!empty($_GET["action"])){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
-	 		$views->getView("views/page_header.php");
-	 		$views->getView("views/page_navigation.php");
-			$views->getView("views/user_login.php");
-			$views->getView("views/page_footer.php"); 
+	 		header("Location: http://gift-list-you.herokuapp.com/?action=login"); 
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
@@ -330,10 +293,7 @@ if(!empty($_GET["action"])){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
-	 		$views->getView("views/page_header.php");
-	 		$views->getView("views/page_navigation.php");
-			$views->getView("views/user_login.php");
-			$views->getView("views/page_footer.php"); 
+	 		header("Location: http://gift-list-you.herokuapp.com/?action=login"); 
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
@@ -353,10 +313,7 @@ if(!empty($_GET["action"])){
 	
 		if(!isset($_SESSION["isloggedin"])){
 	 		
-	 		$views->getView("views/page_header.php");
-	 		$views->getView("views/page_navigation.php");
-			$views->getView("views/user_login.php");
-			$views->getView("views/page_footer.php"); 
+	 		header("Location: http://gift-list-you.herokuapp.com/?action=login"); 
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
@@ -490,20 +447,14 @@ if(!empty($_GET["action"])){
 
 	}else{
 			
-		$views->getView("views/page_header.php");
-	 	$views->getView("views/page_navigation.php");
-		$views->getView("views/user_login.php");
-		$views->getView("views/page_footer.php");
+		header("Location: http://gift-list-you.herokuapp.com/?action=login");
 
 	}
 
 	
 }else{
 
-  $views->getView("views/page_header.php");
-	$views->getView("views/page_navigation.php");
-	$views->getView("views/user_login.php");
-	$views->getView("views/page_footer.php");
+  header("Location: http://gift-list-you.herokuapp.com/?action=login");
 
 }
 
