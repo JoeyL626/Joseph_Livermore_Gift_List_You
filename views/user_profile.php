@@ -1,5 +1,5 @@
-<h2>User Info</h2>
-<table width=40%>
+<div class="row">
+<table class="small-5 large-offset-1 columns">
 <tr>
 <th>Name</th>
 <td><? echo $data[0][0]["name"]?></td>
@@ -26,14 +26,5 @@
 </tr>
 </table>
 
-<br>
-
-<a href="?action=updateUserButton">Edit Profile?</a>
-<a href="?action=deleteUserButton">Delete Account?</a>
-<a href="?action=addItemButton">Add Item</a>
-
-<br>
-<br>
-<br>
 
 

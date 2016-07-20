@@ -1,4 +1,4 @@
-<table width=60%>
+<table class="small-5 columns">
 <?
 foreach($data[1] as $list){
 ?>
