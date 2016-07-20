@@ -1,4 +1,4 @@
-<nav>
+
 	<ul class="dropdown menu-centered" data-dropdown-menu>
 	  <li>
 		  <a>Menu</a>
@@ -9,6 +9,6 @@
 				</ul>
 		</li>
 	</ul>
-</nav>
+
 </header>
 <br>
