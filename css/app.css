@@ -6,6 +6,14 @@
 table { 
 	color: #fff;  
 }
+
+#eventLength { 
+	width: 6rem;   
+}
+
+#addressLength { 
+	width: 9rem;   
+}
 /* buttons ******************/
 .listButton { 
 	width: 6rem;  
