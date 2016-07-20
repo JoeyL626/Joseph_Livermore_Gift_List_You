@@ -182,6 +182,7 @@ if(!empty($_GET["action"])){
 	 	}else if($_SESSION["isloggedin"] == 1){
 
 	 	$data = $dbinfo->deleteList($_GET["id"]);
+	 	$data = $dbinfo->deleteListItems($_GET["id"]);
 	 	
 	 	header("Location: http://gift-list-you.herokuapp.com/?action=profile");
 		
