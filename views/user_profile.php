@@ -1,6 +1,9 @@
-<div class="row" style = "
-	width: 62.5rem;
-  padding-right: 5 rem;">
+<div class="row" style = " 
+	width: 65rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: initial;
+  padding: 0.0rem 3.636rem 0.0rem 3.636rem;">
 
 <div class="row float-left">
 <div class="small-5 columns">
