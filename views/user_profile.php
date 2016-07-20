@@ -1,11 +1,8 @@
-<div class="row" style = " 
-	width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 20px;">
+<div class="row" style = "
+  padding-right: 20rem;">
 
 <div class="row float-left">
-<div class="small-5 columns">
+<div class="small-5 offset-1 columns">
 <table>
 <tr>
 <th>Name</th>
