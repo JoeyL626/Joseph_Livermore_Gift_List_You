@@ -32,6 +32,18 @@ class dbinfo{
 		
 		return $result;
 	}
+
+	public function getUserId($email=''){
+
+		$salt="Joeysendallbeallnogettingpasts.a.l.t.thatissecureascanbe";
+		
+		$st = $this->pdo->prepare("select * from users where email = :em");
+		$st->execute(array(":em"=>$email));
+		
+		$result = $st->fetchAll();
+		
+		return $result;
+	}
 	
 	public function addUser($name,$email,$passw,$address,$city,$state,$zip){
 		
