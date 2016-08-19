@@ -1,7 +1,7 @@
 <?
 include 'model/views.php';
 include 'model/dbinfo.php';
-require_once __DIR__ . '../facebook-sdk-v5/autoload.php';
+require_once __DIR__ . '/facebook-sdk-v5/autoload.php';
 
 $views = new views();
 $dbinfo = new dbinfo();
@@ -43,7 +43,7 @@ if(!empty($_GET["action"])){
 //****************************************************************************************************
 
 
-		$fb = new Facebook\Facebook([
+	$fb = new Facebook\Facebook([
   'app_id' => '{1766483266905544}', // Replace {app-id} with your app id
   'app_secret' => '{67a267e941fbd2f9b4985b4c133488ea}',
   'default_graph_version' => 'v2.2',
