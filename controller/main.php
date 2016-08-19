@@ -1,7 +1,7 @@
 <?
 include 'model/views.php';
 include 'model/dbinfo.php';
-require_once __DIR__ . '/facebook-sdk-v5/autoload.php';
+require_once __DIR__ . '../facebook-sdk-v5/autoload.php';
 
 $views = new views();
 $dbinfo = new dbinfo();
