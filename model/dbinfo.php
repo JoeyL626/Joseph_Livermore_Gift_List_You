@@ -92,7 +92,7 @@ class dbinfo{
 //****************************************************************************************************
 
 
-	public function addList($name,$event,$address,$city,$state,$zip,$userid){
+	public function addList($event,$address,$city,$state,$zip,$userid){
 		
 		$st = $this->pdo->prepare("insert into lists(event,address,city,state,zip,user_id) values(:na,:ev,:ad,:ci,:st,:zi,:ui)");
 		$st->execute(array(":ev"=>$event,":ad"=>$address,":ci"=>$city,":st"=>$state,":zi"=>$zip,":ui"=>$userid));
