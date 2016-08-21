@@ -1,5 +1,5 @@
-<div class="row hide-for-large-only">
-<div class="medium-12 columns">
+<div class="row">
+<div class="medium-12 columns hide-for-large-only">
 <form enctype="multipart/form-data" action="?action=addListAction" method="POST">
 	<fieldset>
 
