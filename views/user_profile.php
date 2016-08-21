@@ -1,5 +1,5 @@
 <div class="row" style="padding-left: 1rem;">
-<div class="medium-5 columns" style="padding-left: 1.4rem;">
+<div class="large-5 medium-10 columns" style="padding-left: 1.4rem;">
 <table >
 <tr>
 <th>Name</th>
