@@ -1,4 +1,4 @@
-<div class="hide-for-large-only">
+<div class="hide-for-extra-large-only">
 <div class="row">
 <div class="medium-12 columns">
 <form enctype="multipart/form-data" action="?action=addListAction" method="POST">
