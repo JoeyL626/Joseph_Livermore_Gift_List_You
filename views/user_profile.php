@@ -1,6 +1,5 @@
 <div class="row" style="padding-left: 1rem;">
-<div class="row float-left"  >
-<div class="small-8 columns" style="padding-left: 1.4rem;">
+<div class="small-5 columns" style="padding-left: 1.4rem;">
 <table >
 <tr>
 <th>Name</th>
@@ -15,8 +14,7 @@
 <td><? echo $data[0][0]["address"]." ".$data[0][0]["city"].", ".$data[0][0]["state"]." ".$data[0][0]["zip"]?></td>
 </tr>
 </table>
-</div>
-</div>
+
 
 
 

@@ -1,6 +1,5 @@
 
-<div class="small-7 columns float-right" style="border-radius: 15px;">
-<div style = "widt:100%;">
+<div class="small-6 columns float-right" style="border-radius: 15px;">
 <table>
 <tr>
 <th width="250">Event</th>

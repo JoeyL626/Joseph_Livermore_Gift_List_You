@@ -1,5 +1,3 @@
-<div class="row">
-<div class="small-5 columns">
 <form enctype="multipart/form-data" action="?action=addListAction" method="POST">
 	<fieldset>
 
@@ -79,7 +77,5 @@
 
   </fieldset>
 </form>
-</div>
-</div>
 </div>
 
