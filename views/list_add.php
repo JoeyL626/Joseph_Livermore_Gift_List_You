@@ -1,4 +1,4 @@
-<div class="show-for-medium">
+<div class="show-for-large">
 <form enctype="multipart/form-data" action="?action=addListAction" method="POST">
 	<fieldset>
 
