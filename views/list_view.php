@@ -1,5 +1,5 @@
 
-<div class="large-7 medium-10 columns float-right" style="border-radius: 15px;">
+<div class="large-7 medium-12 columns float-right" style="border-radius: 15px;">
 <table>
 <tr>
 <th width="250">Event</th>
