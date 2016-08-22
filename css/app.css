@@ -53,7 +53,8 @@ form {
 	text-align: left; 
 }
 #sortable li { 
-	margin-top: 10px; 
+	margin-top: 10px;
+	height: 75px; 
 	background: #4A84CA;
 	border: 1px solid #999999;
 	border-radius: 5px;
