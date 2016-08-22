@@ -1,4 +1,4 @@
-<div class="row hide-for-small-only">
+<div id="header" class="row hide-for-small-only">
   <div class="large-6 columns">
 
 		<h1> Gift List You </h1>
@@ -29,7 +29,7 @@
 </form>
 </div>
 
-<div class="row show-for-small-only">
+<div id="header" class="row show-for-small-only">
   <div class="large-6 columns">
 
 		<h1> Gift List You </h1>
