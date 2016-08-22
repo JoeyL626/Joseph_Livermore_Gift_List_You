@@ -69,7 +69,7 @@ form {
     line-height: 20px;
 }
 
-@media (max-width: 643px) { 
+@media (max-width: 662px) { 
 	
 	#sortable li { 
 	height: 125px; 
