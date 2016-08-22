@@ -4,8 +4,8 @@
 			<?
 			foreach($data[1] as $item){
 			?>
-				<span>
 				<li id="<?php echo $item['item_id']; ?>">
+				<span>
 				<div class="medium-2 small-6 columns" >
 				<? echo $item["name"]?>
 				</div>
@@ -25,8 +25,8 @@
 				<a class="button" href="?action=deleteItemAction&id=<? echo $item['item_id']?>&list_id=<? echo $item['list_id']?>">Delete Item</a>
 				</div>
 				</div>
-				</li>	
 				</span>
+				</li>	
 			<?
 			}
 			?>
