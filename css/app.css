@@ -61,7 +61,7 @@ form {
 }
 
 #sortable li div {
-	padding: 5px;
+	margin: 5px;
 }
 #sortable li h2 {    
 	font-size: 16px;
