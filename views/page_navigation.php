@@ -1,5 +1,5 @@
 <div id="header" class="row hide-for-small-only">
-  <div class="large-6 medium-4 columns">
+  <div class="medium-6 columns">
 
 		<h1> Gift List You </h1>
 	
