@@ -12,6 +12,7 @@
 <li><a class="button" href="?action=logout">Logout</a></li>
 </ul>
 </div>
+</div>
 
 
 <div class="row show-for-medium-only">
