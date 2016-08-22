@@ -1,7 +1,5 @@
 
 <div class="row">
-  <div class="large-12 medium-8 columns">
-
 		<ul id="sortable">
 			<?
 			foreach($data[1] as $item){
@@ -21,7 +19,6 @@
 				<div class="large-3 columns" >
 				<a class="button" href="?action=updateItemButton&id=<? echo $item['item_id']?>">Edit Item</a>
 				<a class="button" href="?action=deleteItemAction&id=<? echo $item['item_id']?>&list_id=<? echo $item['list_id']?>">Delete Item</a>
-				</div>
 				</div>
 				</span>
 				</li>	
