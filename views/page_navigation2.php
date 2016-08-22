@@ -7,8 +7,8 @@
 		</div>
 		</div>
 	<div class="row">
-		<div class="large-6 medium-8 small-12 medium-centered columns">
-			<ul class="menu align-center">
+		<div class="large-5 medium-7 small-12 medium-centered columns">
+			<ul class="menu">
 				<li><a class="button" href="?action=profile">Profile</a></li>
 				<li><a class="button" href="?action=updateUserButton">Edit Profile</a></li>
 				<li><a class="button" href="?action=addItemButton">Add Item</a></li>
