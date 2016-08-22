@@ -31,7 +31,7 @@
 
 <div id="header" class="show-for-small-only">
 <div class="row">
-  <div class="small-12 small-centered columns">
+  <div class="small-8 small-centered columns">
 
 		<h1> Gift List You </h1>
 	
