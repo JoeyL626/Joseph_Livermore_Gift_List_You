@@ -1,4 +1,9 @@
+<div id="header" class="row">
+  <div class="medium-6 columns">
 
+		<h1> Gift List You </h1>
+	
+	</div>
 	<ul class="dropdown menu-centered" style="list-style: none;" data-dropdown-menu>
 	  <li>
 		  <a class="button">Menu</a>
