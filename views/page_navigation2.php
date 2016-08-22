@@ -1,6 +1,6 @@
 <div id="header">
 <div class="row">
-  <div class="medium-5 medium-centered columns">
+  <div class="medium-7 medium-centered columns">
 
 		<h1> Gift List You </h1>
 	
