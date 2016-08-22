@@ -17,7 +17,7 @@
 				</div>
 				<div class="medium-4 columns hide-for-small-only">
 				<a class="button" href="?action=updateItemButton&id=<? echo $item['item_id']?>">Edit Item</a>
-				<a class="button" href="?action=deleteItemAction&id=<? echo $item['item_id']?>&list_id=<? echo $item['list_id']?>">Delete Item</a>
+				<a class="button float-right" href="?action=deleteItemAction&id=<? echo $item['item_id']?>&list_id=<? echo $item['list_id']?>">Delete Item</a>
 				</div>
 				<div class="row show-for-small-only">
 				<div class="small-7 small-centered columns" >
