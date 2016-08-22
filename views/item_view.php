@@ -9,16 +9,16 @@
 				<li id="<?php echo $item['item_id']; ?>">
 				<span>
 				<div class="row" >
-				<div class="small-2 small-offset-1 columns" >
+				<div class="large-2 large-offset-1 columns" >
 				<? echo $item["name"]?>
 				</div>
-				<div class="small-2 columns" >
+				<div class="large-2 columns" >
 				<? echo $item["url"]?>
 				</div>
-				<div class="small-2 columns" >
+				<div class="large-2 columns" >
 				<? echo $item["price"]?>
 				</div>
-				<div class="small-3 columns" >
+				<div class="large-3 columns" >
 				<a class="button" href="?action=updateItemButton&id=<? echo $item['item_id']?>">Edit Item</a>
 				<a class="button" href="?action=deleteItemAction&id=<? echo $item['item_id']?>&list_id=<? echo $item['list_id']?>">Delete Item</a>
 				</div>
