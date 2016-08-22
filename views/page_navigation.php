@@ -1,5 +1,5 @@
 <div id="header" class="row hide-for-small-only">
-  <div class="medium-5 columns">
+  <div class="large-6 medium-5 columns">
 
 		<h1> Gift List You </h1>
 	
@@ -8,19 +8,19 @@
 	<fieldset>
 		
 		
-    	<div class="medium-2 columns">
+    	<div class="medium-4 columns">
 				<input type="text" name="email" value="" placeholder="email" />
 			</div>
 		
 
 		
-    	<div class="medium-2 columns">
+    	<div class="medium-4 columns">
 				<input type="password" name="password" value="" placeholder="password"/>
 			</div>
 		
 
 
-    	<div class="medium-1 columns">
+    	<div class="medium-4 columns">
     		<input type="submit" name="submit" value="Login"/>
     	</div>
     
