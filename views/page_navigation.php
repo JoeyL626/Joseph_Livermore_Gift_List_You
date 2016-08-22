@@ -40,8 +40,8 @@
 	<div class="row">
 	<div class="small-6 small-centered columns">
 		<ul style="list-style: none;">
-			<li><a class="button" href="?action=signup">Signup</a>
-			<a class="button" href="?action=login">Login</a></li>
+			<li><a class="large button" href="?action=signup">Signup</a>
+			<a class="large button" href="?action=login">Login</a></li>
 		</ul>
 	</div>
 </div>

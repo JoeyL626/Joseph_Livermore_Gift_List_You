@@ -1,5 +1,5 @@
 <div class="row">
-<div class="large-6 small-4 small-centered columns">
+<div class="large-6 small-8 small-centered columns">
 <form enctype="multipart/form-data" action="?action=updateListAction" method="POST">
 	<fieldset>
 
