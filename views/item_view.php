@@ -6,13 +6,13 @@
 			?>
 				<li id="<?php echo $item['item_id']; ?>">
 				<span>
-				<div class="medium-2 small-4 columns" >
+				<div class="medium-2 small-6 columns" >
 				<? echo $item["name"]?>
 				</div>
 				<div class="medium-4 small-4 columns" >
 				<? echo $item["url"]?>
 				</div>
-				<div class="medium-2 small-4 columns" >
+				<div class="medium-2 small-2 columns" >
 				<? echo $item["price"]?>
 				</div>
 				<div class="medium-4 columns hide-for-small-only">
