@@ -175,7 +175,8 @@ if(!empty($_GET["action"])){
 			$views->getView("views/user_profile.php",$data);
 			$views->getView("views/list_add.php");
 			$views->getView("views/list_view.php",$data);
-			$views->getView("views/list_add_mobile.php");
+			$views->getView("views/list_add_medium.php");
+			$views->getView("views/list_add_small.php");
 			$views->getView("views/page_footer.php");
 	 	
 	 	}
