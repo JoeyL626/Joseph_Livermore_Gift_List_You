@@ -1,4 +1,5 @@
-<div id="header" class="row">
+<div id="header">
+<div class="row">
   <div class="medium-5 columns">
 
 		<h1> Gift List You </h1>
