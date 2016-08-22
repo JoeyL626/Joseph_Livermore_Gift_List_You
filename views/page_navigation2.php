@@ -1,6 +1,6 @@
 <div id="header">
 <div class="row">
-  <div class="medium-5 columns">
+  <div class="medium-5 medium-centered columns">
 
 		<h1> Gift List You </h1>
 	
@@ -17,7 +17,7 @@
 
 
 <div class="row show-for-medium-only">
-<div class="medium-8 medium-centered columns">
+<div class="medium-7 medium-centered columns">
 <ul class="menu align-right">
 <li><a class="button" href="?action=profile">Profile</a></li>
 <li><a class="button" href="?action=updateUserButton">Edit Profile</a></li>
@@ -28,7 +28,7 @@
 </div>
 
 <div class="row show-for-small-only">
-<div class="medium-8  medium-centered columns">
+<div class="medium-7  medium-centered columns">
 <ul class="menu align-right">
 <li><a class="button" href="?action=profile">Profile</a></li>
 <li><a class="button" href="?action=updateUserButton">Edit Profile</a></li>
