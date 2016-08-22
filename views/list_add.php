@@ -1,5 +1,5 @@
 <div style="background-color: #0C56AF;" class="show-for-large">
-<h1 style="margin-left: 20px; margin-right: auto;">Create List</h1>
+<h1 style="margin-left: 100px;">Create List</h1>
 <form enctype="multipart/form-data" action="?action=addListAction" method="POST">
 	<fieldset>
 
