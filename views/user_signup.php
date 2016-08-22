@@ -1,5 +1,5 @@
 <div class="row">
-<div class="large-6 small-8 small-centered columns">
+<div class="large-6 medium-8 small-centered columns">
 <form enctype="multipart/form-data" action="?action=signupAction" method="POST">
 	<fieldset>
 
