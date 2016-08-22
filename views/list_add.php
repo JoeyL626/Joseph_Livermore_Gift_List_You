@@ -1,4 +1,5 @@
-<div class="show-for-large">
+<div style="background-color: #0C56AF;" class="show-for-large">
+<h1>Create List</h1>
 <form enctype="multipart/form-data" action="?action=addListAction" method="POST">
 	<fieldset>
 
