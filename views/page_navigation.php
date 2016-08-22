@@ -29,7 +29,7 @@
 </form>
 </div>
 
-<div class="show-for-small-only">
+<div class="row show-for-small-only">
   <div class="large-6 columns">
 
 		<h1> Gift List You </h1>
