@@ -1,4 +1,5 @@
-<div class="show-for-medium-only">
+<div style="background-color: #0C56AF;" class="show-for-medium-only">
+<h1 style="margin-left: 100px;">Create List</h1>
 <div class="row">
 <div class="medium-12 columns">
 <form enctype="multipart/form-data" action="?action=addListAction" method="POST">
