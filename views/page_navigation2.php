@@ -4,7 +4,7 @@
 		<h1> Gift List You </h1>
 	
 	</div>
-<div class="medium-6 columns">
+<div class="medium-6 columns show-for-large-only">
 <ul class="menu align-right">
 <li><a class="button" href="?action=profile">Profile</a></li>
 <li><a class="button" href="?action=updateUserButton">Edit Profile</a></li>
@@ -12,7 +12,7 @@
 <li><a class="button" href="?action=logout">Logout</a></li>
 </ul>
 </div>
-</div>
+
 
 <div class="row show-for-medium-only">
 <div class="medium-6 medium-centered columns">
@@ -35,4 +35,4 @@
 </ul>
 </div>
 </div>
-
+</div>
