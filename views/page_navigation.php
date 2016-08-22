@@ -20,7 +20,7 @@
 		
 
 
-    	<div class="medium-4 columns">
+    	<div class="medium-3 columns">
     		<input type="submit" name="submit" value="Login"/>
     	</div>
     
