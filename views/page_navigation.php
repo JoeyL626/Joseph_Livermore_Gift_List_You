@@ -8,13 +8,13 @@
 	<fieldset>
 		
 		
-    	<div class="medium-3 columns">
+    	<div class="medium-2 columns">
 				<input type="text" name="email" value="" placeholder="email" />
 			</div>
 		
 
 		
-    	<div class="medium-3 columns">
+    	<div class="medium-2 columns">
 				<input type="password" name="password" value="" placeholder="password"/>
 			</div>
 		
