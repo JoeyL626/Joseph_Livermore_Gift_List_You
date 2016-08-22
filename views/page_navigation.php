@@ -1,5 +1,5 @@
 <div id="header" class="row hide-for-small-only">
-  <div class="medium-4 columns">
+  <div class="medium-5 columns">
 
 		<h1> Gift List You </h1>
 	
@@ -20,7 +20,7 @@
 		
 
 
-    	<div class="medium-2 columns">
+    	<div class="medium-1 columns">
     		<input type="submit" name="submit" value="Login"/>
     	</div>
     
