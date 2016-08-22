@@ -1,7 +1,11 @@
 <div class="row show-for-medium-only">
 <div class="medium-12 columns">
 <div style="background-color: #0C56AF;">
-<h1 style="margin-left: auto;">Create List</h1>
+<div class="row">
+<div class="medium-5 medium-centered columns"
+<h1>Create List</h1>
+</div>
+</div>
 <form enctype="multipart/form-data" action="?action=addListAction" method="POST">
 	<fieldset>
 
