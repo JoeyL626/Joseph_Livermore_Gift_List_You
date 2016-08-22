@@ -15,11 +15,9 @@
 				<div class="medium-2 small-4 columns" >
 				<? echo $item["price"]?>
 				</div>
-				<div class="hide-for-small-only">
-				<div class="medium-4 columns">
+				<div class="medium-4 columns hide-for-small-only">
 				<a class="button" href="?action=updateItemButton&id=<? echo $item['item_id']?>">Edit Item</a>
 				<a class="button" href="?action=deleteItemAction&id=<? echo $item['item_id']?>&list_id=<? echo $item['list_id']?>">Delete Item</a>
-				</div>
 				</div>
 				<div class="row show-for-small-only">
 				<div class="small-12 columns" >
