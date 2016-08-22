@@ -38,7 +38,7 @@
 	</div>
 	</div>
 	<div class="row">
-	<div class="small-12 columns show-for-small-only" id="header">
+	<div class="small-8 small-centered columns">
 		<ul class="menu-center" style="list-style: none;">
 			<li><a class="button" href="?action=signup">Signup</a></li>
 			<li><a class="button" href="?action=login">Login</a></li>
