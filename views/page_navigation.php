@@ -31,14 +31,14 @@
 
 <div id="header" class="show-for-small-only">
 <div class="row">
-  <div class="small-8 small-centered columns">
+  <div class="small-6 small-centered columns">
 
 		<h1> Gift List You </h1>
 	
 	</div>
 	</div>
 	<div class="row">
-	<div class="small-8 small-centered columns">
+	<div class="small-6 small-centered columns">
 		<ul class="menu-center" style="list-style: none;">
 			<li><a class="button" href="?action=signup">Signup</a></li>
 			<li><a class="button" href="?action=login">Login</a></li>
