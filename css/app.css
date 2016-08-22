@@ -67,3 +67,12 @@ form {
 	font-size: 16px;
     line-height: 20px;
 }
+
+@media (min-width: 643px) { 
+	
+	#sortable li { 
+	height: 125px; 
+
+}
+
+}
