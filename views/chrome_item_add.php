@@ -19,7 +19,7 @@
 								</select><br>
   	
 <div class="row">
-<div class="medium-3 medium-centered columns">
+<div class="small-3 small-centered columns">
   	<input class="button" type="submit" name="submit" value="Add Item"/>
   	</div>
   	</div>
