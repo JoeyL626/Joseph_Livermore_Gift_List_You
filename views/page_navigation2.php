@@ -20,7 +20,7 @@
 	<div class="row">
 	  <div class="small-6 small-centered columns">
 	
-			<h1 style="font-family: 'Rochester', cursive;"> Gift List You </h1>
+			<h1 style="font-family: 'Rochester', cursive; font-size: 30px;"> Gift List You </h1>
 		
 		</div>
 		</div>
