@@ -1,6 +1,6 @@
 <div class="show-for-large" style="background-color: #2196F3; border-radius:15px;">
 <div class="row">
-<div class="large-4 large-centered columns">
+<div class="large-5 large-centered columns">
 <h2 style="font-family: 'Rochester', cursive;">Create List</h2>
 </div>
 </div>
