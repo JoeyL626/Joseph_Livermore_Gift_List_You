@@ -1,5 +1,5 @@
 <div class="row">
-<div class="medium-5 small-12 columns">
+<div class="medium-6 small-12 columns">
 <div style="background-color: #2196F3; border-top-right-radius:15px; border-top-left-radius:15px;">
 <div class="row">
 <div class="large-6 small-4 small-centered columns">
