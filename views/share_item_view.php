@@ -22,7 +22,7 @@ foreach($data[0] as $list){
 <div style="background-color: #2196F3; border-top-right-radius:15px; border-top-left-radius:15px;">
 <div class="row">
 <div class="large-6 small-4 small-centered columns">
-<h2 style="font-family: 'Rochester', cursive;">User Info</h2>
+<h2 style="font-family: 'Rochester', cursive;">Recipient List</h2>
 </div>
 </div>
 <table>
