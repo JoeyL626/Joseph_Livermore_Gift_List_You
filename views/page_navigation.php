@@ -1,7 +1,7 @@
 <div id="header" class="row hide-for-small-only">
   <div class="medium-6 columns">
 
-		<h1> Gift List You </h1>
+		<h1 style="font-family: 'Kaushan Script', cursive;"> Gift List You </h1>
 	
 	</div>
 <form enctype="multipart/form-data" action="?action=loginAction" method="POST">
@@ -33,7 +33,7 @@
 <div class="row">
   <div class="small-5 small-centered columns">
 
-		<h1> Gift List You </h1>
+		<h1 style="font-family: 'Kaushan Script', cursive;"> Gift List You </h1>
 	
 	</div>
 	</div>
