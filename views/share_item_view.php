@@ -1,5 +1,10 @@
 
 <div class="medium-7 columns hide-for-small-only">
+<div class="row">
+<div class="large-6 small-4 small-centered columns">
+<h2 style="font-family: 'Rochester', cursive;">Recipient List</h2>
+</div>
+</div>
 <table>
 <?
 foreach($data[0] as $list){
