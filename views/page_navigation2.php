@@ -1,11 +1,11 @@
 <div id="header" class="hide-for-small-only">
 	<div class="row">
-	  <div class="medium-7 columns">
+	  <div class="large-7 medium-6 columns">
 	
 			<h1 style="font-family: 'Rochester', cursive;"> Gift List You </h1>
 		
 		</div>
-		<div class="medium-5 columns">
+		<div class="large -5medium-6 columns">
 			<ul class="menu">
 				<li><a style="margin:0 0 5px 0;" class="large button" href="?action=profile">Profile</a></li>
 				<li><a style="margin:0 5px 5px 5px;" class="large button" href="?action=addItemButton">Add Item</a></li>
