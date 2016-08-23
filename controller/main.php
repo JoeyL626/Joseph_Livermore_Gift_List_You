@@ -150,6 +150,12 @@ if(!empty($_GET["action"])){
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
+	 		if($_POST["name"]==" " || !isset($_POST["name"])){
+
+	 				echo "hello";
+
+	 		}
+
 	 		$data = $dbinfo->updateUser($_SESSION["userid"],$_POST["name"],$_POST["email"],$_POST["address"],$_POST["city"],$_POST["state"],$_POST["zip"]);
 	 		header("Location: http://gift-list-you.herokuapp.com/?action=profile");
 		
