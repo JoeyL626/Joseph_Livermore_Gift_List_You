@@ -150,13 +150,13 @@ if(!empty($_GET["action"])){
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
-	 		if(isset($_POST["name"])){
+	 		if(!isset($_POST["name"])){
 
 	 			$data[0]= "name" ;
 
 	 		}else{
 
-	 			$data[0]=$_POST["name"];
+	 			$data[0]= $_POST["name"];
 
 	 		}
 
