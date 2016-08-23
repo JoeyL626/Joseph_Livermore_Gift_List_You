@@ -2468,7 +2468,6 @@ table {
   table thead,
   table tbody,
   table tfoot {
-    border: 1px solid #f1f1f1;
     background-color: #BBDEFB; }
   table caption {
     font-weight: bold;
