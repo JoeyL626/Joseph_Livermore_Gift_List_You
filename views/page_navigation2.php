@@ -16,16 +16,16 @@
 </div>
 
 
-<div class="show-for-small-only">
+<div id="header" class="show-for-small-only">
 	<div class="row">
-	  <div id="header" class="small-6 small-centered columns">
+	  <div class="small-6 small-centered columns">
 	
 			<h1 style="font-family: 'Rochester', cursive; font-size: 30px;"> Gift List You </h1>
 		
 		</div>
 		</div>
 	<div class="row">
-		<div id="header" class="small-9 small-centered columns">
+		<div class="small-9 small-centered columns">
 			<ul class="menu">
 				<li><a style="margin:0 0 5px 0;" class="button" href="?action=profile">Profile</a></li>
 				<li><a style="margin:0 5px 5px 5px;" class="button" href="?action=addItemButton">Add Item</a></li>
