@@ -10,7 +10,8 @@
 	margin-top:1.5rem; 
 	border-top-right-radius:15px;
 	border-top-left-radius:15px;
-	height:200px; 
+	height:100px; 
+	position: relative;
 }
 /* table ******************/
 table { 
