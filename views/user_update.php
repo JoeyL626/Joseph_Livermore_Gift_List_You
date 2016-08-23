@@ -23,7 +23,7 @@
 <div class="row">
 <div class="large-4 medium-5 small-8 small-centered columns">
   	<input class="button align-left" type="submit" name="submit" value="Update"/>
-  	<a class="button align-left" href="?action=deleteUserButton">Delete Account?</a>
+  	<a class="button align-left" href="?action=deleteUserButton">Delete</a>
 </div>
 </div>
 	</form>
