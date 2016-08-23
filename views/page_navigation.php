@@ -1,5 +1,5 @@
 <div id="header" class="row hide-for-small-only">
-  <div class="medium-6 columns">
+  <div class="medium-9 columns">
 
 		<h1 style="font-family: 'Rochester', cursive; font-size: 50px;"> Gift List You </h1>
 	
