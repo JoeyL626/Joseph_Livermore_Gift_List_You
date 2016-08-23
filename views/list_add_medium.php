@@ -1,6 +1,6 @@
 <div class="row show-for-medium-only">
 <div class="medium-12 columns">
-<div style="background-color: #0C56AF;">
+<div style="background-color: #0C56AF; border-radius:15px;">
 <div class="row">
 <div class="medium-5 medium-centered columns">
 <h1>Create List</h1>

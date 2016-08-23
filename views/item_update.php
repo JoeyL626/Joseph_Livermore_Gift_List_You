@@ -1,5 +1,11 @@
 <div class="row">
 <div class="large-6 small-8 small-centered columns">
+<div style="background-color: #0C56AF;border-radius:15px;">
+<div class="row">
+<div class="small-5 small-centered columns">
+<h1>Update Item</h1>
+</div>
+</div>
 <form enctype="multipart/form-data" action="?action=updateItemAction" method="POST">
 	<fieldset>
 
@@ -24,5 +30,6 @@
 
   </fieldset>
 </form>
+</div>
 </div>
 </div>
