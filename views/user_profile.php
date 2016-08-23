@@ -1,6 +1,6 @@
 <div class="row">
 <div class="large-5 medium-12 columns">
-<div style="background-color: #0C56AF;">
+<div style="background-color: #0C56AF; border-radius:15;">
 <div class="row">
 <div class="large-7 small-5 small-centered columns">
 <h1>User Info</h1>
