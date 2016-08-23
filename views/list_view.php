@@ -1,5 +1,11 @@
 
 <div class="large-7 medium-12 columns">
+<div style="background-color: #0C56AF;">
+<div class="row">
+<div class="large-7 small-5 small-centered columns">
+<h1>Create List</h1>
+</div>
+</div>
 <table>
 <tr>
 <th width="250">Event</th>
