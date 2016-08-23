@@ -23,7 +23,7 @@
 </tr>
 <tr>
 <th></th>
-<td><a href="?action=updateUserButton">          Edit</a></td>
+<td><a style="margin-left:auto;" href="?action=updateUserButton">Edit</a></td>
 </tr>
 </table>
 
