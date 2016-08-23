@@ -1056,7 +1056,7 @@ select {
   [data-whatinput='mouse'] .button {
     outline: 0; }
   .button:hover, .button:focus {
-    background-color: #245da2;
+    background-color: #BBDEFB;
     color: #fefefe; }
   .button.tiny {
     font-size: 0.6rem; }
