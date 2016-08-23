@@ -2,7 +2,7 @@
 <div class="large-5 medium-12 columns">
 <div style="background-color: #0C56AF;">
 <div class="row">
-<div class="medium-5 medium-centered columns">
+<div class="large-8 small-5 small-centered columns">
 <h1>Create List</h1>
 </div>
 </div>
