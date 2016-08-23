@@ -18,6 +18,7 @@
 				<input type="password" name="password" value="" placeholder="password"/>
 			</div>
 		
+	
 
 
     	<div class="medium-4 columns">
