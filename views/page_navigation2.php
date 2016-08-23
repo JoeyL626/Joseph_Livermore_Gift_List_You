@@ -7,9 +7,9 @@
 		</div>
 		<div class="large-5 medium-6 columns">
 			<ul class="menu">
-				<li><a style="margin:0 0 5px 0;" class="large button" href="?action=profile">Profile</a></li>
-				<li><a style="margin:0 5px 5px 5px;" class="large button" href="?action=addItemButton">Add Item</a></li>
-				<li><a style="margin:0 0 5px 0;" class="large button" href="?action=logout">Logout</a></li>
+				<li><a style="margin:5px 0 5px 0;" class="large button" href="?action=profile">Profile</a></li>
+				<li><a style="margin:5px 5px 5px 5px;" class="large button" href="?action=addItemButton">Add Item</a></li>
+				<li><a style="margin:5px 0 5px 0;" class="large button" href="?action=logout">Logout</a></li>
 			</ul>
 		</div>
 	</div>
