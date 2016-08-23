@@ -11,7 +11,7 @@
 
 <div class="row">
 <div class="small-5 small-centered columns">
-    <input type="submit" name="submit" value="Login"/>
+    <input class="button" type="submit" name="submit" value="Login"/>
     </div>
     </div>
 
