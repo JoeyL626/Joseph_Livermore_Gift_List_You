@@ -13,12 +13,12 @@
 <td><? echo $data[2][0]["name"]?></td>
 </tr>
 <tr>
-<th>Email</th>
-<td><? echo $data[2][0]["email"]?></td>
-</tr>
-<tr>
 <th>Event</th>
 <td><? echo $data[1][0]["event"]?></td>
+</tr>
+<tr>
+<th>Email</th>
+<td><? echo $data[2][0]["email"]?></td>
 </tr>
 <tr>
 <th>Address</th>
@@ -27,5 +27,6 @@
 </table>
 </div>
 </div>
+
 
 
