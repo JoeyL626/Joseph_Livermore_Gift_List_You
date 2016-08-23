@@ -2,7 +2,7 @@
 	<div class="row">
 	  <div class="medium-8 small-10 small-centered columns">
 	
-			<h1 style="font-family: 'Kaushan Script', cursive;"> Gift List You </h1>
+			<h1 style="font-family: 'Rochester', cursive;"> Gift List You </h1>
 		
 		</div>
 		</div>
