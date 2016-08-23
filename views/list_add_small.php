@@ -2,7 +2,7 @@
 <div class="small-12 columns">
 <div style="background-color: #2196F3;border-radius:15px;">
 <div class="row">
-<div class="small-5 small-centered columns">
+<div class="small-4 small-centered columns">
 <h2 style="font-family: 'Rochester', cursive;">Create List</h2>
 </div>
 </div>

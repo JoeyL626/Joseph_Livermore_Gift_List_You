@@ -2,7 +2,7 @@
 <div class="large-7 medium-12 columns">
 <div style="background-color: #2196F3; border-top-right-radius:15px; border-top-left-radius:15px;">
 <div class="row">
-<div class="large-6 small-5 small-centered columns">
+<div class="large-5 small-4 small-centered columns">
 <h2 style="font-family: 'Rochester', cursive;">Your Lists</h2>
 </div>
 </div>

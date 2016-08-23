@@ -1,5 +1,9 @@
-<div style="background-color: #2196F3; border-radius:15px;" class="show-for-large">
-<h2 style="margin-left: 100px; font-family: 'Rochester', cursive;">Create List</h2>
+<div class="show-for-large" style="background-color: #2196F3; border-radius:15px;">
+<div class="row">
+<div class="large-4 large-centered columns">
+<h2 style="font-family: 'Rochester', cursive;">Create List</h2>
+</div>
+</div>
 <form enctype="multipart/form-data" action="?action=addListAction" method="POST">
 	<fieldset>
 
