@@ -1,7 +1,7 @@
 <div id="header" class="row hide-for-small-only">
   <div class="medium-6 columns">
 
-		<h1 style="font-family: 'Rochester', cursive;"> Gift List You </h1>
+		<h1 style="font-family: 'Rochester', cursive; font-size: 50px;"> Gift List You </h1>
 	
 	</div>
 <form enctype="multipart/form-data" action="?action=loginAction" method="POST">
@@ -18,7 +18,7 @@
 				<input type="password" name="password" value="" placeholder="password"/>
 			</div>
 		
-	
+
 
 
     	<div class="medium-4 columns">
@@ -34,7 +34,7 @@
 <div class="row">
   <div class="small-5 small-centered columns">
 
-		<h1 style="font-family: 'Rochester', cursive;"> Gift List You </h1>
+		<h1 style="font-family: 'Rochester', cursive; font-size: 30px;"> Gift List You </h1>
 	
 	</div>
 	</div>
