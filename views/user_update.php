@@ -3,7 +3,7 @@
 <div style="background-color: #2196F3;border-radius:15px;">
 <div class="row">
 <div class="large-8 small-9 small-centered columns">
-<h2>Update User Info</h2>
+<h2 style="font-family: 'Rochester', cursive;">Update User Info</h2>
 </div>
 </div>
 	<form action="?action=updateUserAction" method="POST">

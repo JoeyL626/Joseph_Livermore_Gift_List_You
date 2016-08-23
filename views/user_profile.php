@@ -3,7 +3,7 @@
 <div style="background-color: #2196F3; border-top-right-radius:15px; border-top-left-radius:15px;">
 <div class="row">
 <div class="large-7 small-5 small-centered columns">
-<h2>User Info</h2>
+<h2 style="font-family: 'Rochester', cursive;">User Info</h2>
 </div>
 </div>
 </div>

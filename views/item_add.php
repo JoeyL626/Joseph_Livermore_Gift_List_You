@@ -3,7 +3,7 @@
 <div style="background-color: #2196F3;border-radius:15px;">
 <div class="row">
 <div class="large-5 small-6 small-centered columns">
-<h2>Add Item</h2>
+<h2 style="font-family: 'Rochester', cursive;">Add Item</h2>
 </div>
 </div>
 <form enctype="multipart/form-data" action="?action=addItemAction" method="POST">
