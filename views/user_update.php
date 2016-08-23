@@ -2,7 +2,7 @@
 <div class="large-6 small-8 small-centered columns">
 <div style="background-color: #0C56AF;border-radius:15px;">
 <div class="row">
-<div class="small-8 small-centered columns">
+<div class="small-10 small-centered columns">
 <h2>Update User Info</h2>
 </div>
 </div>
