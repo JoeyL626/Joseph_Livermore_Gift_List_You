@@ -3,6 +3,14 @@
 	background-color: #1976D2;
 	margin-bottom:1.5rem;  
 }
+#footer { 
+	background-color: #1976D2;
+	margin-bottom:1.5rem; 
+	background-color: #2196F3;
+	border-top-right-radius:15px;
+	border-top-left-radius:15px;
+	height:200px; 
+}
 /* table ******************/
 table { 
 	padding:1rem;	  

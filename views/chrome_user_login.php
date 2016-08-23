@@ -6,7 +6,11 @@
 
 		Password: <input type="password" name="password" value="" placeholder="password"/><br>
 
-    <input type="submit" name="submit" value="Login"/>
+<div class="row">
+<div class="small-5 small-centered columns">
+  	<input class="button" type="submit" name="submit" value="Login"/>
+  	</div>
+  	</div>
 
   </fieldset>
 </form>
