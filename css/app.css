@@ -2,10 +2,14 @@
 #header { 
 	background-color: #1976D2;
 	margin-bottom:1.5rem;  
+	border-bottom-right-radius:15px;
+	border-bottom-left-radius:15px;
 }
 #footer { 
 	background-color: #1976D2;
 	margin-top:1.5rem; 
+	border-top-right-radius:15px;
+	border-top-left-radius:15px;
 	height:200px; 
 }
 /* table ******************/
