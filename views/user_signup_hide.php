@@ -74,8 +74,11 @@
   					</select>
 
 	<input type="text" name="zip" value="" placeholder="Zip" />
-
+<div class="row">
+<div class="medium-4 medium-centered columns">
   	<input class="button small-centered" type="submit" name="submit" value="Signup"/>
+</div>
+</div>
 
   </fieldset>
 </form>
