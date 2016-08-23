@@ -162,7 +162,57 @@ if(!empty($_GET["action"])){
 
 	 		}
 
-	 		$data = $dbinfo->updateUser($_SESSION["userid"],$data[0],$_POST["email"],$_POST["address"],$_POST["city"],$_POST["state"],$_POST["zip"]);
+	 		if(empty($_POST["email"])){
+
+	 			$data[1]= $ndata[0]["email"] ;
+
+	 		}else{
+
+	 			$data[1]=$_POST["email"];
+
+	 		}
+
+	 		if(empty($_POST["address"])){
+
+	 			$data[2]= $ndata[0]["address"] ;
+
+	 		}else{
+
+	 			$data[2]=$_POST["address"];
+
+	 		}
+
+	 		if(empty($_POST["city"])){
+
+	 			$data[3]= $ndata[0]["city"] ;
+
+	 		}else{
+
+	 			$data[3]=$_POST["city"];
+
+	 		}
+
+	 		if(empty($_POST["state"])){
+
+	 			$data[4]= $ndata[0]["state"] ;
+
+	 		}else{
+
+	 			$data[4]=$_POST["state"];
+
+	 		}
+
+	 		if(empty($_POST["zip"])){
+
+	 			$data[5]= $ndata[0]["zip"] ;
+
+	 		}else{
+
+	 			$data[5]=$_POST["zip"];
+
+	 		}
+
+	 		$data = $dbinfo->updateUser($_SESSION["userid"],$data[0],$data[1],$data[2],$data[3],$data[4],$data[5]);
 	 		header("Location: http://gift-list-you.herokuapp.com/?action=profile");
 		
 		}
@@ -228,7 +278,59 @@ if(!empty($_GET["action"])){
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
-	 	$data = $dbinfo->updateList($_POST["list_id"],$_POST["event"],$_POST["address"],$_POST["city"],$_POST["state"],$_POST["zip"]);
+	 		$ndata = $dbinfo->getItemListName($_POST["list_id"]);
+
+	 		if(empty($_POST["event"])){
+
+	 			$data[0]= $ndata[0]["event"] ;
+
+	 		}else{
+
+	 			$data[0]=$_POST["event"];
+
+	 		}
+
+	 		if(empty($_POST["address"])){
+
+	 			$data[1]= $ndata[0]["address"] ;
+
+	 		}else{
+
+	 			$data[1]=$_POST["address"];
+
+	 		}
+
+	 		if(empty($_POST["city"])){
+
+	 			$data[2]= $ndata[0]["city"] ;
+
+	 		}else{
+
+	 			$data[2]=$_POST["city"];
+
+	 		}
+
+	 		if(empty($_POST["state"])){
+
+	 			$data[3]= $ndata[0]["state"] ;
+
+	 		}else{
+
+	 			$data[3]=$_POST["state"];
+
+	 		}
+
+	 		if(empty($_POST["zip"])){
+
+	 			$data[4]= $ndata[0]["zip"] ;
+
+	 		}else{
+
+	 			$data[4]=$_POST["zip"];
+
+	 		}
+
+	 	$data = $dbinfo->updateList($_POST["list_id"],$data[0],$data[1],$data[2],$data[3],$data[4]);
 	 	
 	 	header("Location: http://gift-list-you.herokuapp.com/?action=profile");
 		
@@ -333,7 +435,39 @@ if(!empty($_GET["action"])){
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
-	 	$data = $dbinfo->updateItem($_POST["item_id"],$_POST["name"],$_POST["price"],$_POST["list"]);
+	 		$data[0] = $dbinfo->getItem($_POST["item_id"]);
+
+	 		if(empty($_POST["name"])){
+
+	 			$data[0]= $ndata[0]["name"] ;
+
+	 		}else{
+
+	 			$data[0]=$_POST["name"];
+
+	 		}
+
+	 		if(empty($_POST["price"])){
+
+	 			$data[1]= $ndata[0]["price"] ;
+
+	 		}else{
+
+	 			$data[1]=$_POST["price"];
+
+	 		}
+
+	 		if(empty($_POST["list"])){
+
+	 			$data[2]= $ndata[0]["list"] ;
+
+	 		}else{
+
+	 			$data[2]=$_POST["list"];
+
+	 		}
+
+	 	$data = $dbinfo->updateItem($_POST["item_id"],$data[0],$data[1],$data[2]);
 		
 		header("Location: http://gift-list-you.herokuapp.com/?action=itemView&id=".$_POST["list"]);
 		
