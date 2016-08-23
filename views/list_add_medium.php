@@ -81,7 +81,11 @@
 
 		<input type="text" name="zip" value="" placeholder="12345" />
 
-  	<input type="submit" name="submit" value="Create List"/>
+<div class="row">
+<div class="medium-3 medium-centered columns">
+  	<input class="button small-centered" type="submit" name="submit" value="Create List"/>
+</div>
+</div>
 
   </fieldset>
 </form>

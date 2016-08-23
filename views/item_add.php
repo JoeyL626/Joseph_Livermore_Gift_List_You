@@ -24,7 +24,11 @@
 								}
 							?>
 								</select>
-  	<input type="submit" name="submit" value="Add Item"/>
+<div class="row">
+<div class="medium-3 medium-centered columns">
+  	<input class="button small-centered" type="submit" name="submit" value="Add Item"/>
+</div>
+</div>
 
   </fieldset>
 </form>

@@ -85,8 +85,13 @@
 
 		Zip: <input type="text" name="zip" value="" placeholder="<? echo $data[0]['zip']?>" />
 
-		  	 <input type="submit" name="submit" value="Update List"/>
-		  	 <a class="button" href="?action=deleteListAction&id=<? echo $data[0]["list_id"]?>">Delete List</a>
+<div class="row">
+<div class="medium-3 medium-centered columns">
+  	<input class="button small-centered" type="submit" name="submit" value="Update"/>
+  	<a class="button" href="?action=deleteListAction&id=<? echo $data[0]["list_id"]?>">Delete List</a>
+</div>
+</div>
+		  	 
   </fieldset>
 </form>
 </div></div></div>
