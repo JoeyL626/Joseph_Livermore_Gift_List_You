@@ -5,7 +5,7 @@
 			<h1 style="font-family: 'Rochester', cursive;"> Gift List You </h1>
 		
 		</div>
-		<div class="large -5medium-6 columns">
+		<div class="large-5 medium-6 columns">
 			<ul class="menu">
 				<li><a style="margin:0 0 5px 0;" class="large button" href="?action=profile">Profile</a></li>
 				<li><a style="margin:0 5px 5px 5px;" class="large button" href="?action=addItemButton">Add Item</a></li>
