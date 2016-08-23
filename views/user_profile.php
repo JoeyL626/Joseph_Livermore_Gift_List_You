@@ -20,6 +20,10 @@
 <th>Address</th>
 <td><? echo $data[0][0]["address"]." ".$data[0][0]["city"].", ".$data[0][0]["state"]." ".$data[0][0]["zip"]?></td>
 </tr>
+</tr>
+<tr>
+<th><a class="button" href="?action=updateUserButton">Edit</a></th>
+</tr>
 </table>
 
 

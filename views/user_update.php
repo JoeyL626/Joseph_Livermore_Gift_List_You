@@ -23,9 +23,9 @@
 		<input type="submit" name="submit" value="Update User"/>
 		<a href="?action=deleteUserButton">Delete Account?</a>
 <div class="row">
-<div class="medium-3 medium-centered columns">
-  	<input class="button" type="submit" name="submit" value="Update"/>
-  	<a href="?action=deleteUserButton">Delete Account?</a>
+<div class="large-4 medium-5 small-8 small-centered columns">
+  	<input class="button align-left" type="submit" name="submit" value="Update"/>
+  	<a class="button align-left" href="?action=deleteUserButton">Delete Account?</a>
 </div>
 </div>
 	</form>
