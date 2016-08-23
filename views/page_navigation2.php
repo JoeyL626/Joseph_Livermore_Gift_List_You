@@ -15,7 +15,6 @@
 			</div>
 		</div>
 	</div>
-</div>
 
 
 <div class="show-for-small-only">
@@ -37,4 +36,3 @@
 			</div>
 		</div>
 	</div>
-</div>
