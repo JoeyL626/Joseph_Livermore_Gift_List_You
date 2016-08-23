@@ -3,7 +3,7 @@
 <div style="background-color: #0C56AF; border-radius:15px;">
 <div class="row">
 <div class="medium-5 medium-centered columns">
-<h1>Create List</h1>
+<h2>Create List</h2>
 </div>
 </div>
 <form enctype="multipart/form-data" action="?action=addListAction" method="POST">
