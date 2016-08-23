@@ -25,7 +25,7 @@
 							?>
 								</select>
 <div class="row">
-<div class="small-3 small-centered columns">
+<div class="small-5 small-centered columns">
   	<input class="button small-centered" type="submit" name="submit" value="Add Item"/>
 </div>
 </div>
