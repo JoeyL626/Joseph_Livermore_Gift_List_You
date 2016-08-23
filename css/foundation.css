@@ -1057,7 +1057,7 @@ select {
     outline: 0; }
   .button:hover, .button:focus {
     background-color: #BBDEFB;
-    color: #fefefe; }
+    color: black; }
   .button.tiny {
     font-size: 0.6rem; }
   .button.small {
