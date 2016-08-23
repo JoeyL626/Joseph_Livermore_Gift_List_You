@@ -32,6 +32,7 @@ foreach($data[0] as $list){
 <h2 style="font-family: 'Rochester', cursive;">Recipient List</h2>
 </div>
 </div>
+</div>
 <table>
 <?
 foreach($data[0] as $list){
@@ -45,6 +46,5 @@ foreach($data[0] as $list){
 }
 ?>
 </table>
-</div>
 </div>
 </div>

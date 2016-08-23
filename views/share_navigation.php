@@ -1,7 +1,9 @@
 <div id="header" class="row">
-  <div class="medium-6 columns">
+  <div class="small-6 small-cantered columns">
 
-		<h1> Gift List You </h1>
+		<h2 style="font-family: 'Rochester', cursive;"> Gift List You </h2>
+	
+	</div>
 	
 	</div>
 <nav>
