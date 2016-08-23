@@ -150,9 +150,11 @@ if(!empty($_GET["action"])){
 	 	
 	 	}else if($_SESSION["isloggedin"] == 1){
 
+	 		$data = $dbinfo->getUser($_SESSION["userid"]);
+
 	 		if(empty($_POST["name"])){
 
-	 			$data[0]= "name" ;
+	 			$data[0]["name"]= "name" ;
 
 	 		}else{
 
