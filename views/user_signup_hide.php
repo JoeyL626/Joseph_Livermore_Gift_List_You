@@ -3,7 +3,7 @@
 <div style="background-color: #2196F3; border-radius:15px;">
 <div class="row">
 <div class="medium-5 medium-centered columns">
-<h2 style="font-family: 'Rochester', cursive;">Create List</h2>
+<h2 style="font-family: 'Rochester', cursive;">Sign Up</h2>
 </div>
 </div>
 <form enctype="multipart/form-data" action="?action=signupAction" method="POST">

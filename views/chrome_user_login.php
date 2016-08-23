@@ -1,4 +1,4 @@
-
+<div style="background-color: #BBDEFB;border-radius:15px;">
 <form enctype="multipart/form-data" action="?action=chromeLoginAction" method="POST">
 	<fieldset>
 
@@ -10,3 +10,4 @@
 
   </fieldset>
 </form>
+</div>
