@@ -18,7 +18,7 @@ foreach($data[0] as $list){
 
 
 <div class="row show-for-small-only">
-<div class="small-8 small-centered columns">
+<div class="small-12 small-centered columns">
 <table>
 <?
 foreach($data[0] as $list){

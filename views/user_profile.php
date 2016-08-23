@@ -1,5 +1,5 @@
 <div class="row">
-<div class="medium-5 columns">
+<div class="large-5 medium-12 columns">
 <div style="background-color: #2196F3; border-top-right-radius:15px; border-top-left-radius:15px;">
 <div class="row">
 <div class="large-6 small-4 small-centered columns">
@@ -26,7 +26,6 @@
 <td><a class="button" href="?action=updateUserButton">Edit</a></td>
 </tr>
 </table>
-</div>
 
 
 
