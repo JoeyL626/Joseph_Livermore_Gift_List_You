@@ -20,8 +20,6 @@
 		
 		<input type="text" name="zip" value="" placeholder="<? echo $data[0]["zip"];?>"/>
 
-		<input type="submit" name="submit" value="Update User"/>
-		<a href="?action=deleteUserButton">Delete Account?</a>
 <div class="row">
 <div class="large-4 medium-5 small-8 small-centered columns">
   	<input class="button align-left" type="submit" name="submit" value="Update"/>
