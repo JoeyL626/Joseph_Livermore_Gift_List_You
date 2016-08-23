@@ -3,7 +3,7 @@
 <div style="background-color: #0C56AF;">
 <div class="row">
 <div class="large-7 small-5 small-centered columns">
-<h1>Create List</h1>
+<h1>Your Lists</h1>
 </div>
 </div>
 <table>
