@@ -7,7 +7,7 @@
 		</div>
 		</div>
 	<div class="row">
-		<div class="large-4 medium-4 small-11 medium-offset-8 small-centered columns">
+		<div class="large-5 medium-6 small-11 large-offset-7 medium-offset-6 small-centered columns">
 			<ul class="menu">
 				<li><a style="margin:0 5px 5px 5px;" class="large button" href="?action=profile">Profile</a></li>
 				<li><a style="margin:0 5px 5px 5px;" class="large button" href="?action=addItemButton">Add Item</a></li>
