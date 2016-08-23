@@ -1,6 +1,6 @@
 <div class="row">
 <div class="large-6 small-8 small-centered columns">
-<div style="background-color: #0C56AF;border-radius:15px;">
+<div style="background-color: #2196F3;border-radius:15px;">
 <div class="row">
 <div class="large-8 small-9 small-centered columns">
 <h2>Update User Info</h2>
