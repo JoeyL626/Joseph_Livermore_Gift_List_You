@@ -2,8 +2,8 @@
 <div class="large-6 small-8 small-centered columns">
 <div style="background-color: #0C56AF;border-radius:15px;">
 <div class="row">
-<div class="small-6 small-centered columns">
-<h1>Uodate User Info</h1>
+<div class="small-8 small-centered columns">
+<h1>Update User Info</h1>
 </div>
 </div>
 	<form action="?action=updateUserAction" method="POST">
