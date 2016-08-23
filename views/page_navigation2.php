@@ -6,7 +6,7 @@
 		
 		</div>
 		<div class="large-5 medium-6 columns">
-			<ul class="menu align-left">
+			<ul class="menu align-right">
 				<li><a style="margin:15px 0 5px 0;" class="large button" href="?action=profile">Profile</a></li>
 				<li><a style="margin:15px 5px 5px 5px;" class="large button" href="?action=addItemButton">Add Item</a></li>
 				<li><a style="margin:15px 0 5px 0;" class="large button" href="?action=logout">Logout</a></li>
