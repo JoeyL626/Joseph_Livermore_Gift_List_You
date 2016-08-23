@@ -87,8 +87,8 @@
 
 <div class="row">
 <div class="large-4 medium-5 small-8 small-centered columns">
-  	<input class="button small-centered" type="submit" name="submit" value="Update"/>
-  	<a class="button" href="?action=deleteListAction&id=<? echo $data[0]["list_id"]?>">Delete</a>
+  	<input class="button align-left" type="submit" name="submit" value="Update"/>
+  	<a class="button align-left" href="?action=deleteListAction&id=<? echo $data[0]["list_id"]?>">Delete</a>
 </div>
 </div>
 		  	 
