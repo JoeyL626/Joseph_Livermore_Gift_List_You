@@ -86,7 +86,7 @@
 		Zip: <input type="text" name="zip" value="" placeholder="<? echo $data[0]['zip']?>" />
 
 <div class="row">
-<div class="small-10 small-centered columns">
+<div class="small-8 small-centered columns">
   	<input class="button small-centered" type="submit" name="submit" value="Update"/>
   	<a class="button" href="?action=deleteListAction&id=<? echo $data[0]["list_id"]?>">Delete List</a>
 </div>
