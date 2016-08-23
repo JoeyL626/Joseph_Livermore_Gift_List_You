@@ -156,7 +156,7 @@ if(!empty($_GET["action"])){
 
 	 		}else{
 
-	 			$data[0]= $_POST["name"];
+	 			$data[0]=$_POST["name"];
 
 	 		}
 
