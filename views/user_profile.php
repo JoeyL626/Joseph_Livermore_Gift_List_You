@@ -6,7 +6,7 @@
 <h1>Create List</h1>
 </div>
 </div>
-<table style="width:90%;">
+<table >
 <tr>
 <th>Name</th>
 <td><? echo $data[0][0]["name"]?></td>
