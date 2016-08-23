@@ -1,7 +1,11 @@
 <div class="row">
 <div class="large-5 medium-12 columns">
 <div style="background-color: #0C56AF;">
-<h1 style="margin-left: 100px;">Create List</h1>
+<div class="row">
+<div class="medium-5 medium-centered columns">
+<h1>Create List</h1>
+</div>
+</div>
 <table >
 <tr>
 <th>Name</th>
