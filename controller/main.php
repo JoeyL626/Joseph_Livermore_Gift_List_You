@@ -152,15 +152,15 @@ if(!empty($_GET["action"])){
 
 	 		if($_POST["name"]==" " || !isset($_POST["name"])){
 
-	 			$data[1]="name";
+	 			$data[0]="name";
 
 	 		}else{
 
-	 			$data[1]=$_POST["name"];
+	 			$data[0]=$_POST["name"];
 
 	 		}
 
-	 		$data = $dbinfo->updateUser($_SESSION["userid"],$data[1],$_POST["email"],$_POST["address"],$_POST["city"],$_POST["state"],$_POST["zip"]);
+	 		$data = $dbinfo->updateUser($_SESSION["userid"],$data[0],$_POST["email"],$_POST["address"],$_POST["city"],$_POST["state"],$_POST["zip"]);
 	 		header("Location: http://gift-list-you.herokuapp.com/?action=profile");
 		
 		}
