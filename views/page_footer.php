@@ -1,5 +1,4 @@
-<footer id="footer" class="row">
-</footer>
+
 
 
 <script>
