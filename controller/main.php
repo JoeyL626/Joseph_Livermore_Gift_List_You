@@ -55,6 +55,7 @@ if(!empty($_GET["action"])){
 		$views->getView("views/page_header.php");
 	 	$views->getView("views/page_navigation.php");
 	 	$views->getView("views/user_login.php");
+		$views->getView("views/user_signup.php");
 		$views->getView("views/user_signup_hide.php");
 		$views->getView("views/page_footer.php");
 
